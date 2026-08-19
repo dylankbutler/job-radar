@@ -213,10 +213,12 @@ async function run() {
   const companyResults = [];
 
   for (const c of companies) {
-    const cfg = ATS[c] || {};
-    const ats = await fetchGreenhouse(cfg.greenhouse)
-             || await fetchLever(cfg.lever)
-             || await fetchAshby(cfg.ashby)
+    const cfg  = ATS[c] || {};
+    // For companies not in the ATS map, try common slug variations automatically
+    const slug = c.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const ats  = await fetchGreenhouse(cfg.greenhouse ?? slug)
+             || await fetchLever(cfg.lever ?? slug)
+             || await fetchAshby(cfg.ashby ?? slug)
              || (cfg.workday ? await fetchWorkday(cfg.workday) : null);
 
     let jobs;
