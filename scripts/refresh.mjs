@@ -56,20 +56,27 @@ function passesSeniorFilter(j) {
   return j.level !== 'senior' && !re.test(j.title || '');
 }
 
+const MAX_AGE_DAYS = 14;
+function isFresh(job) {
+  if (!job.fetched_at) return false;
+  return (Date.now() - new Date(job.fetched_at)) / 86400000 <= MAX_AGE_DAYS;
+}
+
 async function run() {
+  const now = new Date().toISOString();
   console.log(`Refreshing job radar for ${companies.length} watchlist companies...`);
 
   const companyResults = [];
   for (const c of companies) {
     const prompt = `Candidate profile: ${profile}\n\nSearch for current open job postings at the company "${c}" (remote roles, or roles based in San Diego, Los Angeles, New York City, or San Francisco) that would suit this candidate. Check their careers page and major job boards. Return up to 3 roles. ${JSON_SPEC}`;
     const jobs = await callClaude(prompt);
-    jobs.forEach(j => companyResults.push({ ...j, company: j.company || c, id: jobId(j.title || '', j.company || c) }));
+    jobs.forEach(j => companyResults.push({ ...j, company: j.company || c, id: jobId(j.title || '', j.company || c), fetched_at: now }));
     console.log(`  ${c}: ${jobs.length} role(s) found`);
   }
 
   const discoveryPrompt = `Candidate profile: ${profile}\n\nYou are a job search assistant. Use web_search to find current open job postings that fit this candidate. Run several targeted searches such as:\n- "entry level data analyst remote job 2025"\n- "associate product analyst remote hiring"\n- "junior business analyst remote culture"\n- "entry level growth analyst remote job"\n- "data analyst media music entertainment remote"\n- "AI evaluation analyst remote entry level"\nFocus on established companies (not early-stage startups), remote-first or flexible (San Diego, LA, NYC, SF). Look on job boards like Greenhouse, Lever, Workday, LinkedIn, We Work Remotely, and company career pages. Return up to 10 of the best matches. ${JSON_SPEC}`;
   const discoveryRaw = await callClaude(discoveryPrompt, 4096);
-  const discoveryJobs = discoveryRaw.map(j => ({ ...j, id: jobId(j.title || '', j.company || '') }));
+  const discoveryJobs = discoveryRaw.map(j => ({ ...j, id: jobId(j.title || '', j.company || ''), fetched_at: now }));
   console.log(`  discovery: ${discoveryJobs.length} role(s) found`);
 
   const filteredCompanies = companyResults.filter(passesSeniorFilter).filter(j => j.id);
@@ -80,15 +87,15 @@ async function run() {
     existing = JSON.parse(fs.readFileSync('data/jobs.json', 'utf-8'));
   } catch {}
 
-  // merge new results with existing, new entries take priority, old ones fill in behind
+  // merge: keep old entries only if still within MAX_AGE_DAYS and not replaced by today's run
   const mergedCompanies = [...filteredCompanies];
   (existing.companies || []).forEach(old => {
-    if (!mergedCompanies.some(n => n.id === old.id)) mergedCompanies.push(old);
+    if (!mergedCompanies.some(n => n.id === old.id) && isFresh(old)) mergedCompanies.push(old);
   });
 
   const mergedDiscovery = [...filteredDiscovery];
   (existing.discovery || []).forEach(old => {
-    if (!mergedDiscovery.some(n => n.id === old.id)) mergedDiscovery.push(old);
+    if (!mergedDiscovery.some(n => n.id === old.id) && isFresh(old)) mergedDiscovery.push(old);
   });
 
   const output = {
