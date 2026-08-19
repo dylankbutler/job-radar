@@ -22,10 +22,26 @@ function passesSeniorFilter(j) {
   return j.level !== 'senior' && !/\b(senior|sr\.?|staff|principal|director|vp|vice\s+president|head\s+of|chief|lead)\b/i.test(j.title || '');
 }
 
+// ── ATS slug overrides — guessed slugs often differ from company name ─────────
+const ATS_SLUGS = {
+  'Surfline':               { greenhouse: 'surfline' },
+  'Whatnot':                { greenhouse: 'whatnot' },
+  'National Research Group':{ greenhouse: 'nationalresearchgroup' },
+  'Clay':                   { lever: 'clay-hq' },
+  'Live Nation':            {}, // Workday — no public API
+  'Substack':               { greenhouse: 'substack' },
+  'Pinterest':              { greenhouse: 'pinterest' },
+  'World Surf League':      { greenhouse: 'worldsurfleague' },
+  'BandsinTown':            { lever: 'bandsintown' },
+  'IHeart Media':           {}, // Workday — no public API
+  'Automattic':             { greenhouse: 'automattic' },
+  'Patagonia':              {}, // Workday — no public API
+};
+
 // ── ATS API fetchers ─────────────────────────────────────────────────────────
 
-async function fetchGreenhouse(company) {
-  const slug = company.toLowerCase().replace(/[^a-z0-9]/g, '');
+async function fetchGreenhouse(slug) {
+  if (!slug) return null;
   try {
     const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${slug}/jobs`);
     if (!r.ok) return null;
@@ -40,8 +56,8 @@ async function fetchGreenhouse(company) {
   } catch { return null; }
 }
 
-async function fetchLever(company) {
-  const slug = company.toLowerCase().replace(/[^a-z0-9]/g, '');
+async function fetchLever(slug) {
+  if (!slug) return null;
   try {
     const r = await fetch(`https://api.lever.co/v0/postings/${slug}?mode=json`);
     if (!r.ok) return null;
@@ -56,8 +72,8 @@ async function fetchLever(company) {
   } catch { return null; }
 }
 
-async function fetchAshby(company) {
-  const slug = company.toLowerCase().replace(/[^a-z0-9]/g, '');
+async function fetchAshby(slug) {
+  if (!slug) return null;
   try {
     const r = await fetch('https://api.ashbyhq.com/posting-public.list', {
       method: 'POST',
@@ -70,7 +86,7 @@ async function fetchAshby(company) {
     if (!Array.isArray(jobs) || !jobs.length) return null;
     return { via: 'Ashby', jobs: jobs.map(j => ({
       raw_title: j.title,
-      location:  j.locationName || j.isRemote ? 'Remote' : 'Unknown',
+      location:  j.isRemote ? 'Remote' : (j.locationName || 'Unknown'),
       url:       `https://jobs.ashbyhq.com/${slug}/${j.id}`,
       date:      j.publishedDate?.slice(0, 10) || null,
     }))};
@@ -122,7 +138,10 @@ async function run() {
   const companyResults = [];
   for (const c of companies) {
     // 1. Try live ATS APIs first — these only return currently open positions
-    const ats = await fetchGreenhouse(c) || await fetchLever(c) || await fetchAshby(c);
+    const slugs = ATS_SLUGS[c] || {};
+    const ats = await fetchGreenhouse(slugs.greenhouse)
+             || await fetchLever(slugs.lever)
+             || await fetchAshby(slugs.ashby);
 
     let jobs;
     if (ats) {
