@@ -54,10 +54,9 @@ function isRelevantTitle(title = '') {
   return RELEVANT.test(title) && !EXCLUDE.test(title);
 }
 
-const MAX_AGE_DAYS = 14;
-function isFresh(job) {
+function isFresh(job, maxDays = 5) {
   if (!job.fetched_at) return false;
-  return (Date.now() - new Date(job.fetched_at)) / 86400000 <= MAX_AGE_DAYS;
+  return (Date.now() - new Date(job.fetched_at)) / 86400000 <= maxDays;
 }
 
 // ── ATS fetchers (live listings only) ────────────────────────────────────────
@@ -175,6 +174,28 @@ async function fetchJobicy() {
   return results;
 }
 
+// ── URL health check ──────────────────────────────────────────────────────────
+
+async function checkUrl(url, timeoutMs = 4000) {
+  if (!url) return false;
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+    const r = await fetch(url, { method: 'HEAD', signal: ctrl.signal, redirect: 'follow' });
+    clearTimeout(timer);
+    return r.ok;
+  } catch { return false; }
+}
+
+async function filterDead(jobs) {
+  if (!jobs.length) return jobs;
+  const healthy = await Promise.all(jobs.map(j => checkUrl(j.url)));
+  const kept = jobs.filter((_, i) => healthy[i]);
+  const dropped = jobs.length - kept.length;
+  if (dropped) console.log(`    URL check: dropped ${dropped} dead link(s)`);
+  return kept;
+}
+
 // ── Claude ────────────────────────────────────────────────────────────────────
 
 async function callClaude(prompt, { maxTokens = 1024, useSearch = false } = {}) {
@@ -211,6 +232,7 @@ async function run() {
 
   // ── Watchlist ──────────────────────────────────────────────────────────────
   const companyResults = [];
+  const atsScanned = new Set(); // companies where ATS gave us the complete open-job list
 
   for (const c of companies) {
     const cfg  = ATS[c] || {};
@@ -223,6 +245,7 @@ async function run() {
 
     let jobs;
     if (ats) {
+      atsScanned.add(c.toLowerCase()); // ATS is authoritative; old results for this company will be dropped
       const listing = ats.jobs.slice(0, 40)
         .map(j => `- "${j.raw_title}" | ${j.location} | ${j.date || 'no date'} | ${j.url}`)
         .join('\n');
@@ -233,6 +256,7 @@ async function run() {
       // Web search fallback — only for companies with no known ATS
       const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nSearch for open jobs at "${c}" using their careers page or Greenhouse/Lever/Ashby board (not job aggregators). Use after:${thirtyDaysAgo} to restrict to recent listings. ${SEARCH_SPEC}`;
       jobs = await callClaude(prompt, { maxTokens: 1024, useSearch: true });
+      jobs = await filterDead(jobs);
       console.log(`  ${c}: ${jobs.length} role(s) [web search fallback — no ATS found]`);
     }
 
@@ -263,21 +287,22 @@ async function run() {
     const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nBelow are currently open remote jobs pulled live from Remotive and Jobicy (no stale data). Score and filter for the best fits — prioritize culture-forward brands (surf, music, outdoor, media, AI), established remote-first companies, and roles at the entry-to-mid level. Avoid early-stage startups.\n\n${listing}\n\n${DISCOVERY_SCORE_SPEC}`;
     const scored = await callClaude(prompt, { maxTokens: 4096, useSearch: false });
 
-    // Re-attach source URL from pool if Claude dropped it
-    discoveryJobs = scored.map(j => {
+    // Re-attach source URL from pool if Claude dropped it, then health-check
+    const withUrls = scored.map(j => {
       const match = discoveryPool.find(p =>
         p.raw_title?.toLowerCase() === j.title?.toLowerCase() &&
         p.company?.toLowerCase() === j.company?.toLowerCase()
       );
       return {
         ...j,
-        url:        j.url || match?.url || '',
-        source:     j.source || match?.source || '',
+        url:         j.url || match?.url || '',
+        source:      j.source || match?.source || '',
         posted_date: j.posted_date || match?.date || null,
-        id:         jobId(j.title || '', j.company || ''),
-        fetched_at: now,
+        id:          jobId(j.title || '', j.company || ''),
+        fetched_at:  now,
       };
     });
+    discoveryJobs = await filterDead(withUrls.filter(j => j.url));
   }
 
   console.log(`  Discovery: ${discoveryJobs.length} role(s) scored`);
@@ -289,14 +314,20 @@ async function run() {
   let existing = { companies: [], discovery: [] };
   try { existing = JSON.parse(fs.readFileSync('data/jobs.json', 'utf-8')); } catch {}
 
+  // For ATS-covered companies, today's API results are the complete source of truth —
+  // don't carry forward old results (the job may have been filled since last run).
+  // For web-search-only companies, keep results up to 5 days as a best-effort cache.
   const mergedCompanies = [...filteredCompanies];
   (existing.companies || []).forEach(old => {
-    if (!mergedCompanies.some(n => n.id === old.id) && isFresh(old)) mergedCompanies.push(old);
+    const co = (old.company || '').toLowerCase();
+    if (atsScanned.has(co)) return; // ATS already gave us the full picture for this company
+    if (!mergedCompanies.some(n => n.id === old.id) && isFresh(old, 5)) mergedCompanies.push(old);
   });
 
+  // Discovery: keep recent results (5 days) to smooth over day-to-day API variation
   const mergedDiscovery = [...filteredDiscovery];
   (existing.discovery || []).forEach(old => {
-    if (!mergedDiscovery.some(n => n.id === old.id) && isFresh(old)) mergedDiscovery.push(old);
+    if (!mergedDiscovery.some(n => n.id === old.id) && isFresh(old, 5)) mergedDiscovery.push(old);
   });
 
   fs.mkdirSync('data', { recursive: true });

@@ -636,6 +636,161 @@ body::after {
   background-size: 200px 200px;
 }
 
+/* ── Filter Bar ── */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  align-items: center;
+  padding: 9px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  margin-bottom: 14px;
+}
+.filter-group { display: flex; align-items: center; gap: 8px; }
+.filter-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+.pill-group { display: flex; gap: 3px; flex-wrap: wrap; }
+.pill {
+  font-size: 11.5px;
+  padding: 3px 9px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-2);
+  transition: all 0.14s ease;
+}
+.pill:hover { border-color: var(--border-hi); color: var(--text-1); }
+.pill.active { background: var(--accent); border-color: var(--accent); color: #FFF; }
+.filter-select {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--text-1);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 3px 8px;
+  outline: none;
+  cursor: pointer;
+}
+.filter-select:focus { border-color: var(--accent); }
+
+/* ── Application Status ── */
+.card-status {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--border);
+  padding: 7px 16px 9px 18px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.status-btn {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-3);
+  transition: all 0.14s ease;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.03em;
+}
+.status-btn:hover { border-color: var(--border-hi); color: var(--text-2); }
+.status-btn.applied.active      { background: var(--accent-dim);           border-color: var(--accent); color: var(--accent); }
+.status-btn.interviewing.active { background: rgba(37,99,235,0.07);        border-color: #2563EB;       color: #2563EB; }
+.status-btn.offer.active        { background: var(--hi-dim);               border-color: var(--hi);     color: var(--hi); }
+.status-btn.pass.active         { background: rgba(100,116,139,0.08);      border-color: #64748B;       color: #64748B; }
+.status-meta-pill {
+  font-size: 9.5px;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.status-meta-pill.applied      { background: var(--accent-dim);      color: var(--accent); }
+.status-meta-pill.interviewing { background: rgba(37,99,235,0.07);  color: #2563EB; }
+.status-meta-pill.offer        { background: var(--hi-dim);          color: var(--hi); }
+.status-meta-pill.pass         { background: rgba(100,116,139,0.08); color: #64748B; }
+
+/* ── Settings Panel ── */
+.settings-section { max-width: 580px; }
+.settings-block { margin-bottom: 30px; }
+.settings-div { height: 1px; background: var(--border); margin-bottom: 28px; }
+.settings-block-head {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-1);
+  margin-bottom: 4px;
+}
+.settings-block-sub {
+  font-size: 12px;
+  color: var(--text-3);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.settings-textarea {
+  width: 100%;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--text-1);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  resize: vertical;
+  min-height: 72px;
+  outline: none;
+  line-height: 1.65;
+  transition: border-color 0.15s ease;
+}
+.settings-textarea:focus { border-color: var(--border-hi); }
+.settings-token-input {
+  width: 100%;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--text-1);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 8px 12px;
+  outline: none;
+  margin-bottom: 8px;
+  transition: border-color 0.15s ease;
+}
+.settings-token-input:focus { border-color: var(--accent); }
+.settings-save {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #FFF;
+  border: none;
+  transition: background 0.15s, transform 0.1s;
+  cursor: pointer;
+}
+.settings-save:hover  { background: #B8933F; }
+.settings-save:active { transform: scale(0.97); }
+.settings-status {
+  font-size: 11.5px;
+  color: var(--text-3);
+  min-height: 17px;
+  margin-top: 6px;
+}
+.settings-status.ok  { color: var(--hi); }
+.settings-status.err { color: var(--lo); }
+
 /* ── Mobile ── */
 @media (max-width: 767px) {
   body { grid-template-columns: 1fr; }
@@ -698,7 +853,7 @@ body::after {
   </div>
 
   <div class="sb-footer">
-    Edit <code>companies.txt</code> or <code>profile.txt</code> to adjust targeting. Refreshes daily via GitHub Actions.
+    Edit your profile and watchlist from the <strong>Settings</strong> tab. Refreshes daily via GitHub Actions.
   </div>
 </aside>
 
@@ -712,9 +867,83 @@ body::after {
         Discovery <span class="tab-n" id="count-discovery">0</span>
       </button>
       <button class="tab" data-tab="how">How it works</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </div>
+    <div class="filter-bar" id="filter-bar">
+      <div class="filter-group">
+        <span class="filter-label">Sort</span>
+        <select class="filter-select" id="sort-select">
+          <option value="score">Score</option>
+          <option value="date">Date posted</option>
+          <option value="company">Company A–Z</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Score</span>
+        <div class="pill-group">
+          <button class="pill active" data-score="0">All</button>
+          <button class="pill" data-score="60">60+</button>
+          <button class="pill" data-score="70">70+</button>
+          <button class="pill" data-score="80">80+</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Location</span>
+        <div class="pill-group">
+          <button class="pill active" data-loc="all">All</button>
+          <button class="pill" data-loc="remote">Remote</button>
+          <button class="pill" data-loc="sf">SF</button>
+          <button class="pill" data-loc="la">LA</button>
+          <button class="pill" data-loc="sd">SD</button>
+          <button class="pill" data-loc="nyc">NYC</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Status</span>
+        <div class="pill-group">
+          <button class="pill active" data-status-f="all">All</button>
+          <button class="pill" data-status-f="applied">Applied</button>
+          <button class="pill" data-status-f="interviewing">Interviewing</button>
+        </div>
+      </div>
     </div>
     <div id="panel-companies"></div>
     <div id="panel-discovery" style="display:none"></div>
+    <div id="panel-settings" style="display:none">
+      <div class="settings-section">
+        <div class="settings-block">
+          <div class="settings-block-head">GitHub Token</div>
+          <div class="settings-block-sub">Create a fine-grained personal access token at <strong>github.com → Settings → Developer settings → Personal access tokens → Fine-grained</strong>. Scope it to this repository only with <strong>Contents: Read and write</strong>. Stored only in your browser.</div>
+          <input type="password" class="settings-token-input" id="settings-token-input" placeholder="github_pat_..." autocomplete="off" />
+          <div style="display:flex;gap:6px;align-items:center">
+            <button class="settings-save" id="settings-token-save">Save token</button>
+            <button class="btn-icon" id="settings-token-clear" style="font-size:11.5px;padding:5px 10px">Clear</button>
+          </div>
+          <div class="settings-status" id="settings-token-status"></div>
+        </div>
+        <div class="settings-div"></div>
+        <div class="settings-block">
+          <div class="settings-block-head">Candidate Profile</div>
+          <div class="settings-block-sub">Plain-language description of your background, preferences, and deal-breakers. Sent to Claude with every scoring request.</div>
+          <textarea class="settings-textarea" id="settings-profile" rows="5" spellcheck="false"></textarea>
+          <div style="display:flex;gap:6px;align-items:center;margin-top:10px">
+            <button class="settings-save" id="settings-profile-save">Save to GitHub</button>
+            <div class="settings-status" id="settings-profile-status"></div>
+          </div>
+        </div>
+        <div class="settings-div"></div>
+        <div class="settings-block">
+          <div class="settings-block-head">Watchlist Companies</div>
+          <div class="settings-block-sub">One company name per line. Scanned via Greenhouse, Lever, Ashby, and Workday APIs on every refresh. After saving, trigger a run to pick up changes.</div>
+          <textarea class="settings-textarea" id="settings-companies" rows="8" spellcheck="false"></textarea>
+          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:10px">
+            <button class="settings-save" id="settings-companies-save">Save to GitHub</button>
+            <button class="settings-save" id="settings-refresh-trigger" style="background:var(--text-2)">Trigger Refresh</button>
+            <div class="settings-status" id="settings-companies-status"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="panel-how" style="display:none">
       <div class="how-flow">
 
@@ -865,11 +1094,16 @@ body::after {
   'use strict';
 
   const SENIOR = /\b(senior|sr\.?|staff|principal|director|vp|vice\s+president|head\s+of|chief|lead)\b/i;
-  let dismissed = JSON.parse(localStorage.getItem('jr_dismissed') || '[]');
-  let saved     = JSON.parse(localStorage.getItem('jr_saved')     || '[]');
-  let data      = { lastUpdated: null, companies: [], discovery: [] };
-  let companies = [];
-  let active    = 'companies';
+  let dismissed  = JSON.parse(localStorage.getItem('jr_dismissed') || '[]');
+  let saved      = JSON.parse(localStorage.getItem('jr_saved')     || '[]');
+  let appStatus  = JSON.parse(localStorage.getItem('jr_status')    || '{}');
+  let data       = { lastUpdated: null, companies: [], discovery: [] };
+  let companies  = [];
+  let profileText = '';
+  let active     = 'companies';
+  let filters    = { minScore: 0, location: 'all', sort: 'score', status: 'all' };
+
+  const STATUS_LABELS = { applied: 'Applied', interviewing: 'Interviewing', offer: 'Offer', pass: 'Pass' };
 
   /* ── Time ago ── */
   function timeAgo(dateStr) {
@@ -978,6 +1212,7 @@ body::after {
   function makeCard(j, i) {
     const score   = j.fit_score || 50;
     const isSaved = saved.includes(j.id);
+    const st      = appStatus[j.id] || null;
     const col     = scoreColor(score);
     const pc      = pingColor(score);
     const level   = j.level || '';
@@ -988,6 +1223,10 @@ body::after {
     el.className = 'card';
     el.style.cssText = `animation-delay:${delay}ms; --ping-c:${pc}; border-left-color:${col}`;
     el.dataset.id = j.id;
+
+    const statusButtons = ['applied','interviewing','offer','pass']
+      .map(s => `<button class="status-btn ${s}${st === s ? ' active' : ''}" data-status="${s}">${STATUS_LABELS[s]}</button>`)
+      .join('');
 
     el.innerHTML = `
       <div class="card-body">
@@ -1000,6 +1239,7 @@ body::after {
           ${j.location ? `<span class="sep">·</span><span>${j.location}</span>` : ''}
           ${j.source   ? `<span class="sep">·</span><span class="card-src">${j.source}</span>` : ''}
           ${timeAgo(j.posted_date) ? `<span class="sep">·</span><span class="card-posted">${timeAgo(j.posted_date)}</span>` : ''}
+          ${st ? `<span class="sep">·</span><span class="status-meta-pill ${st}">${STATUS_LABELS[st]}</span>` : ''}
         </div>
         <div class="card-why">${j.why_fit || ''}</div>
       </div>
@@ -1010,7 +1250,8 @@ body::after {
           <button class="btn-icon save ${isSaved ? 'on' : ''}" data-id="${j.id}">${isSaved ? 'Saved' : 'Save'}</button>
           <button class="btn-icon dismiss" data-id="${j.id}">Dismiss</button>
         </div>
-      </div>`;
+      </div>
+      <div class="card-status">${statusButtons}</div>`;
 
     /* sonar ping after card finishes entering */
     setTimeout(() => {
@@ -1036,6 +1277,17 @@ body::after {
       glitchDismiss(el, () => renderTab(active));
     });
 
+    el.querySelectorAll('.status-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const s = btn.dataset.status;
+        if (appStatus[j.id] === s) delete appStatus[j.id];
+        else appStatus[j.id] = s;
+        localStorage.setItem('jr_status', JSON.stringify(appStatus));
+        renderTab(active);
+      });
+    });
+
     return el;
   }
 
@@ -1056,7 +1308,14 @@ body::after {
     const list = (tab === 'companies' ? data.companies : data.discovery)
       .filter(j => !dismissed.includes(j.id))
       .filter(j => j.level !== 'senior' && !SENIOR.test(j.title || ''))
-      .sort((a, b) => (b.fit_score || 0) - (a.fit_score || 0));
+      .filter(j => (j.fit_score || 0) >= filters.minScore)
+      .filter(j => filters.location === 'all' || (j.location || '').toLowerCase().includes(filters.location))
+      .filter(j => filters.status === 'all' || appStatus[j.id] === filters.status)
+      .sort((a, b) => {
+        if (filters.sort === 'date')    return (b.posted_date || '') > (a.posted_date || '') ? 1 : -1;
+        if (filters.sort === 'company') return (a.company || '').localeCompare(b.company || '');
+        return (b.fit_score || 0) - (a.fit_score || 0);
+      });
 
     document.getElementById(`count-${tab}`).textContent = list.length;
     panel.innerHTML = '';
@@ -1075,10 +1334,140 @@ body::after {
     document.getElementById('panel-companies').style.display = tab === 'companies' ? '' : 'none';
     document.getElementById('panel-discovery').style.display = tab === 'discovery'  ? '' : 'none';
     document.getElementById('panel-how').style.display       = tab === 'how'        ? '' : 'none';
-    if (tab !== 'how') renderTab(tab);
+    document.getElementById('panel-settings').style.display  = tab === 'settings'   ? '' : 'none';
+    document.getElementById('filter-bar').style.display      = (tab === 'companies' || tab === 'discovery') ? '' : 'none';
+    if (tab === 'companies' || tab === 'discovery') renderTab(tab);
   }
 
   document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => switchTab(t.dataset.tab)));
+
+  /* ── Filter handlers ── */
+  document.getElementById('sort-select').addEventListener('change', e => {
+    filters.sort = e.target.value;
+    renderTab(active);
+  });
+  document.querySelectorAll('.pill[data-score]').forEach(p => {
+    p.addEventListener('click', () => {
+      filters.minScore = parseInt(p.dataset.score, 10);
+      document.querySelectorAll('.pill[data-score]').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      renderTab(active);
+    });
+  });
+  document.querySelectorAll('.pill[data-loc]').forEach(p => {
+    p.addEventListener('click', () => {
+      filters.location = p.dataset.loc;
+      document.querySelectorAll('.pill[data-loc]').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      renderTab(active);
+    });
+  });
+  document.querySelectorAll('.pill[data-status-f]').forEach(p => {
+    p.addEventListener('click', () => {
+      filters.status = p.dataset.statusF;
+      document.querySelectorAll('.pill[data-status-f]').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      renderTab(active);
+    });
+  });
+
+  /* ── Settings ── */
+  function getOwnerRepo() {
+    const h = window.location.hostname;
+    const p = window.location.pathname;
+    if (h.endsWith('.github.io')) {
+      return { owner: h.replace('.github.io', ''), repo: p.split('/').filter(Boolean)[0] || 'job-radar' };
+    }
+    return { owner: 'dylankbutler', repo: 'job-radar' };
+  }
+
+  async function ghSave(path, content, message) {
+    const token = localStorage.getItem('jr_gh_token');
+    if (!token) return { ok: false, err: 'No token — add one in the GitHub Token section first.' };
+    const { owner, repo } = getOwnerRepo();
+    try {
+      const getR = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+        headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' }
+      });
+      if (!getR.ok) return { ok: false, err: `GitHub ${getR.status} — check token permissions.` };
+      const { sha } = await getR.json();
+      const putR = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+        method: 'PUT',
+        headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message, content: btoa(unescape(encodeURIComponent(content))), sha })
+      });
+      if (!putR.ok) return { ok: false, err: `Save failed (${putR.status}).` };
+      return { ok: true };
+    } catch (e) { return { ok: false, err: e.message }; }
+  }
+
+  function setSt(id, msg, type) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = msg;
+    el.className = 'settings-status' + (type ? ' ' + type : '');
+    if (type === 'ok') setTimeout(() => { el.textContent = ''; el.className = 'settings-status'; }, 4000);
+  }
+
+  function initSettings() {
+    const existing = localStorage.getItem('jr_gh_token');
+    if (existing) setSt('settings-token-status', 'Token saved.', 'ok');
+
+    document.getElementById('settings-token-save').addEventListener('click', () => {
+      const t = document.getElementById('settings-token-input').value.trim();
+      if (!t) return;
+      localStorage.setItem('jr_gh_token', t);
+      document.getElementById('settings-token-input').value = '';
+      setSt('settings-token-status', 'Token saved.', 'ok');
+    });
+    document.getElementById('settings-token-clear').addEventListener('click', () => {
+      localStorage.removeItem('jr_gh_token');
+      document.getElementById('settings-token-input').value = '';
+      setSt('settings-token-status', 'Token cleared.', '');
+    });
+
+    document.getElementById('settings-profile').value   = profileText;
+    document.getElementById('settings-companies').value = companies.join('\n');
+
+    document.getElementById('settings-profile-save').addEventListener('click', async () => {
+      const btn = document.getElementById('settings-profile-save');
+      btn.textContent = 'Saving…';
+      const r = await ghSave('profile.txt', document.getElementById('settings-profile').value, 'Update profile.txt from dashboard');
+      btn.textContent = 'Save to GitHub';
+      if (r.ok) setSt('settings-profile-status', 'Saved.', 'ok');
+      else setSt('settings-profile-status', r.err, 'err');
+    });
+
+    document.getElementById('settings-companies-save').addEventListener('click', async () => {
+      const btn = document.getElementById('settings-companies-save');
+      btn.textContent = 'Saving…';
+      const content = document.getElementById('settings-companies').value;
+      const r = await ghSave('companies.txt', content, 'Update companies.txt from dashboard');
+      btn.textContent = 'Save to GitHub';
+      if (r.ok) {
+        setSt('settings-companies-status', 'Saved.', 'ok');
+        companies = content.split('\n').map(s => s.trim()).filter(Boolean);
+        updateSidebar();
+      } else setSt('settings-companies-status', r.err, 'err');
+    });
+
+    document.getElementById('settings-refresh-trigger').addEventListener('click', async () => {
+      const token = localStorage.getItem('jr_gh_token');
+      if (!token) { setSt('settings-companies-status', 'Add a token first.', 'err'); return; }
+      const btn = document.getElementById('settings-refresh-trigger');
+      btn.textContent = 'Triggering…';
+      const { owner, repo } = getOwnerRepo();
+      try {
+        const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/refresh.yml/dispatches`, {
+          method: 'POST',
+          headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ref: 'main' })
+        });
+        setSt('settings-companies-status', (r.ok || r.status === 204) ? 'Workflow triggered — check Actions tab in ~1 min.' : `Trigger failed (${r.status}).`, r.ok || r.status === 204 ? 'ok' : 'err');
+      } catch (e) { setSt('settings-companies-status', e.message, 'err'); }
+      btn.textContent = 'Trigger Refresh';
+    });
+  }
 
   /* ── Typewriter ── */
   const TW_LINES = [
@@ -1139,17 +1528,21 @@ body::after {
     panel.appendChild(frag);
 
     try {
-      const [jr, tr] = await Promise.all([
-        fetch('./data/jobs.json?_=' + Date.now()),
-        fetch('./companies.txt?_='  + Date.now()),
+      const ts = Date.now();
+      const [jr, tr, pr] = await Promise.all([
+        fetch('./data/jobs.json?_=' + ts),
+        fetch('./companies.txt?_='  + ts),
+        fetch('./profile.txt?_='    + ts),
       ]);
-      data      = await jr.json();
-      companies = (await tr.text()).split('\n').map(s => s.trim()).filter(Boolean);
+      data        = await jr.json();
+      companies   = (await tr.text()).split('\n').map(s => s.trim()).filter(Boolean);
+      profileText = (await pr.text()).trim();
     } catch (e) { console.error('Load error:', e); }
 
     updateSidebar();
     renderTab('companies');
     renderTab('discovery');
+    initSettings();
   }
 
   init();
