@@ -359,7 +359,8 @@ body {
 }
 .card-meta strong { color: var(--text-1); font-weight: 500; }
 .sep { color: var(--text-3); }
-.card-src { color: var(--text-3); }
+.card-src    { color: var(--text-3); }
+.card-posted { color: var(--text-3); font-family: 'DM Mono', monospace; font-size: 11px; }
 .card-why { font-size: 12.5px; color: var(--text-2); line-height: 1.55; }
 
 .card-actions {
@@ -852,6 +853,18 @@ body {
   let companies = [];
   let active    = 'companies';
 
+  /* ── Time ago ── */
+  function timeAgo(dateStr) {
+    if (!dateStr) return null;
+    const days = Math.floor((Date.now() - new Date(dateStr)) / 86400000);
+    if (days <= 0)  return 'Today';
+    if (days === 1) return '1 day ago';
+    if (days < 7)   return `${days} days ago`;
+    if (days < 14)  return '1 week ago';
+    if (days < 30)  return `${Math.floor(days / 7)} weeks ago`;
+    return `${Math.floor(days / 30)}mo ago`;
+  }
+
   /* ── Score ── */
   const scoreColor = s => s >= 75 ? 'var(--hi)'  : s >= 50 ? 'var(--mid)'  : 'var(--lo)';
   const pingColor  = s => s >= 75 ? 'rgba(21,128,61,0.55)' : s >= 50 ? 'rgba(154,120,48,0.55)' : 'rgba(185,28,28,0.55)';
@@ -969,6 +982,7 @@ body {
           <strong>${j.company || ''}</strong>
           ${j.location ? `<span class="sep">·</span><span>${j.location}</span>` : ''}
           ${j.source   ? `<span class="sep">·</span><span class="card-src">${j.source}</span>` : ''}
+          ${timeAgo(j.posted_date) ? `<span class="sep">·</span><span class="card-posted">${timeAgo(j.posted_date)}</span>` : ''}
         </div>
         <div class="card-why">${j.why_fit || ''}</div>
       </div>
