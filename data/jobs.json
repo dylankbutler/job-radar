@@ -1,1 +1,45 @@
-{"lastUpdated":null,"companies":[],"discovery":[]}
+{
+  "lastUpdated": "2026-08-19T21:57:51.558Z",
+  "companies": [
+    {
+      "title": "Partner Marketing, Data Partnerships",
+      "company": "Clay",
+      "location": "New York, NY",
+      "level": "mid",
+      "fit_score": 72,
+      "why_fit": "Partnerships and marketing GTM work aligns with candidate's background; remote-friendly NYC role.",
+      "url": "https://www.ziprecruiter.com/co/Clay/Jobs/-in-New-York,NY?id=elhcnu36ckU3SI9NyFdgPHIMrQ0%3D",
+      "source": "ZipRecruiter",
+      "posted_date": "2026-07-01",
+      "id": "partnermarketingdatapartnerships|clay",
+      "fetched_at": "2026-08-19T21:53:54.761Z"
+    },
+    {
+      "title": "Marketing Analyst, WordPress VIP",
+      "company": "Automattic",
+      "location": "Remote",
+      "level": "entry",
+      "fit_score": 88,
+      "why_fit": "Entry-level data analytics role perfect for recent grad with SQL/Python skills and interest in marketing analytics.",
+      "url": "https://builtin.com/job/marketing-analyst-wordpress-vip/3318297",
+      "source": "Built In",
+      "posted_date": "2026-08-11",
+      "id": "marketinganalystwordpressvip|automattic",
+      "fetched_at": "2026-08-19T21:53:54.761Z"
+    },
+    {
+      "title": "Excellence Wrangler",
+      "company": "Automattic",
+      "location": "Remote",
+      "level": "mid",
+      "fit_score": 72,
+      "why_fit": "QA/testing role leverages analytical skills and product evaluation background from LLM model evaluation work.",
+      "url": "https://builtin.com/job/excellence-wrangler/7118245",
+      "source": "Built In",
+      "posted_date": "2026-08-09",
+      "id": "excellencewrangler|automattic",
+      "fetched_at": "2026-08-19T21:53:54.761Z"
+    }
+  ],
+  "discovery": []
+}
