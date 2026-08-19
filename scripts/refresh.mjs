@@ -21,8 +21,7 @@ async function callClaude(prompt) {
     headers: {
       'Content-Type': 'application/json',
       'x-api-key': API_KEY,
-      'anthropic-version': '2023-06-01',
-      'anthropic-beta': 'web-search-2025-03-05'
+      'anthropic-version': '2023-06-01'
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
@@ -33,9 +32,11 @@ async function callClaude(prompt) {
   });
   const data = await res.json();
   if (data.error) {
-    console.error('API error:', JSON.stringify(data.error));
+    console.error('API error:', JSON.stringify(data.error, null, 2));
+    console.error('HTTP status:', res.status);
     return [];
   }
+  console.log('stop_reason:', data.stop_reason, '| content blocks:', (data.content || []).map(b => b.type));
   const text = (data.content || [])
     .filter(b => b.type === 'text')
     .map(b => b.text)
