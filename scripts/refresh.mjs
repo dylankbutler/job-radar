@@ -13,7 +13,9 @@ const companies = fs.readFileSync('companies.txt', 'utf-8')
 
 const profile = fs.readFileSync('profile.txt', 'utf-8').trim();
 
-const JSON_SPEC = `Return ONLY a valid JSON array (no markdown fences, no commentary) of objects with these exact fields: title, company, location, level (one of "entry","mid","senior"), fit_score (integer 0-100 for how well it fits the profile), why_fit (one short sentence, under 20 words), url (direct posting link if available), source (site name, e.g. "company careers page", "LinkedIn", "We Work Remotely"), posted_date (ISO date string YYYY-MM-DD if the posting date is visible on the listing, otherwise null). CRITICAL: Only include roles that are verifiably still open and active — if the listing page says "no longer available", "position filled", "job closed", or redirects to a 404, skip it entirely. Only include listings posted within the last 45 days; if the posting date is unknown and you cannot confirm recency, skip it. Exclude any role that is senior, staff, principal, director, VP, or head-of level. If nothing current and relevant is found, return [].`;
+const JSON_SPEC = `Return ONLY a valid JSON array (no markdown fences, no commentary) of objects with these exact fields: title, company, location, level (one of "entry","mid","senior"), fit_score (integer 0-100 for how well it fits the profile), why_fit (one short sentence, under 20 words), url (direct posting link if available), source (site name, e.g. "company careers page", "LinkedIn", "We Work Remotely"), posted_date (ISO date string YYYY-MM-DD if the posting date is visible on the listing, otherwise null). CRITICAL: Only include roles that appear to be currently open and active — skip any listing that says "no longer available", "position filled", or "job closed". Only include listings posted within the last 45 days; if the posting date is unknown and you cannot confirm recency, skip it. Exclude any role that is senior, staff, principal, director, VP, or head-of level. If nothing current and relevant is found, return [].`;
+
+const DISCOVERY_SPEC = `Return ONLY a valid JSON array (no markdown fences, no commentary) of objects with these exact fields: title, company, location, level (one of "entry","mid","senior"), fit_score (integer 0-100 for how well it fits the profile), why_fit (one short sentence, under 20 words), url (direct posting link if available), source (site name, e.g. "LinkedIn", "Greenhouse", "We Work Remotely", "company careers page"), posted_date (ISO date string YYYY-MM-DD if visible, otherwise null). Include roles that appear to be open — only skip if a listing explicitly says "closed", "filled", or "no longer available". Do NOT skip roles just because you cannot confirm the exact posting date. Exclude any role that is senior, staff, principal, director, VP, or head-of level. Return the best matches you find even if you are not 100% certain they are still open. If truly nothing relevant is found, return [].`;
 
 async function callClaude(prompt, maxTokens = 2048) {
   const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -74,9 +76,19 @@ async function run() {
     console.log(`  ${c}: ${jobs.length} role(s) found`);
   }
 
-  const discoveryPrompt = `Candidate profile: ${profile}\n\nYou are a job search assistant. Use web_search to find current open job postings that fit this candidate. Run several targeted searches such as:\n- "entry level data analyst remote job 2025"\n- "associate product analyst remote hiring"\n- "junior business analyst remote culture"\n- "entry level growth analyst remote job"\n- "data analyst media music entertainment remote"\n- "AI evaluation analyst remote entry level"\nFocus on established companies (not early-stage startups), remote-first or flexible (San Diego, LA, NYC, SF). Look on job boards like Greenhouse, Lever, Workday, LinkedIn, We Work Remotely, and company career pages. Return up to 10 of the best matches. ${JSON_SPEC}`;
-  const discoveryRaw = await callClaude(discoveryPrompt, 4096);
-  const discoveryJobs = discoveryRaw.map(j => ({ ...j, id: jobId(j.title || '', j.company || ''), fetched_at: now }));
+  const discoveryPromptA = `Candidate profile: ${profile}\n\nYou are a job search assistant. Search the web for currently open job postings matching this candidate. Run these searches:\n- "entry level data analyst remote 2026 site:greenhouse.io OR site:lever.co"\n- "junior product analyst remote job 2026"\n- "associate business analyst remote hiring now"\n- "growth analyst entry level remote job opening 2026"\n- "data analyst media entertainment remote job"\nReturn up to 6 results from established companies (not early-stage startups). Prioritize roles on Greenhouse, Lever, Workday, or company career pages. ${DISCOVERY_SPEC}`;
+
+  const discoveryPromptB = `Candidate profile: ${profile}\n\nYou are a job search assistant. Search the web for currently open job postings matching this candidate. Run these searches:\n- "AI evaluation analyst remote entry level job 2026"\n- "market research analyst remote junior 2026"\n- "operations analyst remote entry level hiring"\n- "partnerships coordinator remote job 2026 site:linkedin.com"\n- "GTM analyst remote job entry level surf outdoor music brand"\nReturn up to 6 results from established or remote-first companies. Avoid early-stage startups. Look on We Work Remotely, Remote.co, LinkedIn, and company career pages. ${DISCOVERY_SPEC}`;
+
+  const [discoveryRawA, discoveryRawB] = await Promise.all([
+    callClaude(discoveryPromptA, 4096),
+    callClaude(discoveryPromptB, 4096),
+  ]);
+
+  const seen = new Set();
+  const discoveryJobs = [...discoveryRawA, ...discoveryRawB]
+    .map(j => ({ ...j, id: jobId(j.title || '', j.company || ''), fetched_at: now }))
+    .filter(j => j.id && !seen.has(j.id) && seen.add(j.id));
   console.log(`  discovery: ${discoveryJobs.length} role(s) found`);
 
   const filteredCompanies = companyResults.filter(passesSeniorFilter).filter(j => j.id);
