@@ -913,7 +913,7 @@ body::after {
       <div class="settings-section">
         <div class="settings-block">
           <div class="settings-block-head">GitHub Token</div>
-          <div class="settings-block-sub">Create a fine-grained personal access token at <strong>github.com → Settings → Developer settings → Personal access tokens → Fine-grained</strong>. Scope it to this repository only with <strong>Contents: Read and write</strong>. Stored only in your browser.</div>
+          <div class="settings-block-sub">Create a fine-grained personal access token at <strong>github.com → Settings → Developer settings → Personal access tokens → Fine-grained</strong>. Scope it to this repository only with two permissions: <strong>Contents: Read and write</strong> (to save files) and <strong>Actions: Read and write</strong> (to trigger refreshes). Stored only in your browser.</div>
           <input type="password" class="settings-token-input" id="settings-token-input" placeholder="github_pat_..." autocomplete="off" />
           <div style="display:flex;gap:6px;align-items:center">
             <button class="settings-save" id="settings-token-save">Save token</button>
@@ -1463,7 +1463,8 @@ body::after {
           headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
           body: JSON.stringify({ ref: 'main' })
         });
-        setSt('settings-companies-status', (r.ok || r.status === 204) ? 'Workflow triggered — check Actions tab in ~1 min.' : `Trigger failed (${r.status}).`, r.ok || r.status === 204 ? 'ok' : 'err');
+        const ok = r.ok || r.status === 204;
+        setSt('settings-companies-status', ok ? 'Workflow triggered — check Actions tab in ~1 min.' : (r.status === 403 ? 'Trigger failed (403) — token needs Actions: Read and write permission.' : `Trigger failed (${r.status}).`), ok ? 'ok' : 'err');
       } catch (e) { setSt('settings-companies-status', e.message, 'err'); }
       btn.textContent = 'Trigger Refresh';
     });
