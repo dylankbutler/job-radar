@@ -15,7 +15,7 @@ const profile = fs.readFileSync('profile.txt', 'utf-8').trim();
 
 const JSON_SPEC = `Return ONLY a valid JSON array (no markdown fences, no commentary) of objects with these exact fields: title, company, location, level (one of "entry","mid","senior"), fit_score (integer 0-100 for how well it fits the profile), why_fit (one short sentence, under 20 words), url (direct posting link if available), source (site name, e.g. "company careers page", "LinkedIn", "We Work Remotely"). Exclude any role that is senior, staff, principal, director, VP, or head-of level. If nothing current and relevant is found, return [].`;
 
-async function callClaude(prompt) {
+async function callClaude(prompt, maxTokens = 2048) {
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -25,7 +25,7 @@ async function callClaude(prompt) {
     },
     body: JSON.stringify({
       model: 'claude-haiku-4-5',
-      max_tokens: 2048,
+      max_tokens: maxTokens,
       tools: [{ type: 'web_search_20250305', name: 'web_search' }],
       messages: [{ role: 'user', content: prompt }]
     })
@@ -67,8 +67,8 @@ async function run() {
     console.log(`  ${c}: ${jobs.length} role(s) found`);
   }
 
-  const discoveryPrompt = `Candidate profile: ${profile}\n\nSearch broadly across the web (not limited to any specific company) for current open roles fitting this candidate — remote-first companies, or roles based in San Diego, Los Angeles, New York City, or San Francisco. Prioritize established or remote-first-for-years companies over early-stage/Series A-B startups; culture-forward brands (surf, music, outdoor, sustainable fashion) as well as AI evaluation/model quality roles, data analytics roles, and product/UX roles. Avoid postings that emphasize "fast-paced," "wear many hats," or hypergrowth urgency. Return up to 10 roles. ${JSON_SPEC}`;
-  const discoveryRaw = await callClaude(discoveryPrompt);
+  const discoveryPrompt = `Candidate profile: ${profile}\n\nYou are a job search assistant. Use web_search to find current open job postings that fit this candidate. Run several targeted searches such as:\n- "entry level data analyst remote job 2025"\n- "associate product analyst remote hiring"\n- "junior business analyst remote culture"\n- "entry level growth analyst remote job"\n- "data analyst media music entertainment remote"\n- "AI evaluation analyst remote entry level"\nFocus on established companies (not early-stage startups), remote-first or flexible (San Diego, LA, NYC, SF). Look on job boards like Greenhouse, Lever, Workday, LinkedIn, We Work Remotely, and company career pages. Return up to 10 of the best matches. ${JSON_SPEC}`;
+  const discoveryRaw = await callClaude(discoveryPrompt, 4096);
   const discoveryJobs = discoveryRaw.map(j => ({ ...j, id: jobId(j.title || '', j.company || '') }));
   console.log(`  discovery: ${discoveryJobs.length} role(s) found`);
 
