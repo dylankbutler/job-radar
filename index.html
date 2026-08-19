@@ -260,27 +260,37 @@ body {
 .main-inner { max-width: 100%; }
 
 /* ── Tabs ── */
-.tabs { display: flex; gap: 6px; margin-bottom: 24px; }
+.tabs {
+  display: inline-flex; gap: 2px; margin-bottom: 24px;
+  background: var(--surface-up);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 3px;
+}
 .tab {
   display: flex; align-items: center; gap: 7px;
-  padding: 7px 16px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
+  padding: 6px 15px;
+  border-radius: 7px;
+  border: none;
   background: transparent;
   color: var(--text-2);
   font-family: 'Outfit', sans-serif;
   font-weight: 600; font-size: 13px;
   transition: all 0.18s cubic-bezier(0.16,1,0.3,1);
 }
-.tab:hover { border-color: var(--border-hi); color: var(--text-1); }
-.tab.active { background: var(--accent-dim); border-color: var(--accent-rng); color: var(--accent); }
+.tab:hover { color: var(--text-1); background: rgba(0,0,0,0.04); }
+.tab.active {
+  background: var(--surface);
+  color: var(--text-1);
+  box-shadow: 0 1px 3px rgba(15,23,42,0.10), 0 1px 2px rgba(15,23,42,0.06);
+}
 .tab-n {
   font-family: 'DM Mono', monospace;
   font-size: 10px;
   background: rgba(0,0,0,0.07);
   padding: 1px 5px; border-radius: 4px;
 }
-.tab.active .tab-n { background: rgba(154,120,48,0.15); }
+.tab.active .tab-n { background: rgba(0,0,0,0.06); }
 
 /* ── Cards ── */
 .jobs { display: flex; flex-direction: column; gap: 10px; }
@@ -288,23 +298,19 @@ body {
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
+  border-left: 3px solid transparent;
   border-radius: var(--r);
   display: grid;
-  grid-template-columns: 4px 1fr auto;
+  grid-template-columns: 1fr auto;
   overflow: hidden;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   animation: card-in 0.4s cubic-bezier(0.16,1,0.3,1) both;
-  /* Diffusion shadow — wide-spread, very light */
-  box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px -4px rgba(15,23,42,0.04);
-  will-change: transform;
-  transform-style: preserve-3d;
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 4px 12px -2px rgba(15,23,42,0.04);
 }
 .card:hover {
   border-color: var(--border-hi);
-  /* Lift + liquid glass inset edge refraction */
-  box-shadow: 0 12px 32px -6px rgba(15,23,42,0.10),
-              0 1px 2px rgba(15,23,42,0.04),
-              inset 0 1px 0 rgba(255,255,255,0.9);
+  border-left-color: inherit;
+  box-shadow: 0 4px 16px -4px rgba(15,23,42,0.10), 0 1px 3px rgba(15,23,42,0.05);
 }
 
 @keyframes card-in {
@@ -336,7 +342,7 @@ body {
 
 .card-bar { /* bg/opacity set inline */ }
 
-.card-body { padding: 15px 16px; }
+.card-body { padding: 14px 16px 14px 18px; }
 .card-top { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 5px; }
 .card-title {
   font-family: 'Outfit', sans-serif;
@@ -616,6 +622,18 @@ body {
   font-size: 11px;
   color: var(--text-3);
   line-height: 1.4;
+}
+
+/* ── Grain texture ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.038;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
 }
 
 /* ── Mobile ── */
@@ -968,11 +986,10 @@ body {
 
     const el = document.createElement('div');
     el.className = 'card';
-    el.style.cssText = `animation-delay:${delay}ms; --ping-c:${pc}`;
+    el.style.cssText = `animation-delay:${delay}ms; --ping-c:${pc}; border-left-color:${col}`;
     el.dataset.id = j.id;
 
     el.innerHTML = `
-      <div class="card-bar" style="background:${col};opacity:0.6"></div>
       <div class="card-body">
         <div class="card-top">
           <span class="card-title">${j.title || 'Untitled Role'}</span>
@@ -994,8 +1011,6 @@ body {
           <button class="btn-icon dismiss" data-id="${j.id}">Dismiss</button>
         </div>
       </div>`;
-
-    addTilt(el);
 
     /* sonar ping after card finishes entering */
     setTimeout(() => {
