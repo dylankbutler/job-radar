@@ -1519,6 +1519,60 @@ body::after {
     }
   }
 
+  /* ── Background URL validation ── */
+  function fetchT(url, ms = 5000) {
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), ms);
+    return fetch(url, { signal: ctrl.signal });
+  }
+
+  async function validateJobs() {
+    const allJobs = [...(data.companies || []), ...(data.discovery || [])];
+    if (!allJobs.length) return;
+
+    await Promise.all(allJobs.map(async j => {
+      if (!j.url || dismissed.includes(j.id)) return;
+      let dead = false;
+
+      // Greenhouse boards-api — public, CORS-enabled
+      const ghM = j.url.match(/greenhouse\.io\/([^/?#]+)\/jobs\/(\d+)/i);
+      if (ghM) {
+        try {
+          const r = await fetchT(`https://boards-api.greenhouse.io/v1/boards/${ghM[1]}/jobs/${ghM[2]}`);
+          dead = !r.ok;
+        } catch { /* network error or timeout — assume live */ }
+      }
+
+      // Lever postings api — public, CORS-enabled
+      const lvM = j.url.match(/jobs\.lever\.co\/([^/?#]+)\/([a-f0-9-]{36})/i);
+      if (lvM) {
+        try {
+          const r = await fetchT(`https://api.lever.co/v0/postings/${lvM[1]}/${lvM[2]}`);
+          dead = !r.ok;
+        } catch { /* assume live */ }
+      }
+
+      if (dead) {
+        data.companies = (data.companies || []).filter(x => x.id !== j.id);
+        data.discovery = (data.discovery || []).filter(x => x.id !== j.id);
+        const card = document.querySelector(`.card[data-id="${CSS.escape(j.id)}"]`);
+        if (card) {
+          card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.97)';
+          setTimeout(() => card.remove(), 370);
+        }
+      }
+    }));
+
+    // Refresh counts after validation sweep
+    ['companies', 'discovery'].forEach(tab => {
+      const src = tab === 'companies' ? data.companies : data.discovery;
+      const n = (src || []).filter(j => !dismissed.includes(j.id)).length;
+      document.getElementById(`count-${tab}`).textContent = n;
+    });
+  }
+
   /* ── Init ── */
   async function init() {
     tickTW();
@@ -1543,6 +1597,7 @@ body::after {
     renderTab('companies');
     renderTab('discovery');
     initSettings();
+    validateJobs(); // background — silently removes confirmed-dead GH/Lever jobs
   }
 
   init();
