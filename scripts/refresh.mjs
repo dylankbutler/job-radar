@@ -21,11 +21,12 @@ async function callClaude(prompt) {
     headers: {
       'Content-Type': 'application/json',
       'x-api-key': API_KEY,
-      'anthropic-version': '2023-06-01'
+      'anthropic-version': '2023-06-01',
+      'anthropic-beta': 'web-search-2025-03-05'
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
-      max_tokens: 1500,
+      max_tokens: 4096,
       tools: [{ type: 'web_search_20250305', name: 'web_search' }],
       messages: [{ role: 'user', content: prompt }]
     })
@@ -100,4 +101,4 @@ async function run() {
   console.log('Wrote data/jobs.json');
 }
 
-run();
+run().catch(err => { console.error('Fatal:', err); process.exit(1); });
