@@ -16,23 +16,23 @@ a { text-decoration: none; }
 
 /* ── Tokens ── */
 :root {
-  --bg:         #EDE8DF;
+  --bg:         #F8FAFC;
   --surface:    #FFFFFF;
-  --surface-up: #F4F0E8;
-  --border:     rgba(13,27,42,0.09);
-  --border-hi:  rgba(13,27,42,0.18);
-  --text-1:     #0D1B2A;
-  --text-2:     #4A6077;
-  --text-3:     #8A9BAD;
+  --surface-up: #F1F5F9;
+  --border:     rgba(15,23,42,0.07);
+  --border-hi:  rgba(15,23,42,0.14);
+  --text-1:     #0F172A;
+  --text-2:     #475569;
+  --text-3:     #94A3B8;
   --accent:     #9A7830;
-  --accent-dim: rgba(154,120,48,0.10);
-  --accent-rng: rgba(154,120,48,0.28);
+  --accent-dim: rgba(154,120,48,0.08);
+  --accent-rng: rgba(154,120,48,0.22);
   --hi:         #15803D;
-  --hi-dim:     rgba(21,128,61,0.10);
+  --hi-dim:     rgba(21,128,61,0.09);
   --mid:        #9A7830;
-  --mid-dim:    rgba(154,120,48,0.10);
+  --mid-dim:    rgba(154,120,48,0.09);
   --lo:         #B91C1C;
-  --lo-dim:     rgba(185,28,28,0.10);
+  --lo-dim:     rgba(185,28,28,0.09);
   --sb-bg:      #07101C;
   --sb-brd:     rgba(255,255,255,0.06);
   --sb-t1:      #C8D8E8;
@@ -252,10 +252,10 @@ body {
 ════════════════════════════════════ */
 .main {
   grid-column: 2;
-  padding: 32px 48px 80px;
+  padding: 40px 56px 96px;
   min-height: 100dvh;
 }
-.main-inner { max-width: 660px; }
+.main-inner { max-width: 680px; }
 
 /* ── Tabs ── */
 .tabs { display: flex; gap: 6px; margin-bottom: 24px; }
@@ -281,7 +281,7 @@ body {
 .tab.active .tab-n { background: rgba(154,120,48,0.15); }
 
 /* ── Cards ── */
-.jobs { display: flex; flex-direction: column; gap: 8px; }
+.jobs { display: flex; flex-direction: column; gap: 10px; }
 
 .card {
   background: var(--surface);
@@ -290,15 +290,19 @@ body {
   display: grid;
   grid-template-columns: 4px 1fr auto;
   overflow: hidden;
-  transition: border-color 0.18s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
   animation: card-in 0.4s cubic-bezier(0.16,1,0.3,1) both;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04);
+  /* Diffusion shadow — wide-spread, very light */
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px -4px rgba(15,23,42,0.04);
   will-change: transform;
   transform-style: preserve-3d;
 }
 .card:hover {
   border-color: var(--border-hi);
-  box-shadow: 0 4px 18px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
+  /* Lift + liquid glass inset edge refraction */
+  box-shadow: 0 12px 32px -6px rgba(15,23,42,0.10),
+              0 1px 2px rgba(15,23,42,0.04),
+              inset 0 1px 0 rgba(255,255,255,0.9);
 }
 
 @keyframes card-in {
@@ -308,9 +312,9 @@ body {
 
 /* sonar-ping animation (applied via JS) */
 @keyframes sonar-ping {
-  0%  { box-shadow: 0 0 0 0 var(--ping-c), 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04); }
-  65% { box-shadow: 0 0 0 14px rgba(0,0,0,0), 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04); }
-  100%{ box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04); }
+  0%  { box-shadow: 0 0 0 0 var(--ping-c), 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px -4px rgba(15,23,42,0.04); }
+  65% { box-shadow: 0 0 0 14px rgba(0,0,0,0), 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px -4px rgba(15,23,42,0.04); }
+  100%{ box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px -4px rgba(15,23,42,0.04); }
 }
 
 /* glitch dismiss */
@@ -399,11 +403,11 @@ body {
   padding: 16px 18px;
   display: grid; gap: 9px;
   animation: card-in 0.4s ease both;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 8px 24px -4px rgba(15,23,42,0.04);
 }
 .skel {
   border-radius: 4px;
-  background: linear-gradient(90deg, #EDE8DF 25%, #F8F5EF 50%, #EDE8DF 75%);
+  background: linear-gradient(90deg, #F1F5F9 25%, #F8FAFC 50%, #F1F5F9 75%);
   background-size: 200% 100%;
   animation: shimmer 1.8s ease infinite;
 }
