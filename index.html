@@ -1552,6 +1552,29 @@ body::after {
         } catch { /* assume live */ }
       }
 
+      // Ashby posting list — public, CORS-enabled; check if job ID still in active listings
+      const ashbyM = j.url.match(/jobs\.ashbyhq\.com\/([^/?#]+)\/([a-f0-9-]{36})/i);
+      if (ashbyM) {
+        try {
+          const r = await fetchT('https://api.ashbyhq.com/posting-public.list', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ organizationHostedJobsPageName: ashbyM[1] }),
+          });
+          if (r.ok) {
+            const d = await r.json();
+            dead = !(d.results || []).some(p => p.id === ashbyM[2]);
+          }
+        } catch { /* assume live */ }
+      }
+
+      // Job aggregator URLs (builtin, indeed, ziprecruiter, linkedin) are inherently
+      // unreliable — flag them as dead so they get removed; the next refresh will
+      // replace them with direct ATS links
+      if (/builtin\.com|indeed\.com|ziprecruiter\.com|linkedin\.com\/jobs/i.test(j.url)) {
+        dead = true;
+      }
+
       if (dead) {
         data.companies = (data.companies || []).filter(x => x.id !== j.id);
         data.discovery = (data.discovery || []).filter(x => x.id !== j.id);

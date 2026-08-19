@@ -21,7 +21,7 @@ const ATS = {
   'Surfline':                { greenhouse: 'surfline' },
   'Whatnot':                 { greenhouse: 'whatnot' },
   'National Research Group': { greenhouse: 'nationalresearchgroup' },
-  'Clay':                    { lever: 'clay-hq' },
+  'Clay':                    { ashby: 'claylabs' },
   'Live Nation':             { workday: { base: 'https://livenation.wd1.myworkdayjobs.com', tenant: 'livenation', board: 'LNExternalSite' } },
   'Substack':                { greenhouse: 'substack' },
   'Pinterest':               { greenhouse: 'pinterest' },
