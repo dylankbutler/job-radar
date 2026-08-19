@@ -33,12 +33,12 @@ a { text-decoration: none; }
   --mid-dim:    rgba(154,120,48,0.09);
   --lo:         #B91C1C;
   --lo-dim:     rgba(185,28,28,0.09);
-  --sb-bg:      #07101C;
-  --sb-brd:     rgba(255,255,255,0.06);
-  --sb-t1:      #C8D8E8;
-  --sb-t2:      #4A6278;
-  --sb-t3:      #253546;
-  --rg:         #00FF88;
+  --sb-bg:      #FFFFFF;
+  --sb-brd:     rgba(15,23,42,0.07);
+  --sb-t1:      #0F172A;
+  --sb-t2:      #475569;
+  --sb-t3:      #94A3B8;
+  --rg:         #9A7830;
   --sb-w:       288px;
   --r:          12px;
 }
@@ -80,6 +80,8 @@ body {
   align-self: center;
   margin-bottom: 20px;
   flex-shrink: 0;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(15,23,42,0.06);
 }
 
 .radar-svg {
@@ -96,10 +98,10 @@ body {
     from 0deg at 50% 50%,
     transparent 0deg,
     transparent 285deg,
-    rgba(0,255,136,0.03) 300deg,
-    rgba(0,255,136,0.10) 322deg,
-    rgba(0,255,136,0.28) 350deg,
-    rgba(0,255,136,0.00) 360deg
+    rgba(154,120,48,0.03) 300deg,
+    rgba(154,120,48,0.10) 322deg,
+    rgba(154,120,48,0.28) 350deg,
+    rgba(154,120,48,0.00) 360deg
   );
   animation: rspin 3s linear infinite;
   clip-path: circle(50% at 50% 50%);
@@ -111,7 +113,7 @@ body {
   left: calc(50% - 1px);
   width: 2px;
   height: 50%;
-  background: linear-gradient(to top, rgba(0,255,136,0.95) 0%, rgba(0,255,136,0.2) 70%, transparent 100%);
+  background: linear-gradient(to top, rgba(154,120,48,0.95) 0%, rgba(154,120,48,0.2) 70%, transparent 100%);
   transform-origin: 50% 100%;
   animation: rspin 3s linear infinite;
   border-radius: 2px 2px 0 0;
@@ -130,7 +132,7 @@ body {
   border-radius: 50%;
   background: var(--rg);
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 6px 2px rgba(0,255,136,0.5);
+  box-shadow: 0 0 6px 2px rgba(154,120,48,0.5);
 }
 
 /* Blips — positions calculated to align with arm sweep timing */
@@ -153,9 +155,9 @@ body {
 
 @keyframes blip-glow {
   0%   { opacity: 0;   box-shadow: none; }
-  4%   { opacity: 1;   box-shadow: 0 0 7px 3px rgba(0,255,136,0.9); }
-  18%  { opacity: 0.8; box-shadow: 0 0 5px 2px rgba(0,255,136,0.5); }
-  75%  { opacity: 0.3; box-shadow: 0 0 2px 1px rgba(0,255,136,0.15); }
+  4%   { opacity: 1;   box-shadow: 0 0 7px 3px rgba(154,120,48,0.9); }
+  18%  { opacity: 0.8; box-shadow: 0 0 5px 2px rgba(154,120,48,0.5); }
+  75%  { opacity: 0.3; box-shadow: 0 0 2px 1px rgba(154,120,48,0.15); }
   99%  { opacity: 0.1; box-shadow: none; }
   100% { opacity: 0; }
 }
@@ -444,6 +446,177 @@ body {
 .empty-title { font-family:'Outfit',sans-serif; font-weight:600; font-size:15px; color:var(--text-2); }
 .empty-sub   { font-size:12px; color:var(--text-3); max-width:300px; line-height:1.6; }
 
+/* ════════════════════════════════════
+   HOW IT WORKS
+════════════════════════════════════ */
+.how-flow { display: flex; flex-direction: column; padding-top: 4px; }
+
+.how-step {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 0 22px;
+}
+
+.how-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3px;
+}
+
+.how-node {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-hi);
+  background: var(--surface);
+  flex-shrink: 0;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.how-node.lit {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.how-wire {
+  flex: 1;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--border-hi) 0%, var(--border) 100%);
+  min-height: 28px;
+  margin: 5px 0;
+}
+.how-wire.last { background: linear-gradient(to bottom, var(--border-hi) 0%, transparent 100%); }
+
+.how-content { padding-bottom: 40px; }
+
+.how-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 5px;
+}
+
+.how-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: -0.025em;
+  color: var(--text-1);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.how-body {
+  font-size: 13.5px;
+  color: var(--text-2);
+  line-height: 1.7;
+  max-width: 50ch;
+  margin-bottom: 16px;
+}
+
+.how-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 6px 20px -4px rgba(15,23,42,0.05);
+  margin-bottom: 6px;
+}
+
+.how-card-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 12px;
+}
+
+.how-anatomy { display: flex; flex-direction: column; gap: 8px; }
+
+.how-block {
+  background: var(--surface-up);
+  border-radius: 7px;
+  padding: 11px 13px;
+}
+.how-block-head {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.how-block-body {
+  font-size: 12.5px;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+.how-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+.how-chip {
+  font-size: 11.5px;
+  color: var(--text-2);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+.how-chip.skip {
+  color: var(--lo);
+  border-color: rgba(185,28,28,0.15);
+  background: var(--lo-dim);
+}
+
+.how-scores { display: flex; flex-direction: column; gap: 9px; }
+.how-score-row { display: flex; align-items: center; gap: 12px; }
+.how-score-lbl { font-size: 12px; color: var(--text-2); min-width: 80px; }
+.how-score-track {
+  flex: 1; height: 3px;
+  background: var(--surface-up);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.how-score-fill { height: 100%; border-radius: 2px; }
+.how-score-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  min-width: 26px;
+  text-align: right;
+}
+
+.how-schedule-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04);
+}
+.how-schedule-time {
+  font-family: 'DM Mono', monospace;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-1);
+  line-height: 1;
+}
+.how-schedule-detail {
+  font-size: 11px;
+  color: var(--text-3);
+  line-height: 1.4;
+}
+
 /* ── Mobile ── */
 @media (max-width: 767px) {
   body { grid-template-columns: 1fr; }
@@ -469,13 +642,13 @@ body {
   <!-- Radar widget -->
   <div class="radar-wrap">
     <svg class="radar-svg" viewBox="0 0 128 128">
-      <circle cx="64" cy="64" r="64" fill="#030D1A"/>
-      <circle cx="64" cy="64" r="16"  fill="none" stroke="rgba(0,255,136,0.14)" stroke-width="0.6"/>
-      <circle cx="64" cy="64" r="30"  fill="none" stroke="rgba(0,255,136,0.11)" stroke-width="0.6"/>
-      <circle cx="64" cy="64" r="45"  fill="none" stroke="rgba(0,255,136,0.09)" stroke-width="0.6"/>
-      <circle cx="64" cy="64" r="60"  fill="none" stroke="rgba(0,255,136,0.07)" stroke-width="0.6"/>
-      <line x1="64" y1="2"  x2="64" y2="126" stroke="rgba(0,255,136,0.08)" stroke-width="0.5"/>
-      <line x1="2"  y1="64" x2="126" y2="64" stroke="rgba(0,255,136,0.08)" stroke-width="0.5"/>
+      <circle cx="64" cy="64" r="64" fill="#F1F5F9"/>
+      <circle cx="64" cy="64" r="16"  fill="none" stroke="rgba(15,23,42,0.12)" stroke-width="0.6"/>
+      <circle cx="64" cy="64" r="30"  fill="none" stroke="rgba(15,23,42,0.09)" stroke-width="0.6"/>
+      <circle cx="64" cy="64" r="45"  fill="none" stroke="rgba(15,23,42,0.07)" stroke-width="0.6"/>
+      <circle cx="64" cy="64" r="60"  fill="none" stroke="rgba(15,23,42,0.05)" stroke-width="0.6"/>
+      <line x1="64" y1="2"  x2="64" y2="126" stroke="rgba(15,23,42,0.07)" stroke-width="0.5"/>
+      <line x1="2"  y1="64" x2="126" y2="64" stroke="rgba(15,23,42,0.07)" stroke-width="0.5"/>
     </svg>
     <div class="radar-sweep"></div>
     <div class="radar-arm"></div>
@@ -519,9 +692,152 @@ body {
       <button class="tab" data-tab="discovery">
         Discovery <span class="tab-n" id="count-discovery">0</span>
       </button>
+      <button class="tab" data-tab="how">How it works</button>
     </div>
     <div id="panel-companies"></div>
     <div id="panel-discovery" style="display:none"></div>
+    <div id="panel-how" style="display:none">
+      <div class="how-flow">
+
+        <!-- 01 -->
+        <div class="how-step">
+          <div class="how-spine"><div class="how-node lit"></div><div class="how-wire"></div></div>
+          <div class="how-content">
+            <div class="how-eyebrow">01 — Input</div>
+            <h2 class="how-title">Two files define everything</h2>
+            <p class="how-body"><code style="font-family:'DM Mono',monospace;font-size:12px;color:var(--accent)">profile.txt</code> is a plain-language description of who you are — your background, what you're drawn to, where you want to work, and what you're actively trying to avoid. <code style="font-family:'DM Mono',monospace;font-size:12px;color:var(--accent)">companies.txt</code> is your targeted watchlist, one company per line. Edit either file in the repo and the next run picks it up.</p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="how-step">
+          <div class="how-spine"><div class="how-node"></div><div class="how-wire"></div></div>
+          <div class="how-content">
+            <div class="how-eyebrow">02 — Trigger</div>
+            <h2 class="how-title">Fires every morning while you sleep</h2>
+            <p class="how-body">A scheduled workflow on GitHub's servers runs automatically at 8am Pacific — nothing on your machine, no tab to keep open. You can also trigger it manually any time from the repo's Actions tab.</p>
+            <div class="how-schedule-badge">
+              <div class="how-schedule-time">08:00</div>
+              <div class="how-schedule-detail">Pacific Time<br>every day</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="how-step">
+          <div class="how-spine"><div class="how-node"></div><div class="how-wire"></div></div>
+          <div class="how-content">
+            <div class="how-eyebrow">03 — Watchlist Scan</div>
+            <h2 class="how-title">Every company on your list, checked</h2>
+            <p class="how-body">For each company in your watchlist, Claude searches their careers page and major job boards with your profile as context. It reads actual job descriptions — not just keywords — and surfaces up to 3 current openings per company that genuinely fit.</p>
+            <div class="how-card">
+              <div class="how-card-label">Your current watchlist</div>
+              <div class="how-chips" id="how-companies-chips">
+                <span class="how-chip">Surfline</span>
+                <span class="how-chip">Patagonia</span>
+                <span class="how-chip">Vans</span>
+                <span class="how-chip">GitLab</span>
+                <span class="how-chip">Zapier</span>
+                <span class="how-chip">Automattic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="how-step">
+          <div class="how-spine"><div class="how-node"></div><div class="how-wire"></div></div>
+          <div class="how-content">
+            <div class="how-eyebrow">04 — Open Discovery</div>
+            <h2 class="how-title">An unconstrained search across the whole web</h2>
+            <p class="how-body">The Discovery tab is a separate, open-ended search with no company list. Claude searches the full web with your profile as context and a set of specific steering instructions about what to find and what to skip. Here's what those instructions look like:</p>
+            <div class="how-card">
+              <div class="how-card-label">What goes into a Discovery search</div>
+              <div class="how-anatomy">
+                <div class="how-block">
+                  <div class="how-block-head">Your Profile</div>
+                  <div class="how-block-body">Your full background is sent as context with every search — experience, skill areas, preferences, and deal-breakers — so results are matched against you specifically, not a generic job-seeker.</div>
+                </div>
+                <div class="how-block">
+                  <div class="how-block-head">Location Filter</div>
+                  <div class="how-chips" style="margin:0">
+                    <span class="how-chip">Remote</span>
+                    <span class="how-chip">San Diego</span>
+                    <span class="how-chip">Los Angeles</span>
+                    <span class="how-chip">New York City</span>
+                    <span class="how-chip">San Francisco</span>
+                  </div>
+                </div>
+                <div class="how-block">
+                  <div class="how-block-head">Look for</div>
+                  <div class="how-chips" style="margin:0">
+                    <span class="how-chip">Surf brands</span>
+                    <span class="how-chip">Music</span>
+                    <span class="how-chip">Outdoor</span>
+                    <span class="how-chip">Sustainable fashion</span>
+                    <span class="how-chip">AI evaluation</span>
+                    <span class="how-chip">Data analytics</span>
+                    <span class="how-chip">Product / UX</span>
+                    <span class="how-chip">Remote-first companies</span>
+                  </div>
+                </div>
+                <div class="how-block">
+                  <div class="how-block-head">Skip if they say</div>
+                  <div class="how-chips" style="margin:0">
+                    <span class="how-chip skip">"fast-paced"</span>
+                    <span class="how-chip skip">"wear many hats"</span>
+                    <span class="how-chip skip">Series A / B startup</span>
+                    <span class="how-chip skip">hypergrowth</span>
+                    <span class="how-chip skip">early-stage grind culture</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="how-step">
+          <div class="how-spine"><div class="how-node"></div><div class="how-wire"></div></div>
+          <div class="how-content">
+            <div class="how-eyebrow">05 — Scoring</div>
+            <h2 class="how-title">Every role gets a fit score</h2>
+            <p class="how-body">Claude scores each result from 0 to 100 based on how closely the role aligns with your profile — skills, level, culture, and location. The radar rings on each card reflect the score: green is a strong match, gold is reasonable, red is weak. Results sort highest-first.</p>
+            <div class="how-card">
+              <div class="how-card-label">Example scores</div>
+              <div class="how-scores">
+                <div class="how-score-row">
+                  <span class="how-score-lbl">Data Analyst</span>
+                  <div class="how-score-track"><div class="how-score-fill" style="width:88%;background:var(--hi)"></div></div>
+                  <span class="how-score-num" style="color:var(--hi)">88</span>
+                </div>
+                <div class="how-score-row">
+                  <span class="how-score-lbl">UX Researcher</span>
+                  <div class="how-score-track"><div class="how-score-fill" style="width:64%;background:var(--mid)"></div></div>
+                  <span class="how-score-num" style="color:var(--mid)">64</span>
+                </div>
+                <div class="how-score-row">
+                  <span class="how-score-lbl">Sales Coordinator</span>
+                  <div class="how-score-track"><div class="how-score-fill" style="width:31%;background:var(--lo)"></div></div>
+                  <span class="how-score-num" style="color:var(--lo)">31</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="how-step">
+          <div class="how-spine"><div class="how-node"></div><div class="how-wire last"></div></div>
+          <div class="how-content">
+            <div class="how-eyebrow">06 — Dashboard</div>
+            <h2 class="how-title">Results merge, dismissed roles stay gone</h2>
+            <p class="how-body">Each run merges new results with previous ones — so a strong role won't disappear just because it wasn't filled yet. Save roles you're tracking (stored in your browser). Dismiss ones that aren't right and they won't reappear. Your radar sharpens over time as you curate it.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </main>
 
@@ -729,7 +1045,8 @@ body {
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
     document.getElementById('panel-companies').style.display = tab === 'companies' ? '' : 'none';
     document.getElementById('panel-discovery').style.display = tab === 'discovery'  ? '' : 'none';
-    renderTab(tab);
+    document.getElementById('panel-how').style.display       = tab === 'how'        ? '' : 'none';
+    if (tab !== 'how') renderTab(tab);
   }
 
   document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => switchTab(t.dataset.tab)));
@@ -778,6 +1095,10 @@ body {
     document.getElementById('sb-cos').innerHTML = companies
       .map(c => `<div class="sb-co-item"><span class="sb-co-dot"></span>${c}</div>`)
       .join('');
+    const chips = document.getElementById('how-companies-chips');
+    if (chips && companies.length) {
+      chips.innerHTML = companies.map(c => `<span class="how-chip">${c}</span>`).join('');
+    }
   }
 
   /* ── Init ── */
