@@ -6,39 +6,61 @@ if (!API_KEY) { console.error('Missing ANTHROPIC_API_KEY'); process.exit(1); }
 const companies = fs.readFileSync('companies.txt', 'utf-8').split('\n').map(s => s.trim()).filter(Boolean);
 const profile   = fs.readFileSync('profile.txt',   'utf-8').trim();
 
-// Spec for scoring ATS data (no date validation needed — ATS only returns live jobs)
-const SCORE_SPEC = `Return ONLY a valid JSON array (no markdown fences) of objects with these exact fields: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Exclude any role that is senior, staff, principal, director, VP, head-of, or lead level. Return up to 3 best-fit roles. If none are relevant, return [].`;
+// ── Output specs ──────────────────────────────────────────────────────────────
 
-// Spec for web search fallback — permissive on dates since we already restrict via search operators
-const SEARCH_SPEC = `Return ONLY a valid JSON array (no markdown fences) of objects with these exact fields: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Only skip a listing if it is explicitly marked closed or filled. Exclude senior/staff/principal/director/VP/head-of/lead roles. Return up to 3 best-fit roles. If none found, return [].`;
+const SCORE_SPEC = `Return ONLY a valid JSON array (no markdown fences) with these exact fields per object: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Exclude any senior/staff/principal/director/VP/head-of/lead role. Return up to 3 best fits. If none relevant, return [].`;
 
-// Spec for discovery — broadest, prioritize returning results
-const DISCOVERY_SPEC = `Return ONLY a valid JSON array (no markdown fences) of objects with these exact fields: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Only skip a listing if it is explicitly marked closed or filled — do NOT skip because you cannot confirm a date. Exclude senior/staff/principal/director/VP/head-of/lead roles. Return up to 8 best matches even if you are not certain they are still open.`;
+const DISCOVERY_SCORE_SPEC = `Return ONLY a valid JSON array (no markdown fences) with these exact fields per object: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Exclude any senior/staff/principal/director/VP/head-of/lead role. Return the top 15 best-fit roles sorted by fit_score descending. If none relevant, return [].`;
+
+const SEARCH_SPEC = `Return ONLY a valid JSON array (no markdown fences) with these exact fields per object: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Only skip a listing explicitly marked closed or filled. Exclude senior/staff/principal/director/VP/head-of/lead roles. Return up to 3 best fits. If none found, return [].`;
+
+// ── ATS + Workday config ──────────────────────────────────────────────────────
+// Slug / URL map so we never guess — add/correct entries here as needed
+
+const ATS = {
+  'Surfline':                { greenhouse: 'surfline' },
+  'Whatnot':                 { greenhouse: 'whatnot' },
+  'National Research Group': { greenhouse: 'nationalresearchgroup' },
+  'Clay':                    { lever: 'clay-hq' },
+  'Live Nation':             { workday: { base: 'https://livenation.wd1.myworkdayjobs.com', tenant: 'livenation', board: 'LNExternalSite' } },
+  'Substack':                { greenhouse: 'substack' },
+  'Pinterest':               { greenhouse: 'pinterest' },
+  'World Surf League':       { greenhouse: 'worldsurfleague' },
+  'BandsinTown':             { lever: 'bandsintown' },
+  'IHeart Media':            { workday: { base: 'https://iheartmedia.wd5.myworkdayjobs.com', tenant: 'iheartmedia', board: 'External' } },
+  'Automattic':              { greenhouse: 'automattic' },
+  'Patagonia':               { workday: { base: 'https://patagonia.wd5.myworkdayjobs.com', tenant: 'patagonia', board: 'Patagonia_Careers' } },
+};
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
 
 function jobId(title, company) {
   return (title + '|' + company).toLowerCase().replace(/[^a-z0-9|]/g, '').slice(0, 100);
 }
 function passesSeniorFilter(j) {
-  return j.level !== 'senior' && !/\b(senior|sr\.?|staff|principal|director|vp|vice\s+president|head\s+of|chief|lead)\b/i.test(j.title || '');
+  return j.level !== 'senior'
+    && !/\b(senior|sr\.?|staff|principal|director|vp|vice\s+president|head\s+of|chief|lead)\b/i.test(j.title || '');
+}
+function parseWorkdayDate(str) {
+  if (!str) return null;
+  const m = str.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+  return m ? `${m[3]}-${m[1]}-${m[2]}` : null;
 }
 
-// ── ATS slug overrides — guessed slugs often differ from company name ─────────
-const ATS_SLUGS = {
-  'Surfline':               { greenhouse: 'surfline' },
-  'Whatnot':                { greenhouse: 'whatnot' },
-  'National Research Group':{ greenhouse: 'nationalresearchgroup' },
-  'Clay':                   { lever: 'clay-hq' },
-  'Live Nation':            {}, // Workday — no public API
-  'Substack':               { greenhouse: 'substack' },
-  'Pinterest':              { greenhouse: 'pinterest' },
-  'World Surf League':      { greenhouse: 'worldsurfleague' },
-  'BandsinTown':            { lever: 'bandsintown' },
-  'IHeart Media':           {}, // Workday — no public API
-  'Automattic':             { greenhouse: 'automattic' },
-  'Patagonia':              {}, // Workday — no public API
-};
+// Pre-filter raw job titles before sending to Claude for scoring
+const RELEVANT = /analyst|data|product|research|market|operations|growth|partnerships|coordinator|associate|gtm|strategy|business|intelligence|insights|evaluation/i;
+const EXCLUDE  = /engineer|developer|devops|designer|security|legal|counsel|finance|accounting|recruiter|hr |talent|sales\s/i;
+function isRelevantTitle(title = '') {
+  return RELEVANT.test(title) && !EXCLUDE.test(title);
+}
 
-// ── ATS API fetchers ─────────────────────────────────────────────────────────
+const MAX_AGE_DAYS = 14;
+function isFresh(job) {
+  if (!job.fetched_at) return false;
+  return (Date.now() - new Date(job.fetched_at)) / 86400000 <= MAX_AGE_DAYS;
+}
+
+// ── ATS fetchers (live listings only) ────────────────────────────────────────
 
 async function fetchGreenhouse(slug) {
   if (!slug) return null;
@@ -76,15 +98,14 @@ async function fetchAshby(slug) {
   if (!slug) return null;
   try {
     const r = await fetch('https://api.ashbyhq.com/posting-public.list', {
-      method: 'POST',
+      method:  'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ organizationHostedJobsPageName: slug }),
+      body:    JSON.stringify({ organizationHostedJobsPageName: slug }),
     });
     if (!r.ok) return null;
     const d = await r.json();
-    const jobs = d.results;
-    if (!Array.isArray(jobs) || !jobs.length) return null;
-    return { via: 'Ashby', jobs: jobs.map(j => ({
+    if (!d.results?.length) return null;
+    return { via: 'Ashby', jobs: d.results.map(j => ({
       raw_title: j.title,
       location:  j.isRemote ? 'Remote' : (j.locationName || 'Unknown'),
       url:       `https://jobs.ashbyhq.com/${slug}/${j.id}`,
@@ -93,24 +114,85 @@ async function fetchAshby(slug) {
   } catch { return null; }
 }
 
-// ── Claude caller ────────────────────────────────────────────────────────────
+async function fetchWorkday({ base, tenant, board }) {
+  try {
+    const r = await fetch(`${base}/wday/cxs/${tenant}/${board}/jobs`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ appliedFacets: {}, limit: 20, offset: 0, searchText: '' }),
+    });
+    if (!r.ok) return null;
+    const d = await r.json();
+    if (!d.jobPostings?.length) return null;
+    return { via: 'Workday', jobs: d.jobPostings.map(j => ({
+      raw_title: j.title,
+      location:  j.locationsText || 'Unknown',
+      url:       `${base}${j.externalPath}`,
+      date:      parseWorkdayDate(j.postedOn),
+    }))};
+  } catch { return null; }
+}
 
-async function callClaude(prompt, { maxTokens = 2048, useSearch = true } = {}) {
+// ── Discovery API fetchers ────────────────────────────────────────────────────
+
+async function fetchRemotive() {
+  const categories = ['data', 'product', 'marketing', 'business', 'all-others'];
+  const results = (await Promise.all(categories.map(async cat => {
+    try {
+      const r = await fetch(`https://remotive.com/api/remote-jobs?category=${cat}&limit=30`);
+      if (!r.ok) return [];
+      const d = await r.json();
+      return (d.jobs || []).map(j => ({
+        raw_title: j.title,
+        company:   j.company_name,
+        location:  j.candidate_required_location || 'Remote',
+        url:       j.url,
+        date:      j.published_date?.slice(0, 10) || null,
+        source:    'Remotive',
+      }));
+    } catch { return []; }
+  }))).flat();
+  return results;
+}
+
+async function fetchJobicy() {
+  const tags = ['analyst', 'data', 'marketing', 'operations', 'product'];
+  const results = (await Promise.all(tags.map(async tag => {
+    try {
+      const r = await fetch(`https://jobicy.com/api/v2/remote-jobs?count=20&tag=${tag}`);
+      if (!r.ok) return [];
+      const d = await r.json();
+      return (d.jobs || []).map(j => ({
+        raw_title: j.jobTitle,
+        company:   j.companyName,
+        location:  j.jobGeo || 'Remote',
+        url:       j.url,
+        date:      j.pubDate?.slice(0, 10) || null,
+        source:    'Jobicy',
+      }));
+    } catch { return []; }
+  }))).flat();
+  return results;
+}
+
+// ── Claude ────────────────────────────────────────────────────────────────────
+
+async function callClaude(prompt, { maxTokens = 1024, useSearch = false } = {}) {
   const body = {
-    model: 'claude-haiku-4-5',
+    model:    'claude-haiku-4-5',
     max_tokens: maxTokens,
     messages: [{ role: 'user', content: prompt }],
   };
   if (useSearch) body.tools = [{ type: 'web_search_20250305', name: 'web_search' }];
 
   const res  = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
+    method:  'POST',
     headers: { 'Content-Type': 'application/json', 'x-api-key': API_KEY, 'anthropic-version': '2023-06-01' },
-    body: JSON.stringify(body),
+    body:    JSON.stringify(body),
   });
   const data = await res.json();
   if (data.error) { console.error('API error:', JSON.stringify(data.error)); return []; }
-  console.log(`  stop_reason: ${data.stop_reason}`);
+
   const text    = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('\n');
   const cleaned = text.replace(/```json/g, '').replace(/```/g, '').trim();
   const match   = cleaned.match(/\[[\s\S]*\]/);
@@ -118,73 +200,87 @@ async function callClaude(prompt, { maxTokens = 2048, useSearch = true } = {}) {
   try { return JSON.parse(match[0]); } catch { return []; }
 }
 
-// ── Expiry ───────────────────────────────────────────────────────────────────
-
-const MAX_AGE_DAYS = 14;
-function isFresh(job) {
-  if (!job.fetched_at) return false;
-  return (Date.now() - new Date(job.fetched_at)) / 86400000 <= MAX_AGE_DAYS;
-}
-
-// ── Main ─────────────────────────────────────────────────────────────────────
+// ── Main ──────────────────────────────────────────────────────────────────────
 
 async function run() {
-  const now           = new Date().toISOString();
-  const today         = now.slice(0, 10);
+  const now   = new Date().toISOString();
+  const today = now.slice(0, 10);
   const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
 
-  console.log(`Refreshing job radar for ${companies.length} watchlist companies (today: ${today})...`);
+  console.log(`Refreshing ${companies.length} watchlist companies (${today})...`);
 
+  // ── Watchlist ──────────────────────────────────────────────────────────────
   const companyResults = [];
+
   for (const c of companies) {
-    // 1. Try live ATS APIs first — these only return currently open positions
-    const slugs = ATS_SLUGS[c] || {};
-    const ats = await fetchGreenhouse(slugs.greenhouse)
-             || await fetchLever(slugs.lever)
-             || await fetchAshby(slugs.ashby);
+    const cfg = ATS[c] || {};
+    const ats = await fetchGreenhouse(cfg.greenhouse)
+             || await fetchLever(cfg.lever)
+             || await fetchAshby(cfg.ashby)
+             || (cfg.workday ? await fetchWorkday(cfg.workday) : null);
 
     let jobs;
     if (ats) {
       const listing = ats.jobs.slice(0, 40)
-        .map(j => `- "${j.raw_title}" | ${j.location} | posted ${j.date || 'unknown'} | ${j.url}`)
+        .map(j => `- "${j.raw_title}" | ${j.location} | ${j.date || 'no date'} | ${j.url}`)
         .join('\n');
-      const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nBelow are ALL currently open positions at ${c} pulled live from their ${ats.via} job board. Score and filter to the best fits:\n\n${listing}\n\n${SCORE_SPEC}`;
+      const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nAll currently open positions at ${c} (live from ${ats.via}):\n${listing}\n\nScore and pick up to 3 best-fit roles. ${SCORE_SPEC}`;
       jobs = await callClaude(prompt, { maxTokens: 1024, useSearch: false });
-      console.log(`  ${c}: ${jobs.length} role(s) [${ats.via} API — ${ats.jobs.length} total open]`);
+      console.log(`  ${c}: ${jobs.length} role(s) [${ats.via} — ${ats.jobs.length} open total]`);
     } else {
-      // 2. Fall back to web search with date operator
-      const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nSearch for currently open jobs at "${c}" by checking their company careers page directly. Use queries like:\n- "site:${c.toLowerCase().replace(/\s+/g, '')}.com careers jobs"\n- "${c} greenhouse jobs after:${thirtyDaysAgo}"\n- "${c} lever jobs after:${thirtyDaysAgo}"\nOnly use the company's own careers page, Greenhouse, Lever, or Ashby. Do NOT use ZipRecruiter, BuiltIn, Indeed, or job aggregators — they index stale listings. ${SEARCH_SPEC}`;
+      // Web search fallback — only for companies with no known ATS
+      const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nSearch for open jobs at "${c}" using their careers page or Greenhouse/Lever/Ashby board (not job aggregators). Use after:${thirtyDaysAgo} to restrict to recent listings. ${SEARCH_SPEC}`;
       jobs = await callClaude(prompt, { maxTokens: 1024, useSearch: true });
-      console.log(`  ${c}: ${jobs.length} role(s) [web search fallback]`);
+      console.log(`  ${c}: ${jobs.length} role(s) [web search fallback — no ATS found]`);
     }
 
     jobs.forEach(j => companyResults.push({
-      ...j,
-      company:    j.company || c,
-      id:         jobId(j.title || '', j.company || c),
-      fetched_at: now,
+      ...j, company: j.company || c,
+      id: jobId(j.title || '', j.company || c), fetched_at: now,
     }));
   }
 
-  // Discovery: two parallel web searches with date operators covering all role types
-  console.log('  Running discovery searches...');
-  const [rawA, rawB] = await Promise.all([
-    callClaude(
-      `Today is ${today}. Candidate profile:\n${profile}\n\nSearch for currently open entry-level jobs. Use date-restricted queries targeting company career pages and reputable boards only (Greenhouse, Lever, Ashby, We Work Remotely, Remote.co, LinkedIn). Do NOT use ZipRecruiter, BuiltIn, Indeed, or Glassdoor — they index stale listings. Queries:\n- "data analyst remote entry level site:greenhouse.io after:${thirtyDaysAgo}"\n- "product analyst associate remote site:lever.co after:${thirtyDaysAgo}"\n- "junior business analyst remote after:${thirtyDaysAgo}"\n- "data analyst media entertainment remote site:greenhouse.io 2026"\n${DISCOVERY_SPEC}`,
-      { maxTokens: 4096, useSearch: true }
-    ),
-    callClaude(
-      `Today is ${today}. Candidate profile:\n${profile}\n\nSearch for currently open entry-level jobs. Use date-restricted queries targeting company career pages and reputable boards only (Greenhouse, Lever, Ashby, We Work Remotely, Remote.co). Do NOT use ZipRecruiter, BuiltIn, Indeed, or Glassdoor. Queries:\n- "AI evaluation analyst remote entry level site:greenhouse.io after:${thirtyDaysAgo}"\n- "market research analyst remote junior site:lever.co after:${thirtyDaysAgo}"\n- "operations analyst remote entry level after:${thirtyDaysAgo}"\n- "strategy analyst remote entry level surf outdoor music brand 2026"\n${DISCOVERY_SPEC}`,
-      { maxTokens: 4096, useSearch: true }
-    ),
-  ]);
+  // ── Discovery — no web search, only live job APIs ──────────────────────────
+  console.log('  Fetching discovery from Remotive + Jobicy...');
 
+  const [remotiveRaw, jobicyRaw] = await Promise.all([fetchRemotive(), fetchJobicy()]);
+
+  // Deduplicate, pre-filter by title relevance, cap at 60 for scoring
   const seen = new Set();
-  const discoveryJobs = [...rawA, ...rawB]
-    .map(j => ({ ...j, id: jobId(j.title || '', j.company || ''), fetched_at: now }))
-    .filter(j => j.id && !seen.has(j.id) && seen.add(j.id));
-  console.log(`  discovery: ${discoveryJobs.length} role(s) found`);
+  const discoveryPool = [...remotiveRaw, ...jobicyRaw]
+    .filter(j => j.raw_title && j.url && !seen.has(j.url) && seen.add(j.url))
+    .filter(j => isRelevantTitle(j.raw_title));
 
+  console.log(`  Discovery pool: ${discoveryPool.length} relevant jobs from APIs`);
+
+  let discoveryJobs = [];
+  if (discoveryPool.length) {
+    const listing = discoveryPool.slice(0, 60)
+      .map(j => `- "${j.raw_title}" at ${j.company} | ${j.location} | posted ${j.date || 'unknown'} | ${j.source} | ${j.url}`)
+      .join('\n');
+    const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nBelow are currently open remote jobs pulled live from Remotive and Jobicy (no stale data). Score and filter for the best fits — prioritize culture-forward brands (surf, music, outdoor, media, AI), established remote-first companies, and roles at the entry-to-mid level. Avoid early-stage startups.\n\n${listing}\n\n${DISCOVERY_SCORE_SPEC}`;
+    const scored = await callClaude(prompt, { maxTokens: 4096, useSearch: false });
+
+    // Re-attach source URL from pool if Claude dropped it
+    discoveryJobs = scored.map(j => {
+      const match = discoveryPool.find(p =>
+        p.raw_title?.toLowerCase() === j.title?.toLowerCase() &&
+        p.company?.toLowerCase() === j.company?.toLowerCase()
+      );
+      return {
+        ...j,
+        url:        j.url || match?.url || '',
+        source:     j.source || match?.source || '',
+        posted_date: j.posted_date || match?.date || null,
+        id:         jobId(j.title || '', j.company || ''),
+        fetched_at: now,
+      };
+    });
+  }
+
+  console.log(`  Discovery: ${discoveryJobs.length} role(s) scored`);
+
+  // ── Merge + expire ─────────────────────────────────────────────────────────
   const filteredCompanies = companyResults.filter(passesSeniorFilter).filter(j => j.id);
   const filteredDiscovery = discoveryJobs.filter(passesSeniorFilter).filter(j => j.id);
 
