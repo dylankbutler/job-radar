@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Job Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+button { cursor: pointer; font: inherit; }
+a { text-decoration: none; }
+
+/* ── Tokens ── */
+:root {
+  --bg:          #07090E;
+  --surface:     #0D1117;
+  --surface-up:  #131C27;
+  --border:      rgba(148, 163, 184, 0.08);
+  --border-hi:   rgba(148, 163, 184, 0.15);
+  --text-1:      #E8ECF0;
+  --text-2:      #7A8FA6;
+  --text-3:      #3C5068;
+  --accent:      #C8A96E;
+  --accent-dim:  rgba(200, 169, 110, 0.10);
+  --accent-ring: rgba(200, 169, 110, 0.28);
+  --hi:          #52D68A;
+  --hi-dim:      rgba(82, 214, 138, 0.12);
+  --mid:         #C8A96E;
+  --mid-dim:     rgba(200, 169, 110, 0.12);
+  --lo:          #E07070;
+  --lo-dim:      rgba(224, 112, 112, 0.12);
+  --sb-w:        268px;
+  --radius:      12px;
+}
+
+/* ── Layout ── */
+body {
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: var(--sb-w) 1fr;
+}
+
+/* ── Sidebar ── */
+.sb {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--sb-w);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.sb-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 38px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hi);
+  flex-shrink: 0;
+  animation: dot-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(82, 214, 138, 0.5); }
+  50%       { opacity: 0.7; box-shadow: 0 0 0 6px rgba(82, 214, 138, 0); }
+}
+
+.sb-wordmark {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  color: var(--text-1);
+  line-height: 1;
+}
+
+.sb-tagline {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-top: 4px;
+}
+
+.sb-group { margin-bottom: 28px; }
+
+.sb-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 10px;
+}
+
+.sb-ts {
+  font-family: 'DM Mono', monospace;
+  font-size: 11.5px;
+  color: var(--text-2);
+  line-height: 1.7;
+}
+.sb-ts-accent { color: var(--accent); }
+.sb-ts-muted  { color: var(--text-3); }
+
+.sb-co-list { display: flex; flex-direction: column; }
+
+.sb-co-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 0;
+  font-size: 12.5px;
+  color: var(--text-2);
+  border-bottom: 1px solid var(--border);
+}
+.sb-co-item:last-child { border-bottom: none; }
+
+.sb-co-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--text-3);
+  flex-shrink: 0;
+}
+
+.sb-footer {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-3);
+  line-height: 1.65;
+}
+.sb-footer code {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-2);
+  background: var(--surface-up);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+/* ── Main ── */
+.main {
+  grid-column: 2;
+  padding: 32px 48px 80px;
+  min-height: 100dvh;
+}
+
+.main-inner { max-width: 660px; }
+
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-2);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.tab:hover { border-color: var(--border-hi); color: var(--text-1); }
+.tab.active {
+  background: var(--accent-dim);
+  border-color: var(--accent-ring);
+  color: var(--accent);
+}
+
+.tab-n {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.tab.active .tab-n { background: rgba(200, 169, 110, 0.15); }
+
+/* ── Cards ── */
+.jobs { display: flex; flex-direction: column; gap: 8px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 4px 1fr auto;
+  overflow: hidden;
+  transition: border-color 0.18s ease, transform 0.15s ease;
+  animation: card-in 0.38s cubic-bezier(0.16, 1, 0.3, 1) both;
+  will-change: transform;
+}
+.card:hover {
+  border-color: var(--border-hi);
+  transform: translateY(-1px);
+}
+
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.card-bar { /* bg color set via inline style */ }
+
+.card-body { padding: 15px 16px; }
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  letter-spacing: -0.01em;
+  color: var(--text-1);
+  line-height: 1.3;
+  flex: 1;
+}
+
+.badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.badge-entry { background: var(--hi-dim);  color: var(--hi);  }
+.badge-mid   { background: var(--mid-dim); color: var(--mid); }
+
+.card-meta {
+  font-size: 12px;
+  color: var(--text-2);
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.card-meta strong { color: var(--text-1); font-weight: 500; }
+.sep { color: var(--text-3); }
+.card-source { color: var(--text-3); }
+
+.card-why {
+  font-size: 12.5px;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 15px 14px 15px 0;
+  gap: 6px;
+}
+
+.card-score { flex-shrink: 0; }
+
+.card-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: stretch;
+  min-width: 76px;
+}
+
+.btn-view {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #07090E;
+  border: none;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+.btn-view:hover  { background: #D4BA7E; }
+.btn-view:active { transform: scale(0.97); }
+
+.btn-icon {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  text-align: center;
+  transition: all 0.15s ease;
+  width: 100%;
+}
+.btn-icon:active { transform: scale(0.97); }
+.btn-icon.save:hover   { border-color: var(--hi); color: var(--hi); }
+.btn-icon.save.on      { background: var(--hi-dim); border-color: var(--hi); color: var(--hi); }
+.btn-icon.dismiss:hover { border-color: var(--lo); color: var(--lo); }
+
+/* ── Skeleton ── */
+.skel-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: grid;
+  gap: 9px;
+  animation: card-in 0.38s ease both;
+}
+.skel {
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--surface-up) 25%,
+    rgba(255, 255, 255, 0.03) 50%,
+    var(--surface-up) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Empty state ── */
+.empty {
+  padding: 56px 24px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.empty-icon {
+  display: grid;
+  grid-template-columns: repeat(5, 8px);
+  grid-template-rows: repeat(3, 8px);
+  gap: 3px;
+}
+.ei {
+  border-radius: 2px;
+  background: var(--border);
+  animation: ei-pulse 2.2s ease-in-out infinite;
+}
+.ei:nth-child(1)  { animation-delay: 0.00s; }
+.ei:nth-child(2)  { animation-delay: 0.10s; }
+.ei:nth-child(3)  { animation-delay: 0.20s; }
+.ei:nth-child(4)  { animation-delay: 0.30s; }
+.ei:nth-child(5)  { animation-delay: 0.40s; }
+.ei:nth-child(6)  { animation-delay: 0.15s; }
+.ei:nth-child(7)  { animation-delay: 0.25s; }
+.ei:nth-child(8)  { animation-delay: 0.35s; }
+.ei:nth-child(9)  { animation-delay: 0.45s; }
+.ei:nth-child(10) { animation-delay: 0.55s; }
+.ei:nth-child(11) { animation-delay: 0.20s; }
+.ei:nth-child(12) { animation-delay: 0.30s; }
+.ei:nth-child(13) { animation-delay: 0.40s; }
+.ei:nth-child(14) { animation-delay: 0.50s; }
+.ei:nth-child(15) { animation-delay: 0.60s; }
+
+@keyframes ei-pulse {
+  0%, 100% { opacity: 0.35; }
+  50%       { opacity: 0.12; }
+}
+
+.empty-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-2);
+}
+.empty-sub {
+  font-size: 12px;
+  color: var(--text-3);
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  body { grid-template-columns: 1fr; }
+
+  .sb {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+  .sb-logo   { margin-bottom: 0; }
+  .sb-tagline { display: none; }
+  .sb-group, .sb-footer { display: none; }
+
+  .main { grid-column: 1; padding: 20px 16px 60px; }
+  .main-inner { max-width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<aside class="sb">
+  <div class="sb-logo">
+    <span class="live-dot"></span>
+    <div>
+      <div class="sb-wordmark">Job Radar</div>
+      <div class="sb-tagline">Surface Intel</div>
+    </div>
+  </div>
+
+  <div class="sb-group">
+    <div class="sb-label">Last Refreshed</div>
+    <div class="sb-ts" id="sb-ts">—</div>
+  </div>
+
+  <div class="sb-group">
+    <div class="sb-label">Watching</div>
+    <div class="sb-co-list" id="sb-cos"></div>
+  </div>
+
+  <div class="sb-footer">
+    Edit <code>companies.txt</code> or <code>profile.txt</code> in the repo to update targeting. Refreshes daily via GitHub Actions.
+  </div>
+</aside>
+
+<main class="main">
+  <div class="main-inner">
+    <div class="tabs">
+      <button class="tab active" data-tab="companies">
+        Watchlist <span class="tab-n" id="count-companies">0</span>
+      </button>
+      <button class="tab" data-tab="discovery">
+        Discovery <span class="tab-n" id="count-discovery">0</span>
+      </button>
+    </div>
+
+    <div id="panel-companies"></div>
+    <div id="panel-discovery" style="display:none"></div>
+  </div>
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  const SENIOR = /\b(senior|sr\.?|staff|principal|director|vp|vice\s+president|head\s+of|chief|lead)\b/i;
+  let dismissed = JSON.parse(localStorage.getItem('jr_dismissed') || '[]');
+  let saved     = JSON.parse(localStorage.getItem('jr_saved')     || '[]');
+  let data      = { lastUpdated: null, companies: [], discovery: [] };
+  let companies = [];
+  let active    = 'companies';
+
+  /* ── Score helpers ── */
+  const scoreColor = s => s >= 75 ? 'var(--hi)' : s >= 50 ? 'var(--mid)' : 'var(--lo)';
+
+  function scoreRing(score) {
+    const r = 17;
+    const C = 2 * Math.PI * r;
+    const fill = (C * score / 100).toFixed(2);
+    const color = scoreColor(score);
+    return `<svg width="42" height="42" viewBox="0 0 42 42" style="display:block">
+      <circle cx="21" cy="21" r="${r}" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2.5"/>
+      <circle class="ring-arc" cx="21" cy="21" r="${r}" fill="none"
+        stroke="${color}" stroke-width="2.5" stroke-linecap="round"
+        transform="rotate(-90 21 21)"
+        data-fill="${fill}" data-total="${C.toFixed(2)}"
+        stroke-dasharray="0 ${C.toFixed(2)}"/>
+      <text x="21" y="25" text-anchor="middle"
+        fill="${color}" font-family="'DM Mono',monospace" font-size="10" font-weight="500">${score}</text>
+    </svg>`;
+  }
+
+  function animateRings(container) {
+    container.querySelectorAll('.ring-arc').forEach(arc => {
+      const fill  = arc.dataset.fill;
+      const total = arc.dataset.total;
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        arc.style.transition = 'stroke-dasharray 0.75s cubic-bezier(0.16,1,0.3,1)';
+        arc.style.strokeDasharray = `${fill} ${total}`;
+      }));
+    });
+  }
+
+  /* ── Skeletons ── */
+  function makeSkeleton(i) {
+    const d = document.createElement('div');
+    d.className = 'skel-card';
+    d.style.animationDelay = `${i * 70}ms`;
+    d.innerHTML = `
+      <div style="display:flex;gap:10px;align-items:center">
+        <div class="skel" style="height:13px;width:140px"></div>
+        <div class="skel" style="height:15px;width:34px;border-radius:4px"></div>
+      </div>
+      <div class="skel" style="height:11px;width:190px"></div>
+      <div class="skel" style="height:11px;width:100%"></div>
+      <div class="skel" style="height:11px;width:70%"></div>
+    `;
+    return d;
+  }
+
+  /* ── Card ── */
+  function makeCard(j, i) {
+    const score   = j.fit_score || 50;
+    const isSaved = saved.includes(j.id);
+    const color   = scoreColor(score);
+    const level   = j.level || '';
+    const levelClass = level === 'entry' ? 'entry' : 'mid';
+
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.style.animationDelay = `${Math.min(i * 55, 380)}ms`;
+    el.dataset.id = j.id;
+
+    el.innerHTML = `
+      <div class="card-bar" style="background:${color};opacity:0.6"></div>
+      <div class="card-body">
+        <div class="card-top">
+          <span class="card-title">${j.title || 'Untitled Role'}</span>
+          ${level && level !== 'senior' ? `<span class="badge badge-${levelClass}">${level}</span>` : ''}
+        </div>
+        <div class="card-meta">
+          <strong>${j.company || ''}</strong>
+          ${j.location ? `<span class="sep">·</span><span>${j.location}</span>` : ''}
+          ${j.source   ? `<span class="sep">·</span><span class="card-source">${j.source}</span>` : ''}
+        </div>
+        <div class="card-why">${j.why_fit || ''}</div>
+      </div>
+      <div class="card-actions">
+        <div class="card-score">${scoreRing(score)}</div>
+        <div class="card-btns">
+          ${j.url ? `<a class="btn-view" href="${j.url}" target="_blank" rel="noopener">View</a>` : ''}
+          <button class="btn-icon save ${isSaved ? 'on' : ''}" data-id="${j.id}">${isSaved ? 'Saved' : 'Save'}</button>
+          <button class="btn-icon dismiss" data-id="${j.id}">Dismiss</button>
+        </div>
+      </div>
+    `;
+
+    el.querySelector('.save').addEventListener('click', () => {
+      if (saved.includes(j.id)) saved = saved.filter(x => x !== j.id);
+      else saved.push(j.id);
+      localStorage.setItem('jr_saved', JSON.stringify(saved));
+      renderTab(active);
+    });
+
+    el.querySelector('.dismiss').addEventListener('click', () => {
+      dismissed.push(j.id);
+      localStorage.setItem('jr_dismissed', JSON.stringify(dismissed));
+      el.style.transition = 'opacity 0.18s ease, transform 0.18s ease';
+      el.style.opacity = '0';
+      el.style.transform = 'translateX(-6px)';
+      setTimeout(() => renderTab(active), 210);
+    });
+
+    return el;
+  }
+
+  /* ── Empty state ── */
+  function makeEmpty(tab) {
+    const el = document.createElement('div');
+    el.className = 'empty';
+    el.innerHTML = `
+      <div class="empty-icon">${Array(15).fill('<div class="ei"></div>').join('')}</div>
+      <div class="empty-title">${tab === 'companies' ? 'No watchlist roles yet' : 'No discovery matches yet'}</div>
+      <div class="empty-sub">Run the GitHub Actions workflow once to populate — or wait for the daily schedule at 8am PT.</div>
+    `;
+    return el;
+  }
+
+  /* ── Render ── */
+  function renderTab(tab) {
+    const panel = document.getElementById(`panel-${tab}`);
+    const list = (tab === 'companies' ? data.companies : data.discovery)
+      .filter(j => !dismissed.includes(j.id))
+      .filter(j => j.level !== 'senior' && !SENIOR.test(j.title || ''))
+      .sort((a, b) => (b.fit_score || 0) - (a.fit_score || 0));
+
+    document.getElementById(`count-${tab}`).textContent = list.length;
+    panel.innerHTML = '';
+
+    if (!list.length) {
+      panel.appendChild(makeEmpty(tab));
+      return;
+    }
+
+    const jobs = document.createElement('div');
+    jobs.className = 'jobs';
+    list.forEach((j, i) => jobs.appendChild(makeCard(j, i)));
+    panel.appendChild(jobs);
+    animateRings(jobs);
+  }
+
+  function switchTab(tab) {
+    active = tab;
+    document.querySelectorAll('.tab').forEach(t =>
+      t.classList.toggle('active', t.dataset.tab === tab)
+    );
+    document.getElementById('panel-companies').style.display = tab === 'companies' ? '' : 'none';
+    document.getElementById('panel-discovery').style.display = tab === 'discovery' ? '' : 'none';
+    renderTab(tab);
+  }
+
+  document.querySelectorAll('.tab').forEach(t =>
+    t.addEventListener('click', () => switchTab(t.dataset.tab))
+  );
+
+  /* ── Sidebar ── */
+  function updateSidebar() {
+    const ts = document.getElementById('sb-ts');
+    if (data.lastUpdated) {
+      const d       = new Date(data.lastUpdated);
+      const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      const timeStr = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+      ts.innerHTML  = `<span class="sb-ts-accent">${dateStr}</span> at <span class="sb-ts-accent">${timeStr}</span>`;
+    } else {
+      ts.innerHTML = `<span class="sb-ts-muted">Never — trigger workflow first</span>`;
+    }
+
+    document.getElementById('sb-cos').innerHTML = companies
+      .map(c => `<div class="sb-co-item"><span class="sb-co-dot"></span>${c}</div>`)
+      .join('');
+  }
+
+  /* ── Init ── */
+  async function init() {
+    const companyPanel = document.getElementById('panel-companies');
+    const frag = document.createDocumentFragment();
+    [0, 1, 2].forEach(i => frag.appendChild(makeSkeleton(i)));
+    companyPanel.appendChild(frag);
+
+    try {
+      const [jobsRes, txtRes] = await Promise.all([
+        fetch('./data/jobs.json?_=' + Date.now()),
+        fetch('./companies.txt?_=' + Date.now()),
+      ]);
+      data      = await jobsRes.json();
+      companies = (await txtRes.text()).split('\n').map(s => s.trim()).filter(Boolean);
+    } catch (e) {
+      console.error('Load error:', e);
+    }
+
+    updateSidebar();
+    renderTab('companies');
+    renderTab('discovery');
+  }
+
+  init();
+}());
+</script>
+</body>
+</html>
