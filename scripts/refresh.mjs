@@ -12,7 +12,6 @@ const SCORE_SPEC = `Return ONLY a valid JSON array (no markdown fences) with the
 
 const DISCOVERY_SCORE_SPEC = `Return ONLY a valid JSON array (no markdown fences) with these exact fields per object: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Exclude any senior/staff/principal/director/VP/head-of/lead role. Return the top 15 best-fit roles sorted by fit_score descending. If none relevant, return [].`;
 
-const SEARCH_SPEC = `Return ONLY a valid JSON array (no markdown fences) with these exact fields per object: title, company, location, level ("entry"|"mid"|"senior"), fit_score (integer 0-100), why_fit (one sentence ≤20 words), url, source, posted_date (YYYY-MM-DD or null). Only skip a listing explicitly marked closed or filled. Exclude senior/staff/principal/director/VP/head-of/lead roles. Return up to 3 best fits. If none found, return [].`;
 
 // ── ATS + Workday config ──────────────────────────────────────────────────────
 // Slug / URL map so we never guess — add/correct entries here as needed
@@ -226,7 +225,6 @@ async function callClaude(prompt, { maxTokens = 1024, useSearch = false } = {}) 
 async function run() {
   const now   = new Date().toISOString();
   const today = now.slice(0, 10);
-  const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
 
   console.log(`Refreshing ${companies.length} watchlist companies (${today})...`);
 
@@ -253,14 +251,8 @@ async function run() {
       jobs = await callClaude(prompt, { maxTokens: 1024, useSearch: false });
       console.log(`  ${c}: ${jobs.length} role(s) [${ats.via} — ${ats.jobs.length} open total]`);
     } else {
-      // Web search fallback — only for companies with no known ATS
-      const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nSearch for open jobs at "${c}" using their careers page or Greenhouse/Lever/Ashby board (not job aggregators). Use after:${thirtyDaysAgo} to restrict to recent listings. ${SEARCH_SPEC}`;
-      jobs = await callClaude(prompt, { maxTokens: 1024, useSearch: true });
-      // Strip aggregator URLs — only keep direct company/ATS links
-      const AGG = /builtin\.com|indeed\.com|ziprecruiter\.com|linkedin\.com\/jobs|glassdoor\.com|nodesk\.co|icehouseventures|simplyhired|monster\.com|dice\.com/i;
-      jobs = jobs.filter(j => j.url && !AGG.test(j.url));
-      jobs = await filterDead(jobs);
-      console.log(`  ${c}: ${jobs.length} role(s) [web search fallback — no ATS found]`);
+      jobs = [];
+      console.log(`  ${c}: 0 role(s) [no ATS board found — skipped]`);
     }
 
     jobs.forEach(j => companyResults.push({
