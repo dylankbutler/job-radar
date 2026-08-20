@@ -1,137 +1,6 @@
 {
   "lastUpdated": "2026-08-20T00:06:39.208Z",
-  "companies": [
-    {
-      "title": "Partnerships Associate - New Grad",
-      "company": "Whatnot",
-      "location": "Remote",
-      "level": "entry",
-      "fit_score": 82,
-      "why_fit": "New grad explicit fit, partnerships GTM work, culture brand alignment.",
-      "url": "https://jobs.ashbyhq.com/whatnot/6d0ac9a1-80fc-48d6-b569-e8583f3bc8d0",
-      "source": "Ashby",
-      "posted_date": null,
-      "id": "partnershipsassociatenewgrad|whatnot",
-      "fetched_at": "2026-08-19T23:44:12.961Z"
-    },
-    {
-      "title": "Product Manager",
-      "company": "Substack",
-      "location": "San Francisco, CA / Remote",
-      "level": "entry",
-      "fit_score": 75,
-      "why_fit": "Entry-level PM role aligns with product/UX background and GTM interest; remote-flexible.",
-      "url": "https://builtin.com/job/product-manager/3229301",
-      "source": "Built In",
-      "posted_date": null,
-      "id": "productmanager|substack",
-      "fetched_at": "2026-08-19T23:44:12.961Z"
-    },
-    {
-      "title": "Product Analyst",
-      "company": "Substack",
-      "location": "San Francisco, CA / Remote",
-      "level": "entry",
-      "fit_score": 85,
-      "why_fit": "Perfect fit: data analytics, SQL, Python skills; product analytics; remote-eligible; media/culture mission.",
-      "url": "https://jobs.icehouseventures.co.nz/companies/substack/jobs/81624006-growth-marketing-manager",
-      "source": "Y Combinator",
-      "posted_date": null,
-      "id": "productanalyst|substack",
-      "fetched_at": "2026-08-19T23:44:12.961Z"
-    },
-    {
-      "title": "Partnerships Associate (Creators & Influencers)",
-      "company": "Substack",
-      "location": "Remote",
-      "level": "entry",
-      "fit_score": 70,
-      "why_fit": "GTM and partnerships interest; remote; creator economy and culture focus; relationship building.",
-      "url": "https://nodesk.co/remote-jobs/substack-partnerships-associate-uk/",
-      "source": "NoDesk",
-      "posted_date": null,
-      "id": "partnershipsassociatecreatorsinfluencers|substack",
-      "fetched_at": "2026-08-19T23:44:12.961Z"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "Clay Labs",
-      "location": "New York",
-      "level": "entry",
-      "fit_score": 92,
-      "why_fit": "Perfect match: direct data analytics role matching candidate's Hex/SQL/Python skills.",
-      "url": "https://jobs.ashbyhq.com/claylabs/31d3597f-400e-4c12-9692-a5fb6f5e0d03",
-      "source": "Ashby",
-      "posted_date": null,
-      "id": "dataanalyst|claylabs",
-      "fetched_at": "2026-08-19T23:21:15.721Z"
-    },
-    {
-      "title": "Product Operations",
-      "company": "Clay Labs",
-      "location": "New York",
-      "level": "entry",
-      "fit_score": 85,
-      "why_fit": "Ops/project management intersection; aligns with candidate's operations & GTM interests.",
-      "url": "https://jobs.ashbyhq.com/claylabs/b798c398-c11d-4d51-8c37-95cd657ca0a5",
-      "source": "Ashby",
-      "posted_date": null,
-      "id": "productoperations|claylabs",
-      "fetched_at": "2026-08-19T23:21:15.721Z"
-    },
-    {
-      "title": "Data Partnerships",
-      "company": "Clay Labs",
-      "location": "New York",
-      "level": "entry",
-      "fit_score": 80,
-      "why_fit": "Partnerships role at data-focused company; combines GTM, partnerships, and analytics.",
-      "url": "https://jobs.ashbyhq.com/claylabs/84eb158a-b39d-4048-9c9f-66fc55a24224",
-      "source": "Ashby",
-      "posted_date": null,
-      "id": "datapartnerships|claylabs",
-      "fetched_at": "2026-08-19T23:21:15.721Z"
-    },
-    {
-      "title": "Partner Marketing, Data Partnerships",
-      "company": "Clay",
-      "location": "New York, NY",
-      "level": "mid",
-      "fit_score": 72,
-      "why_fit": "Partnerships and marketing GTM work aligns with candidate's background; remote-friendly NYC role.",
-      "url": "https://www.ziprecruiter.com/co/Clay/Jobs/-in-New-York,NY?id=elhcnu36ckU3SI9NyFdgPHIMrQ0%3D",
-      "source": "ZipRecruiter",
-      "posted_date": "2026-07-01",
-      "id": "partnermarketingdatapartnerships|clay",
-      "fetched_at": "2026-08-19T21:53:54.761Z"
-    },
-    {
-      "title": "Marketing Analyst, WordPress VIP",
-      "company": "Automattic",
-      "location": "Remote",
-      "level": "entry",
-      "fit_score": 88,
-      "why_fit": "Entry-level data analytics role perfect for recent grad with SQL/Python skills and interest in marketing analytics.",
-      "url": "https://builtin.com/job/marketing-analyst-wordpress-vip/3318297",
-      "source": "Built In",
-      "posted_date": "2026-08-11",
-      "id": "marketinganalystwordpressvip|automattic",
-      "fetched_at": "2026-08-19T21:53:54.761Z"
-    },
-    {
-      "title": "Excellence Wrangler",
-      "company": "Automattic",
-      "location": "Remote",
-      "level": "mid",
-      "fit_score": 72,
-      "why_fit": "QA/testing role leverages analytical skills and product evaluation background from LLM model evaluation work.",
-      "url": "https://builtin.com/job/excellence-wrangler/7118245",
-      "source": "Built In",
-      "posted_date": "2026-08-09",
-      "id": "excellencewrangler|automattic",
-      "fetched_at": "2026-08-19T21:53:54.761Z"
-    }
-  ],
+  "companies": [],
   "discovery": [
     {
       "title": "Business Development Representative",
@@ -225,7 +94,7 @@
       "fetched_at": "2026-08-19T23:21:15.721Z"
     },
     {
-      "title": "Business Analyst (Technical Consultant) – Integrations",
+      "title": "Business Analyst (Technical Consultant) \u2013 Integrations",
       "company": "Launchpad Technologies",
       "location": "LATAM",
       "level": "entry",

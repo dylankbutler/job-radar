@@ -256,6 +256,9 @@ async function run() {
       // Web search fallback — only for companies with no known ATS
       const prompt = `Today is ${today}. Candidate profile:\n${profile}\n\nSearch for open jobs at "${c}" using their careers page or Greenhouse/Lever/Ashby board (not job aggregators). Use after:${thirtyDaysAgo} to restrict to recent listings. ${SEARCH_SPEC}`;
       jobs = await callClaude(prompt, { maxTokens: 1024, useSearch: true });
+      // Strip aggregator URLs — only keep direct company/ATS links
+      const AGG = /builtin\.com|indeed\.com|ziprecruiter\.com|linkedin\.com\/jobs|glassdoor\.com|nodesk\.co|icehouseventures|simplyhired|monster\.com|dice\.com/i;
+      jobs = jobs.filter(j => j.url && !AGG.test(j.url));
       jobs = await filterDead(jobs);
       console.log(`  ${c}: ${jobs.length} role(s) [web search fallback — no ATS found]`);
     }
@@ -314,15 +317,9 @@ async function run() {
   let existing = { companies: [], discovery: [] };
   try { existing = JSON.parse(fs.readFileSync('data/jobs.json', 'utf-8')); } catch {}
 
-  // For ATS-covered companies, today's API results are the complete source of truth —
-  // don't carry forward old results (the job may have been filled since last run).
-  // For web-search-only companies, keep results up to 5 days as a best-effort cache.
+  // Company results are always fully replaced each run — every company is re-scanned,
+  // so there's no reason to carry forward old results (they may have closed).
   const mergedCompanies = [...filteredCompanies];
-  (existing.companies || []).forEach(old => {
-    const co = (old.company || '').toLowerCase();
-    if (atsScanned.has(co)) return; // ATS already gave us the full picture for this company
-    if (!mergedCompanies.some(n => n.id === old.id) && isFresh(old, 5)) mergedCompanies.push(old);
-  });
 
   // Discovery: keep recent results (5 days) to smooth over day-to-day API variation
   const mergedDiscovery = [...filteredDiscovery];
