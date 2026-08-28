@@ -1,57 +1,31 @@
 {
-  "lastUpdated": "2026-08-26T16:11:33.939Z",
+  "lastUpdated": "2026-08-28T00:10:28.799Z",
   "companies": [
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
       "company": "Pinterest",
       "location": "San Francisco, CA, US; Palo Alto, CA, US",
       "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-level ops/business role at culture-forward company; aligns with operations and project management interests.",
+      "fit_score": 62,
+      "why_fit": "Entry-level ops/admin role at culture-forward company; limited remote flexibility but SF nearby.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8103612",
-      "source": "Pinterest Greenhouse",
+      "source": "Pinterest Careers",
       "posted_date": "2026-08-20",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
+      "fetched_at": "2026-08-28T00:10:28.799Z"
     },
     {
       "title": "Client Account Manager II (tvScientific)",
       "company": "Pinterest",
       "location": "New York, NY, US; Remote, US",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Remote-flexible role combining partnerships, GTM, and analytics at media/tech intersection Pinterest represents.",
+      "level": "mid",
+      "fit_score": 58,
+      "why_fit": "Remote-available role in NYC; GTM/partnerships focus aligns with interests; slight seniority stretch.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8026888",
-      "source": "Pinterest Greenhouse",
+      "source": "Pinterest Careers",
       "posted_date": "2026-08-20",
       "id": "clientaccountmanageriitvscientific|pinterest",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
-    },
-    {
-      "title": "Client Account Manager II, Fashion & Apparel",
-      "company": "Pinterest",
-      "location": "New York, NY, US",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Culture-forward fashion focus; GTM/partnerships role at Pinterest, NYC location matches geographic preferences.",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8055301",
-      "source": "Pinterest Greenhouse",
-      "posted_date": "2026-08-24",
-      "id": "clientaccountmanageriifashionapparel|pinterest",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
-    },
-    {
-      "title": "Sponsorships Account Manager",
-      "company": "World Surf League",
-      "location": "São Paulo, Brazil",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "GTM/partnerships focus aligns with background; culture-forward brand; remote flexibility unclear but worth exploring.",
-      "url": "https://boards.greenhouse.io/worldsurfleague/jobs/8506382002?gh_jid=8506382002",
-      "source": "Greenhouse",
-      "posted_date": "2026-04-15",
-      "id": "sponsorshipsaccountmanager|worldsurfleague",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
+      "fetched_at": "2026-08-28T00:10:28.799Z"
     }
   ],
   "discovery": [
@@ -61,12 +35,12 @@
       "location": "LATAM",
       "level": "entry",
       "fit_score": 92,
-      "why_fit": "Perfect match: product analytics, entry-level, remote LATAM, established company.",
+      "why_fit": "Perfect match: product analytics, data analyst role, LATAM-friendly, established remote company.",
       "url": "https://jobicy.com/jobs/149448-data-analyst-product-customer-analytics",
       "source": "Jobicy",
       "posted_date": "2026-08-21",
       "id": "dataanalystproductcustomeranalytics|oowlishtechnology",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
+      "fetched_at": "2026-08-28T00:10:28.799Z"
     },
     {
       "title": "Data Analyst (Product & Customer Analytics)",
@@ -74,38 +48,167 @@
       "location": "LATAM, Argentina, Brazil, Mexico",
       "level": "entry",
       "fit_score": 92,
-      "why_fit": "Perfect match: product analytics, entry-level, remote LATAM, established company.",
+      "why_fit": "Identical role: product analytics expertise, entry-level, established remote-first company.",
       "url": "https://jobicy.com/jobs/151486-data-analyst-product-customer-analytics-2",
       "source": "Jobicy",
       "posted_date": "2026-08-24",
       "id": "dataanalystproductcustomeranalytics|oowlishtechnology",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Analyst",
+      "company": "Affirm",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 78,
+      "why_fit": "Entry-level analyst role at established fintech, data-driven culture, flexible locations available.",
+      "url": "https://jobicy.com/jobs/151815-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-08-27",
+      "id": "analyst|affirm",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
     },
     {
       "title": "Deal Desk Analyst",
       "company": "Tines",
       "location": "USA",
       "level": "entry",
-      "fit_score": 78,
-      "why_fit": "Business analyst adjacent, GTM-adjacent, entry-level, remote, established cybersecurity SaaS.",
+      "fit_score": 75,
+      "why_fit": "Entry-level analyst role, established remote company, strategic business focus aligned with interests.",
       "url": "https://jobicy.com/jobs/151291-deal-desk-analyst",
       "source": "Jobicy",
       "posted_date": "2026-08-21",
       "id": "dealdeskanalyst|tines",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Data Scientist",
+      "company": "BetterHelp",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 74,
+      "why_fit": "Entry-level data science, established remote company, aligned with LLM/AI evaluation background.",
+      "url": "https://jobicy.com/jobs/151808-data-scientist",
+      "source": "Jobicy",
+      "posted_date": "2026-08-27",
+      "id": "datascientist|betterhelp",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Business AI Operations Specialist",
+      "company": "Spreedly",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "AI-focused operations role, entry-level, established fintech, decision-making intersection aligned.",
+      "url": "https://jobicy.com/jobs/151722-business-ai-operations-specialist",
+      "source": "Jobicy",
+      "posted_date": "2026-08-26",
+      "id": "businessaioperationsspecialist|spreedly",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Product Marketing Manager (B2B)",
+      "company": "TeamSnap",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 71,
+      "why_fit": "Product marketing, established remote company, media/community focus, flexible locations available.",
+      "url": "https://jobicy.com/jobs/151760-product-marketing-manager-b2b",
+      "source": "Jobicy",
+      "posted_date": "2026-08-26",
+      "id": "productmarketingmanagerb2b|teamsnap",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
     },
     {
       "title": "Business Systems Analyst - Salesforce, Gainsight Admin",
       "company": "Rithum",
       "location": "USA",
       "level": "entry",
-      "fit_score": 74,
-      "why_fit": "Business analyst, operations, entry-level, remote, established SaaS platform company.",
+      "fit_score": 70,
+      "why_fit": "Entry-level systems analyst, established company, operations/analytics intersection, remote-friendly.",
       "url": "https://jobicy.com/jobs/151282-business-systems-analyst-salesforce-gainsight-admin",
       "source": "Jobicy",
       "posted_date": "2026-08-21",
       "id": "businesssystemsanalystsalesforcegainsightadmin|rithum",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Content Marketing Manager",
+      "company": "Wpromote",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 68,
+      "why_fit": "Content marketing, established digital agency, media/culture intersection, remote-first friendly.",
+      "url": "https://jobicy.com/jobs/151677-content-marketing-manager-4",
+      "source": "Jobicy",
+      "posted_date": "2026-08-26",
+      "id": "contentmarketingmanager|wpromote",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Lifecycle Marketing Automation Specialist",
+      "company": "PadSplit",
+      "location": "LATAM",
+      "level": "entry",
+      "fit_score": 67,
+      "why_fit": "Entry-level marketing automation, GTM-focused, LATAM location flexibility, growth-oriented role.",
+      "url": "https://jobicy.com/jobs/151881-lifecycle-marketing-automation-specialist",
+      "source": "Jobicy",
+      "posted_date": "2026-08-27",
+      "id": "lifecyclemarketingautomationspecialist|padsplit",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Product Marketing Manager",
+      "company": "Dataiku",
+      "location": "USA",
+      "first_score": 66,
+      "why_fit": "Product marketing, AI/data platform, established company, remote flexibility, strategy-focused.",
+      "url": "https://jobicy.com/jobs/151480-product-marketing-manager-2",
+      "source": "Jobicy",
+      "posted_date": "2026-08-24",
+      "id": "productmarketingmanager|dataiku",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Product Support Specialist - Americas",
+      "company": "Ashby",
+      "location": "Canada, USA",
+      "level": "entry",
+      "fit_score": 64,
+      "why_fit": "Entry-level support, HR tech company, established remote, growth-focused, flexible locations.",
+      "url": "https://jobicy.com/jobs/151886-product-support-specialist-americas",
+      "source": "Jobicy",
+      "posted_date": "2026-08-27",
+      "id": "productsupportspecialistamericas|ashby",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Marketing Operations Manager (Pardot Administrator)",
+      "company": "WorkWave",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 63,
+      "why_fit": "Marketing ops, mid-level, established SaaS, operations expertise, remote-friendly, analytics-driven.",
+      "url": "https://jobicy.com/jobs/151894-marketing-operations-manager-pardot-administrator",
+      "source": "Jobicy",
+      "posted_date": "2026-08-27",
+      "id": "marketingoperationsmanagerpardotadministrator|workwave",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
+    },
+    {
+      "title": "Corporate Marketing Manager",
+      "company": "Mural",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 62,
+      "why_fit": "Corporate marketing, collaboration platform, established remote, culture-forward, flexible locations.",
+      "url": "https://jobicy.com/jobs/151719-corporate-marketing-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-08-26",
+      "id": "corporatemarketingmanager|mural",
+      "fetched_at": "2026-08-28T00:10:28.799Z"
     },
     {
       "title": "Data Labeling Specialists",
@@ -147,19 +250,6 @@
       "fetched_at": "2026-08-26T16:11:33.939Z"
     },
     {
-      "title": "Product Marketing Manager (B2B)",
-      "company": "TeamSnap",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 82,
-      "why_fit": "GTM, marketing, product-adjacent, mid-level, remote, established sports tech company.",
-      "url": "https://jobicy.com/jobs/151760-product-marketing-manager-b2b",
-      "source": "Jobicy",
-      "posted_date": "2026-08-26",
-      "id": "productmarketingmanagerb2b|teamsnap",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
-    },
-    {
       "title": "Product Marketing Manager",
       "company": "League",
       "location": "Canada, USA",
@@ -173,19 +263,6 @@
       "fetched_at": "2026-08-26T16:11:33.939Z"
     },
     {
-      "title": "Business AI Operations Specialist",
-      "company": "Spreedly",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 76,
-      "why_fit": "AI-focused operations, entry-level, remote, payments/fintech established company.",
-      "url": "https://jobicy.com/jobs/151722-business-ai-operations-specialist",
-      "source": "Jobicy",
-      "posted_date": "2026-08-26",
-      "id": "businessaioperationsspecialist|spreedly",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
-    },
-    {
       "title": "Data Services Analyst",
       "company": "Cloudbeds",
       "location": "LATAM",
@@ -196,32 +273,6 @@
       "source": "Jobicy",
       "posted_date": "2026-08-26",
       "id": "dataservicesanalyst|cloudbeds",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
-    },
-    {
-      "title": "Content Marketing Manager",
-      "company": "Wpromote",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 70,
-      "why_fit": "Marketing, GTM, mid-level, remote, established digital marketing agency.",
-      "url": "https://jobicy.com/jobs/151677-content-marketing-manager-4",
-      "source": "Jobicy",
-      "posted_date": "2026-08-26",
-      "id": "contentmarketingmanager|wpromote",
-      "fetched_at": "2026-08-26T16:11:33.939Z"
-    },
-    {
-      "title": "Product Marketing Manager",
-      "company": "Dataiku",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 75,
-      "why_fit": "GTM, product marketing, remote, AI/data platform, mid-level established company.",
-      "url": "https://jobicy.com/jobs/151480-product-marketing-manager-2",
-      "source": "Jobicy",
-      "posted_date": "2026-08-24",
-      "id": "productmarketingmanager|dataiku",
       "fetched_at": "2026-08-26T16:11:33.939Z"
     },
     {
@@ -471,32 +522,6 @@
       "posted_date": "2026-08-22",
       "id": "digitalmarketingaispecialist|manaycpainc",
       "fetched_at": "2026-08-23T15:14:46.012Z"
-    },
-    {
-      "title": "Field Operations Manager / Associate",
-      "company": "WorkWhile",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Associate-level ops role, remote eligible, operations and logistics skills, project management adjacent.",
-      "url": "https://jobicy.com/jobs/151250-field-operations-manager-associate",
-      "source": "Jobicy",
-      "posted_date": "2026-08-20",
-      "id": "fieldoperationsmanagerassociate|workwhile",
-      "fetched_at": "2026-08-22T15:12:35.614Z"
-    },
-    {
-      "title": "B2B Marketing Manager",
-      "company": "AssetWatch",
-      "location": "Canada, USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-adjacent marketing role, B2B strategy, remote US/Canada option, GTM and analytics applicable.",
-      "url": "https://jobicy.com/jobs/150922-b2b-marketing-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-08-17",
-      "id": "b2bmarketingmanager|assetwatch",
-      "fetched_at": "2026-08-22T15:12:35.614Z"
     }
   ]
 }
