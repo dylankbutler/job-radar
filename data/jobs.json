@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T18:12:39.286Z",
+  "lastUpdated": "2026-09-10T17:58:41.160Z",
   "companies": [
     {
       "title": "Content Designer II, Personalization",
@@ -7,25 +7,25 @@
       "location": "San Francisco, CA, US; Remote, US",
       "level": "mid",
       "fit_score": 72,
-      "why_fit": "Remote option, culture-forward brand, product/UX background with Figma/Adobe CC directly applicable.",
+      "why_fit": "Remote-first, culture-forward company. Product/UX background with Figma/Adobe aligns well.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7908767",
       "source": "Greenhouse",
       "posted_date": "2026-09-04",
       "id": "contentdesigneriipersonalization|pinterest",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
+      "fetched_at": "2026-09-10T17:58:41.160Z"
     },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
       "company": "Pinterest",
       "location": "San Francisco, CA, US; Palo Alto, CA, US",
       "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Entry-level, operations/partnership exposure, cross-functional insight into tech/product/design orgs.",
+      "fit_score": 68,
+      "why_fit": "Entry-level operations/strategy role. Cross-functional exposure to product and design teams.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8103612",
       "source": "Greenhouse",
       "posted_date": "2026-09-04",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
+      "fetched_at": "2026-09-10T17:58:41.160Z"
     }
   ],
   "discovery": [
@@ -35,38 +35,194 @@
       "location": "USA",
       "level": "entry",
       "fit_score": 88,
-      "why_fit": "Perfect fit: data analytics, established remote company, entry-level analyst role with direct skill match.",
+      "why_fit": "Perfect match: data analytics, product focus, established remote company, aligned with background.",
       "url": "https://jobicy.com/jobs/152755-data-product-analyst-corporate",
       "source": "Jobicy",
       "posted_date": "2026-09-07",
       "id": "dataproductanalystcorporate|yipitdata",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
-    },
-    {
-      "title": "Data Classification Associate, Corporate",
-      "company": "YipitData",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 82,
-      "why_fit": "Entry-level associate role, data analysis focus, established remote company, aligns with background.",
-      "url": "https://jobicy.com/jobs/152734-data-classification-associate-corporate",
-      "source": "Jobicy",
-      "posted_date": "2026-09-07",
-      "id": "dataclassificationassociatecorporate|yipitdata",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
+      "fetched_at": "2026-09-10T17:58:41.160Z"
     },
     {
       "title": "Paid Social & Programmatic Analyst",
       "company": "SeatGeek",
       "location": "USA",
       "level": "entry",
-      "fit_score": 75,
-      "why_fit": "Analytics role at established company; culture-forward (events/entertainment); entry-level analyst fit.",
+      "fit_score": 82,
+      "why_fit": "Growth/GTM analytics at established, culture-forward ticketing brand; data-driven role.",
       "url": "https://jobicy.com/jobs/152717-paid-social-programmatic-analyst",
       "source": "Jobicy",
       "posted_date": "2026-09-07",
       "id": "paidsocialprogrammaticanalyst|seatgeek",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Data Classification Associate, Corporate",
+      "company": "YipitData",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 80,
+      "why_fit": "Entry-level data role at established remote company; analytics foundation with research angle.",
+      "url": "https://jobicy.com/jobs/152734-data-classification-associate-corporate",
+      "source": "Jobicy",
+      "posted_date": "2026-09-07",
+      "id": "dataclassificationassociatecorporate|yipitdata",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "FBS Product Analyst Customer Retention",
+      "company": "Capgemini",
+      "location": "Mexico",
+      "level": "entry",
+      "fit_score": 78,
+      "why_fit": "Product analytics, retention focus, established consulting firm, flexible location near candidate.",
+      "url": "https://jobicy.com/jobs/150290-fbs-product-analyst-customer-retention",
+      "source": "Jobicy",
+      "posted_date": "2026-09-07",
+      "id": "fbsproductanalystcustomerretention|capgemini",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Performance Media Analyst",
+      "company": "Monks",
+      "location": "Brazil",
+      "level": "entry",
+      "fit_score": 75,
+      "why_fit": "Media + analytics intersection, GTM-adjacent, performance marketing with data foundation.",
+      "url": "https://jobicy.com/jobs/152913-performance-media-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-09-09",
+      "id": "performancemediaanalyst|monks",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Business Systems Analyst",
+      "company": "Cordance",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Systems analysis, operations, established company; business-focused technical role.",
+      "url": "https://jobicy.com/jobs/152944-business-systems-analyst-3",
+      "source": "Jobicy",
+      "posted_date": "2026-09-09",
+      "id": "businesssystemsanalyst|cordance",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Marketing Operations Specialist",
+      "company": "LevelUp",
+      "location": "Philippines",
+      "level": "entry",
+      "fit_score": 71,
+      "why_fit": "GTM/marketing ops, entry-level, established remote company, operational analytics focus.",
+      "url": "https://jobicy.com/jobs/152464-marketing-operations-specialist-2",
+      "source": "Jobicy",
+      "posted_date": "2026-09-03",
+      "id": "marketingoperationsspecialist|levelup",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Operations Risk Analyst",
+      "company": "Kalshi",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 70,
+      "why_fit": "Operations analyst role, decision-making focus, established fintech, analytical skillset match.",
+      "url": "https://jobicy.com/jobs/152900-operations-risk-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-09-09",
+      "id": "operationsriskanalyst|kalshi",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "GTM Operations Specialist",
+      "company": "Apaleo",
+      "location": "Germany",
+      "level": "entry",
+      "fit_score": 69,
+      "why_fit": "GTM focus, operations, established SaaS; candidate seeking GTM-adjacent roles.",
+      "url": "https://jobicy.com/jobs/152904-gtm-operations-specialist-f-m-d",
+      "source": "Jobicy",
+      "posted_date": "2026-09-09",
+      "id": "gtmoperationsspecialist|apaleo",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Content Marketing Manager",
+      "company": "NetBox Labs",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Content + marketing, tech-forward brand, remote, entry-level marketing adjacent to strategy.",
+      "url": "https://jobicy.com/jobs/152943-content-marketing-manager-5",
+      "source": "Jobicy",
+      "posted_date": "2026-09-09",
+      "id": "contentmarketingmanager|netboxlabs",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Marketing Operations Coordinator",
+      "company": "Instructure",
+      "location": "Mexico",
+      "level": "entry",
+      "fit_score": 67,
+      "why_fit": "Entry-level marketing ops, established EdTech company, operations focus.",
+      "url": "https://jobicy.com/jobs/152646-marketing-operations-coordinator",
+      "source": "Jobicy",
+      "posted_date": "2026-09-06",
+      "id": "marketingoperationscoordinator|instructure",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Benefits Operations Specialist - AMER",
+      "company": "Remote",
+      "location": "LATAM, Canada, USA",
+      "level": "entry",
+      "fit_score": 66,
+      "why_fit": "Operations specialist, remote-first company, flexible location, analytical ops work.",
+      "url": "https://jobicy.com/jobs/152865-benefits-operations-specialist-amer",
+      "source": "Jobicy",
+      "posted_date": "2026-09-09",
+      "id": "benefitsoperationsspecialistamer|remote",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Junior Program Control Analyst",
+      "company": "ManTech",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 65,
+      "why_fit": "Entry-level analyst, program management adjacent, operations focus, established company.",
+      "url": "https://jobicy.com/jobs/149013-junior-program-control-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-09-10",
+      "id": "juniorprogramcontrolanalyst|mantech",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Procurement Analyst",
+      "company": "Eightfold",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 64,
+      "why_fit": "Analyst role at established AI company, operations/business process, data-driven work.",
+      "url": "https://jobicy.com/jobs/149007-procurement-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-09-10",
+      "id": "procurementanalyst|eightfold",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
+    },
+    {
+      "title": "Data Analyst, Clinical Data Effectiveness",
+      "company": "Clover Health",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 63,
+      "why_fit": "Data analyst, healthcare analytics, remote, established company, decision-support focus.",
+      "url": "https://jobicy.com/jobs/150923-data-analyst-clinical-data-effectiveness",
+      "source": "Jobicy",
+      "posted_date": "2026-09-04",
+      "id": "dataanalystclinicaldataeffectiveness|cloverhealth",
+      "fetched_at": "2026-09-10T17:58:41.160Z"
     },
     {
       "title": "GTM Product Manager - Marketing Operations",
@@ -82,19 +238,6 @@
       "fetched_at": "2026-09-09T18:12:39.286Z"
     },
     {
-      "title": "Marketing Operations Coordinator",
-      "company": "Instructure",
-      "location": "Mexico",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-level operations + marketing focus; established edtech company with remote flexibility.",
-      "url": "https://jobicy.com/jobs/152646-marketing-operations-coordinator",
-      "source": "Jobicy",
-      "posted_date": "2026-09-06",
-      "id": "marketingoperationscoordinator|instructure",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
-    },
-    {
       "title": "Associate Product Operations Manager",
       "company": "Best Egg",
       "location": "USA",
@@ -105,19 +248,6 @@
       "source": "Jobicy",
       "posted_date": "2026-09-03",
       "id": "associateproductoperationsmanager|bestegg",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
-    },
-    {
-      "title": "Data Analyst, Clinical Data Effectiveness",
-      "company": "Clover Health",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 70,
-      "why_fit": "Data analyst role at established company; entry-level with SQL/Python skills directly applicable.",
-      "url": "https://jobicy.com/jobs/150923-data-analyst-clinical-data-effectiveness",
-      "source": "Jobicy",
-      "posted_date": "2026-09-04",
-      "id": "dataanalystclinicaldataeffectiveness|cloverhealth",
       "fetched_at": "2026-09-09T18:12:39.286Z"
     },
     {
@@ -183,19 +313,6 @@
       "source": "Jobicy",
       "posted_date": "2026-09-01",
       "id": "itoperationsanalyst|upguard",
-      "fetched_at": "2026-09-09T18:12:39.286Z"
-    },
-    {
-      "title": "Marketing Operations Specialist",
-      "company": "LevelUp",
-      "location": "Philippines",
-      "level": "entry",
-      "fit_score": 61,
-      "why_fit": "Entry-level marketing ops; operations focus matches interests, location less ideal but remote.",
-      "url": "https://jobicy.com/jobs/152464-marketing-operations-specialist-2",
-      "source": "Jobicy",
-      "posted_date": "2026-09-03",
-      "id": "marketingoperationsspecialist|levelup",
       "fetched_at": "2026-09-09T18:12:39.286Z"
     },
     {
@@ -290,19 +407,6 @@
       "fetched_at": "2026-09-08T18:12:37.319Z"
     },
     {
-      "title": "FBS Product Analyst Customer Retention",
-      "company": "Capgemini",
-      "location": "Mexico",
-      "level": "entry",
-      "fit_score": 58,
-      "why_fit": "Product analytics and retention focus, large established consulting firm, Mexico remote option.",
-      "url": "https://jobicy.com/jobs/150290-fbs-product-analyst-customer-retention",
-      "source": "Jobicy",
-      "posted_date": "2026-09-07",
-      "id": "fbsproductanalystcustomerretention|capgemini",
-      "fetched_at": "2026-09-08T18:12:37.319Z"
-    },
-    {
       "title": "Product Manager - 4 Day Week + Remote",
       "company": "Laminar Projects",
       "location": "Poland, Portugal",
@@ -379,45 +483,6 @@
       "posted_date": null,
       "id": "saasproductsupportjedi|creativeforce",
       "fetched_at": "2026-09-06T17:26:05.372Z"
-    },
-    {
-      "title": "Business Strategy Analyst",
-      "company": "Getlabs",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Strategy and analysis focus matches skills; established healthcare company with remote flexibility.",
-      "url": "https://jobicy.com/jobs/152238-business-strategy-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-08-31",
-      "id": "businessstrategyanalyst|getlabs",
-      "fetched_at": "2026-09-05T17:02:46.294Z"
-    },
-    {
-      "title": "Marketing Associate",
-      "company": "Canonical",
-      "location": "APAC, EMEA, LATAM, Canada, USA",
-      "level": "entry",
-      "fit_score": 67,
-      "why_fit": "Entry-level marketing at established remote-first tech company; global flexibility.",
-      "url": "https://jobicy.com/jobs/149941-marketing-associate",
-      "source": "Jobicy",
-      "posted_date": "2026-09-02",
-      "id": "marketingassociate|canonical",
-      "fetched_at": "2026-09-05T17:02:46.294Z"
-    },
-    {
-      "title": "Growth Marketing Manager, Foundry",
-      "company": "Instructure",
-      "location": "Australia, Brazil, China, Germany, Hong Kong, Hungary, Mexico, Netherlands, Norway, Philippines, Spain, Sweden, USA",
-      "level": "entry",
-      "fit_score": 54,
-      "why_fit": "Growth and marketing; education tech with global remote options and work-life focus.",
-      "url": "https://jobicy.com/jobs/152189-growth-marketing-manager-foundry",
-      "source": "Jobicy",
-      "posted_date": "2026-08-31",
-      "id": "growthmarketingmanagerfoundry|instructure",
-      "fetched_at": "2026-09-05T17:02:46.294Z"
     }
   ]
 }
