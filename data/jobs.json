@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T17:37:24.701Z",
+  "lastUpdated": "2026-09-20T17:49:29.640Z",
   "companies": [
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
@@ -7,12 +7,12 @@
       "location": "San Francisco, CA, US; Palo Alto, CA, US",
       "level": "entry",
       "fit_score": 62,
-      "why_fit": "Entry-level ops/project management role at culture-forward company; limited remote flexibility is main drawback.",
+      "why_fit": "Entry-level ops/project coordination role at culture-forward media company; limited remote flexibility.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8103612",
-      "source": "Pinterest Careers",
+      "source": "Pinterest Greenhouse",
       "posted_date": "2026-09-16",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
+      "fetched_at": "2026-09-20T17:49:29.640Z"
     }
   ],
   "discovery": [
@@ -22,25 +22,12 @@
       "location": "USA",
       "level": "entry",
       "fit_score": 78,
-      "why_fit": "Entry-level financial analyst role matching background in data analytics and market research.",
+      "why_fit": "Entry-level, data-driven role at established company. Aligns with analytics background and seniority.",
       "url": "https://jobicy.com/jobs/153373-financial-analyst-entry-level",
       "source": "Jobicy",
       "posted_date": "2026-09-16",
       "id": "financialanalystentrylevel|certik",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
-    },
-    {
-      "title": "Business Intelligence Analyst",
-      "company": "Carrot",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 76,
-      "why_fit": "BI analyst role leveraging SQL, Python, and dashboard skills from Hex experience.",
-      "url": "https://jobicy.com/jobs/153151-business-intelligence-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-09-13",
-      "id": "businessintelligenceanalyst|carrot",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
+      "fetched_at": "2026-09-20T17:49:29.640Z"
     },
     {
       "title": "Brands Analyst",
@@ -48,63 +35,38 @@
       "location": "USA",
       "level": "entry",
       "fit_score": 75,
-      "why_fit": "Culture-forward cannabis brand with market research and analysis focus aligned with interests.",
+      "why_fit": "Culture-forward cannabis brand, analyst-level, media/market research focus fits perfectly.",
       "url": "https://jobicy.com/jobs/153178-brands-analyst",
       "source": "Jobicy",
       "posted_date": "2026-09-13",
       "id": "brandsanalyst|dutchie",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
+      "fetched_at": "2026-09-20T17:49:29.640Z"
     },
     {
       "title": "Data Services Reports & Insights Analyst",
       "company": "Cloudbeds",
       "location": "LATAM",
       "level": "entry",
-      "fit_score": 74,
-      "why_fit": "Data analytics and insights role matching analytics dashboard and Python skills.",
+      "fit_score": 73,
+      "why_fit": "Established remote-first, data analytics and dashboards focus with SQL/Python relevant experience.",
       "url": "https://jobicy.com/jobs/153527-data-services-reports-insights-analyst",
       "source": "Jobicy",
       "posted_date": "2026-09-17",
       "id": "dataservicesreportsinsightsanalyst|cloudbeds",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
+      "fetched_at": "2026-09-20T17:49:29.640Z"
     },
     {
-      "title": "Growth Marketing",
-      "company": "Roboflow",
+      "title": "Business Intelligence Analyst",
+      "company": "Carrot",
       "location": "USA",
+      "level": "entry",
       "fit_score": 72,
-      "why_fit": "Growth and GTM focus at AI/ML company aligned with LLM evaluation background.",
-      "url": "https://jobicy.com/jobs/153637-growth-marketing",
+      "why_fit": "BI analyst role, data analytics dashboards, established company with remote flexibility.",
+      "url": "https://jobicy.com/jobs/153151-business-intelligence-analyst",
       "source": "Jobicy",
-      "posted_date": "2026-09-19",
-      "id": "growthmarketing|roboflow",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
-    },
-    {
-      "title": "Data Science Intern (Customer Success)",
-      "company": "Cresta",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 71,
-      "why_fit": "AI/ML company with data science focus aligns with LLM evaluation and analytics background.",
-      "url": "https://jobicy.com/jobs/150863-data-science-intern-customer-success",
-      "source": "Jobicy",
-      "posted_date": "2026-09-16",
-      "id": "datascienceinterncustomersuccess|cresta",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
-    },
-    {
-      "title": "Product Marketing - Agents",
-      "company": "Elevenlabs",
-      "location": "Anywhere",
-      "level": "entry",
-      "fit_score": 70,
-      "why_fit": "AI/tech company, product marketing role matching GTM and product experience.",
-      "url": "https://jobicy.com/jobs/153666-product-marketing-agents",
-      "source": "Jobicy",
-      "posted_date": "2026-09-19",
-      "id": "productmarketingagents|elevenlabs",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
+      "posted_date": "2026-09-13",
+      "id": "businessintelligenceanalyst|carrot",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
     },
     {
       "title": "Deal Desk Analyst",
@@ -112,12 +74,141 @@
       "location": "Argentina",
       "level": "entry",
       "fit_score": 68,
-      "why_fit": "Collaboration/productivity tool with partnership and strategy-adjacent work.",
+      "why_fit": "Entry-level, remote-first collaboration platform. Operations/GTM adjacent with analytics component.",
       "url": "https://jobicy.com/jobs/153340-deal-desk-analyst-5",
       "source": "Jobicy",
       "posted_date": "2026-09-15",
       "id": "dealdeskanalyst|mural",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Growth Marketing",
+      "company": "Roboflow",
+      "location": "USA",
+      "fit_score": 70,
+      "why_fit": "AI/ML company, growth role at established remote-first, data-driven marketing analytics fit.",
+      "url": "https://jobicy.com/jobs/153637-growth-marketing",
+      "source": "Jobicy",
+      "posted_date": "2026-09-19",
+      "id": "growthmarketing|roboflow",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Product Marketing - Agents",
+      "company": "Elevenlabs",
+      "location": "Anywhere",
+      "level": "entry",
+      "fit_score": 69,
+      "why_fit": "AI-forward culture brand, product marketing at established remote-first, GTM/strategy adjacent.",
+      "url": "https://jobicy.com/jobs/153666-product-marketing-agents",
+      "source": "Jobicy",
+      "posted_date": "2026-09-19",
+      "id": "productmarketingagents|elevenlabs",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Customer Experience Analyst",
+      "company": "TechMagic",
+      "location": "Ukraine",
+      "level": "entry",
+      "fit_score": 65,
+      "why_fit": "Entry-level analytics, established remote-first tech company with product/UX focus.",
+      "url": "https://jobicy.com/jobs/146131-customer-experience-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-09-19",
+      "id": "customerexperienceanalyst|techmagic",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "B2B Marketing Manager",
+      "company": "AssetWatch",
+      "location": "Canada, USA",
+      "level": "entry",
+      "fit_score": 64,
+      "why_fit": "Remote-first, marketing analytics and market research aligned with GTM and analytics background.",
+      "url": "https://jobicy.com/jobs/150922-b2b-marketing-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-09-17",
+      "id": "b2bmarketingmanager|assetwatch",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Data Science Intern (Customer Success)",
+      "company": "Cresta",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 62,
+      "why_fit": "AI company, data science role, entry-level with analytics and decision-making focus.",
+      "url": "https://jobicy.com/jobs/150863-data-science-intern-customer-success",
+      "source": "Jobicy",
+      "posted_date": "2026-09-16",
+      "id": "datascienceinterncustomersuccess|cresta",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Analyst II, Full Stack (Revenue Analytics)",
+      "company": "Affirm",
+      "location": "Spain",
+      "level": "mid",
+      "fit_score": 71,
+      "why_fit": "Established fintech, mid-level analytics, remote international, data-driven revenue operations.",
+      "url": "https://jobicy.com/jobs/153258-analyst-ii-full-stack-revenue-analytics",
+      "source": "Jobicy",
+      "posted_date": "2026-09-14",
+      "id": "analystiifullstackrevenueanalytics|affirm",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Accounts Receivable Analyst, Order-to-Cash",
+      "company": "Doximity",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 61,
+      "why_fit": "Established healthcare tech, entry-level analyst role, data analytics and operations focus.",
+      "url": "https://jobicy.com/jobs/153690-accounts-receivable-analyst-order-to-cash",
+      "source": "Jobicy",
+      "posted_date": "2026-09-20",
+      "id": "accountsreceivableanalystordertocash|doximity",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Marketing Project Manager - 13 Month Contract",
+      "company": "Thinkific",
+      "location": "Canada",
+      "level": "entry",
+      "fit_score": 66,
+      "why_fit": "Established edtech, project management + marketing operations, remote-first, GTM focus.",
+      "url": "https://jobicy.com/jobs/151215-marketing-project-manager-13-month-contract",
+      "source": "Jobicy",
+      "posted_date": "2026-09-20",
+      "id": "marketingprojectmanager13monthcontract|thinkific",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "Financial Data Analyst, Account Management",
+      "company": "SmithRx",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 60,
+      "why_fit": "Entry-level data analyst, healthcare adjacent, analytics and account management operations.",
+      "url": "https://jobicy.com/jobs/153580-financial-data-analyst-account-management",
+      "source": "Jobicy",
+      "posted_date": "2026-09-18",
+      "id": "financialdataanalystaccountmanagement|smithrx",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
+    },
+    {
+      "title": "ANALYST DIGITAL MARKETING IV (Remote)",
+      "company": "TE Connectivity",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 59,
+      "why_fit": "Established tech company, marketing analytics, remote, data-driven decision making focus.",
+      "url": "https://jobicy.com/jobs/150674-analyst-digital-marketing-iv-remote-iv",
+      "source": "Jobicy",
+      "posted_date": "2026-09-15",
+      "id": "analystdigitalmarketingivremote|teconnectivity",
+      "fetched_at": "2026-09-20T17:49:29.640Z"
     },
     {
       "title": "Content Marketing Strategist - Canada remote",
@@ -130,45 +221,6 @@
       "source": "Jobicy",
       "posted_date": "2026-09-16",
       "id": "contentmarketingstrategistcanadaremote|brafton",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
-    },
-    {
-      "title": "B2B Marketing Manager",
-      "company": "AssetWatch",
-      "location": "Canada, USA",
-      "level": "entry",
-      "fit_score": 66,
-      "why_fit": "Remote B2B marketing matching GTM and marketing background, flexible US/Canada location.",
-      "url": "https://jobicy.com/jobs/150922-b2b-marketing-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-09-17",
-      "id": "b2bmarketingmanager|assetwatch",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
-    },
-    {
-      "title": "Customer Experience Analyst",
-      "company": "TechMagic",
-      "location": "Ukraine",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "CX analytics role leveraging data and UX product experience from iOS app work.",
-      "url": "https://jobicy.com/jobs/146131-customer-experience-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-09-19",
-      "id": "customerexperienceanalyst|techmagic",
-      "fetched_at": "2026-09-19T17:37:24.701Z"
-    },
-    {
-      "title": "Analyst II, Full Stack (Revenue Analytics)",
-      "company": "Affirm",
-      "location": "Spain",
-      "level": "mid",
-      "fit_score": 64,
-      "why_fit": "Fintech revenue analytics with full-stack data skills matching Python and SQL background.",
-      "url": "https://jobicy.com/jobs/153258-analyst-ii-full-stack-revenue-analytics",
-      "source": "Jobicy",
-      "posted_date": "2026-09-14",
-      "id": "analystiifullstackrevenueanalytics|affirm",
       "fetched_at": "2026-09-19T17:37:24.701Z"
     },
     {
@@ -208,19 +260,6 @@
       "source": "Jobicy",
       "posted_date": "2026-09-12",
       "id": "productanalyst|liftoff",
-      "fetched_at": "2026-09-18T17:58:27.537Z"
-    },
-    {
-      "title": "Financial Data Analyst, Account Management",
-      "company": "SmithRx",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Data analytics + account management, remote USA, established healthcare analytics company.",
-      "url": "https://jobicy.com/jobs/153580-financial-data-analyst-account-management",
-      "source": "Jobicy",
-      "posted_date": "2026-09-18",
-      "id": "financialdataanalystaccountmanagement|smithrx",
       "fetched_at": "2026-09-18T17:58:27.537Z"
     },
     {
@@ -404,58 +443,6 @@
       "posted_date": "2026-09-09",
       "id": "marketingoperationsmanager|cordance",
       "fetched_at": "2026-09-15T18:37:31.532Z"
-    },
-    {
-      "title": "Data Product Analyst, Corporate",
-      "company": "YipitData",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 76,
-      "why_fit": "Data product analyst blends analytics and product, established data intelligence company.",
-      "url": "https://jobicy.com/jobs/152755-data-product-analyst-corporate",
-      "source": "Jobicy",
-      "posted_date": "2026-09-07",
-      "id": "dataproductanalystcorporate|yipitdata",
-      "fetched_at": "2026-09-14T19:41:28.846Z"
-    },
-    {
-      "title": "GTM Operations Specialist (f/m/d)",
-      "company": "Apaleo",
-      "location": "Germany",
-      "level": "entry",
-      "fit_score": 74,
-      "why_fit": "GTM ops specialist matches background, hospitality tech, potential for culture-forward environment.",
-      "url": "https://jobicy.com/jobs/152904-gtm-operations-specialist-f-m-d",
-      "source": "Jobicy",
-      "posted_date": "2026-09-09",
-      "id": "gtmoperationsspecialistfmd|apaleo",
-      "fetched_at": "2026-09-14T19:41:28.846Z"
-    },
-    {
-      "title": "Benefits Operations Specialist - AMER",
-      "company": "Remote",
-      "location": "LATAM, Canada, USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Operations role across target regions, remote-first, entry-level appropriate.",
-      "url": "https://jobicy.com/jobs/152865-benefits-operations-specialist-amer",
-      "source": "Jobicy",
-      "posted_date": "2026-09-09",
-      "id": "benefitsoperationsspecialistamer|remote",
-      "fetched_at": "2026-09-14T19:41:28.846Z"
-    },
-    {
-      "title": "Advertising Operations Manager",
-      "company": "Rithum",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 67,
-      "why_fit": "Advertising ops aligns with media/marketing interests, established e-commerce tech company.",
-      "url": "https://jobicy.com/jobs/153094-advertising-operations-manager-2",
-      "source": "Jobicy",
-      "posted_date": "2026-09-12",
-      "id": "advertisingoperationsmanager|rithum",
-      "fetched_at": "2026-09-14T19:41:28.846Z"
     }
   ]
 }
