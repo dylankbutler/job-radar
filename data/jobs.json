@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T18:11:21.100Z",
+  "lastUpdated": "2026-09-27T18:48:21.026Z",
   "companies": [
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
@@ -7,79 +7,222 @@
       "location": "San Francisco, CA, US; Palo Alto, CA, US",
       "level": "entry",
       "fit_score": 72,
-      "why_fit": "Entry-level ops/business role at culture-forward company; cross-functional exposure to product and design teams.",
+      "why_fit": "Entry-level ops/project management role at culture-forward company; aligns with ops and strategy interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8103612",
       "source": "Greenhouse",
       "posted_date": "2026-09-24",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
+      "fetched_at": "2026-09-27T18:48:21.026Z"
     },
     {
-      "title": "Content Growth Specialist, APAC Growth [6-Month Fixed Term]",
+      "title": "Content Designer II, Personalization",
       "company": "Pinterest",
-      "location": "Singapore, SG",
-      "level": "entry",
+      "location": "San Francisco, CA, US; Remote, US",
+      "level": "mid",
       "fit_score": 68,
-      "why_fit": "GTM/growth role at media/culture platform; aligns with community and market analysis background.",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8211440",
+      "why_fit": "Remote-flexible, media/culture-forward platform; product and UX design background applicable; personalization intersection with data.",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7908767",
       "source": "Greenhouse",
-      "posted_date": "2026-09-21",
-      "id": "contentgrowthspecialistapacgrowth6monthfixedterm|pinterest",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
+      "posted_date": "2026-09-24",
+      "id": "contentdesigneriipersonalization|pinterest",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Insights Solutions Partner II",
+      "company": "Pinterest",
+      "location": "Mexico City, MX",
+      "level": "mid",
+      "fit_score": 65,
+      "why_fit": "Market research and insights analysis; media/culture platform; GTM and partnership work align with background.",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7678372",
+      "source": "Greenhouse",
+      "posted_date": "2026-09-24",
+      "id": "insightssolutionspartnerii|pinterest",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Analyst",
+      "company": "Affirm",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 82,
+      "why_fit": "Entry-level analyst role at established fintech; aligns with data analytics background and analyst-level interest.",
+      "url": "https://jobicy.com/jobs/151815-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-09-27",
+      "id": "analyst|affirm",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
     {
       "title": "Data Analyst - SQL / Databricks",
       "company": "Tenable",
       "location": "USA",
       "level": "entry",
-      "fit_score": 88,
-      "why_fit": "Perfect skill match: SQL, Python, data analytics. Established cybersecurity leader with strong remote culture.",
+      "fit_score": 79,
+      "why_fit": "Entry data analyst role matching SQL/Python skills; cybersecurity firm with strong remote culture.",
       "url": "https://jobicy.com/jobs/153978-data-analyst-sql-databricks",
       "source": "Jobicy",
       "posted_date": "2026-09-23",
       "id": "dataanalystsqldatabricks|tenable",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
+      "fetched_at": "2026-09-27T18:48:21.026Z"
     },
     {
       "title": "Technical Product Analyst",
       "company": "CentralReach",
       "location": "USA",
       "level": "entry",
-      "fit_score": 82,
-      "why_fit": "Product analyst role combining analytics and product thinking. Entry-level fit with data background.",
+      "fit_score": 77,
+      "why_fit": "Product analyst role combining technical and product skills; healthcare tech with work-life balance focus.",
       "url": "https://jobicy.com/jobs/154002-technical-product-analyst",
       "source": "Jobicy",
       "posted_date": "2026-09-24",
       "id": "technicalproductanalyst|centralreach",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
+      "fetched_at": "2026-09-27T18:48:21.026Z"
     },
     {
       "title": "Revenue Systems Analyst",
       "company": "UpGuard",
       "location": "USA",
       "level": "entry",
-      "fit_score": 79,
-      "why_fit": "Data analyst + business operations hybrid. Cybersecurity SaaS with established remote practices.",
+      "fit_score": 75,
+      "why_fit": "Entry operations/analytics hybrid role; established cybersecurity SaaS with remote flexibility.",
       "url": "https://jobicy.com/jobs/154071-revenue-systems-analyst",
       "source": "Jobicy",
       "posted_date": "2026-09-25",
       "id": "revenuesystemsanalyst|upguard",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
+      "fetched_at": "2026-09-27T18:48:21.026Z"
     },
     {
       "title": "Data Analyst, Clinical Data Effectiveness",
       "company": "Clover Health",
       "location": "USA",
       "level": "entry",
-      "fit_score": 76,
-      "why_fit": "Healthcare analytics role leveraging SQL and Python. Established public company with work-life balance.",
+      "fit_score": 73,
+      "why_fit": "Entry data analyst in healthcare; leverages SQL/Python skills in mission-driven, established company.",
       "url": "https://jobicy.com/jobs/150923-data-analyst-clinical-data-effectiveness",
       "source": "Jobicy",
       "posted_date": "2026-09-23",
       "id": "dataanalystclinicaldataeffectiveness|cloverhealth",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Data Scientist",
+      "company": "BetterHelp",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Entry data science role at established mental health platform; remote-first, mission-driven culture.",
+      "url": "https://jobicy.com/jobs/151808-data-scientist",
+      "source": "Jobicy",
+      "posted_date": "2026-09-27",
+      "id": "datascientist|betterhelp",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Content Marketing Manager",
+      "company": "Wpromote",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 70,
+      "why_fit": "Entry marketing role at established digital agency; aligns with GTM and marketing interests.",
+      "url": "https://jobicy.com/jobs/151677-content-marketing-manager-4",
+      "source": "Jobicy",
+      "posted_date": "2026-09-26",
+      "id": "contentmarketingmanager|wpromote",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Lifecycle Marketing Manager",
+      "company": "DeleteMe",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Entry marketing operations role; privacy-focused startup with sustainable growth model.",
+      "url": "https://jobicy.com/jobs/153785-lifecycle-marketing-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-09-21",
+      "id": "lifecyclemarketingmanager|deleteme",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Marketing Specialist, Public Sector (Federal + SLED)",
+      "company": "DeleteMe",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 66,
+      "why_fit": "Entry marketing role at established privacy company; GTM and growth-focused position.",
+      "url": "https://jobicy.com/jobs/153788-marketing-specialist-public-sector-federal-sled",
+      "source": "Jobicy",
+      "posted_date": "2026-09-21",
+      "id": "marketingspecialistpublicsectorfederalsled|deleteme",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "People Operations Generalist",
+      "company": "Salesloft",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 64,
+      "why_fit": "Entry ops role at established SaaS; operations background fits, though less aligned with analytics interests.",
+      "url": "https://jobicy.com/jobs/153796-people-operations-generalist-2",
+      "source": "Jobicy",
+      "posted_date": "2026-09-21",
+      "id": "peopleoperationsgeneralist|salesloft",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Operations Associate",
+      "company": "CoinGecko",
+      "location": "Philippines",
+      "level": "entry",
+      "fit_score": 62,
+      "why_fit": "Entry operations role at crypto data platform; remote-first, but location preference mismatch.",
+      "url": "https://jobicy.com/jobs/153997-operations-associate",
+      "source": "Jobicy",
+      "posted_date": "2026-09-24",
+      "id": "operationsassociate|coingecko",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Marketing Data Science Manager",
+      "company": "Mozilla",
+      "location": "Canada, UK",
+      "level": "mid",
+      "fit_score": 60,
+      "why_fit": "Marketing data science hybrid at culture-forward open-source leader; mid-level but strong mission fit.",
+      "url": "https://jobicy.com/jobs/153828-marketing-data-science-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-09-21",
+      "id": "marketingdatasciencemanager|mozilla",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Financial Analyst, R&D",
+      "company": "Salesloft",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 59,
+      "why_fit": "Entry analyst role at established SaaS; financial focus less aligned but analytical skillset matches.",
+      "url": "https://jobicy.com/jobs/151814-financial-analyst-rd",
+      "source": "Jobicy",
+      "posted_date": "2026-09-27",
+      "id": "financialanalystrd|salesloft",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
+    },
+    {
+      "title": "Financial Analyst",
+      "company": "Salesloft",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 58,
+      "why_fit": "Entry financial analyst at established SaaS; analytical skills match but less strategic appeal.",
+      "url": "https://jobicy.com/jobs/151810-financial-analyst-2",
+      "source": "Jobicy",
+      "posted_date": "2026-09-27",
+      "id": "financialanalyst|salesloft",
+      "fetched_at": "2026-09-27T18:48:21.026Z"
     },
     {
       "title": "Data Services Reports & Insights Analyst",
@@ -92,32 +235,6 @@
       "source": "Jobicy",
       "posted_date": "2026-09-17",
       "id": "dataservicesreportsinsightsanalyst|cloudbeds",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
-      "title": "Content Marketing Manager",
-      "company": "Wpromote",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 73,
-      "why_fit": "Marketing role combining analytics and GTM. Digital-first agency with creative culture.",
-      "url": "https://jobicy.com/jobs/151677-content-marketing-manager-4",
-      "source": "Jobicy",
-      "posted_date": "2026-09-26",
-      "id": "contentmarketingmanager|wpromote",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
-      "title": "Lifecycle Marketing Manager",
-      "company": "DeleteMe",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Marketing + data analytics intersection. Privacy-focused company, remote-first culture.",
-      "url": "https://jobicy.com/jobs/153785-lifecycle-marketing-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-09-21",
-      "id": "lifecyclemarketingmanager|deleteme",
       "fetched_at": "2026-09-26T18:11:21.100Z"
     },
     {
@@ -134,19 +251,6 @@
       "fetched_at": "2026-09-26T18:11:21.100Z"
     },
     {
-      "title": "People Operations Generalist",
-      "company": "Salesloft",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 70,
-      "why_fit": "Operations + GTM adjacency. Enterprise SaaS with strong remote-first, culture-forward reputation.",
-      "url": "https://jobicy.com/jobs/153796-people-operations-generalist-2",
-      "source": "Jobicy",
-      "posted_date": "2026-09-21",
-      "id": "peopleoperationsgeneralist|salesloft",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
       "title": "Customer Experience Analyst",
       "company": "TechMagic",
       "location": "Ukraine",
@@ -160,19 +264,6 @@
       "fetched_at": "2026-09-26T18:11:21.100Z"
     },
     {
-      "title": "Operations Associate",
-      "company": "CoinGecko",
-      "location": "Philippines",
-      "level": "entry",
-      "fit_score": 67,
-      "why_fit": "Operations role in crypto/data tech. Transparent company culture, remote-first practices.",
-      "url": "https://jobicy.com/jobs/153997-operations-associate",
-      "source": "Jobicy",
-      "posted_date": "2026-09-24",
-      "id": "operationsassociate|coingecko",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
       "title": "Global Treasury Analyst",
       "company": "Canonical",
       "location": "USA",
@@ -183,19 +274,6 @@
       "source": "Jobicy",
       "posted_date": "2026-09-26",
       "id": "globaltreasuryanalyst|canonical",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
-      "title": "Marketing Specialist, Public Sector (Federal + SLED)",
-      "company": "DeleteMe",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Marketing + GTM specialist. Privacy-focused mission-driven company with remote flexibility.",
-      "url": "https://jobicy.com/jobs/153788-marketing-specialist-public-sector-federal-sled",
-      "source": "Jobicy",
-      "posted_date": "2026-09-21",
-      "id": "marketingspecialistpublicsectorfederalsled|deleteme",
       "fetched_at": "2026-09-26T18:11:21.100Z"
     },
     {
@@ -327,97 +405,6 @@
       "posted_date": "2026-09-20",
       "id": "marketingprojectmanager13monthcontract|thinkific",
       "fetched_at": "2026-09-23T18:45:03.075Z"
-    },
-    {
-      "title": "Business Systems Analyst - Salesforce, Gainsight Admin",
-      "company": "Rithum",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Systems analyst role with operations focus and technical skills matching background.",
-      "url": "https://jobicy.com/jobs/151282-business-systems-analyst-salesforce-gainsight-admin",
-      "source": "Jobicy",
-      "posted_date": "2026-09-21",
-      "id": "businesssystemsanalystsalesforcegainsightadmin|rithum",
-      "fetched_at": "2026-09-22T18:26:05.590Z"
-    },
-    {
-      "title": "Actuarial Analyst",
-      "company": "Clover Health",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 58,
-      "why_fit": "Analyst role in established healthcare company with quantitative and data-driven focus.",
-      "url": "https://jobicy.com/jobs/150917-actuarial-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-09-17",
-      "id": "actuarialanalyst|cloverhealth",
-      "fetched_at": "2026-09-22T18:26:05.590Z"
-    },
-    {
-      "title": "Financial Analyst (Entry-Level)",
-      "company": "CertiK",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-level analyst role at crypto security firm; matches skill stack and growth interest.",
-      "url": "https://jobicy.com/jobs/153373-financial-analyst-entry-level",
-      "source": "Jobicy",
-      "posted_date": "2026-09-16",
-      "id": "financialanalystentrylevel|certik",
-      "fetched_at": "2026-09-21T19:49:20.146Z"
-    },
-    {
-      "title": "Deal Desk Analyst",
-      "company": "Mural",
-      "location": "Argentina",
-      "level": "entry",
-      "fit_score": 67,
-      "why_fit": "Entry-level ops role at collaborative tools company; remote-friendly with GTM exposure.",
-      "url": "https://jobicy.com/jobs/153340-deal-desk-analyst-5",
-      "source": "Jobicy",
-      "posted_date": "2026-09-15",
-      "id": "dealdeskanalyst|mural",
-      "fetched_at": "2026-09-21T19:49:20.146Z"
-    },
-    {
-      "title": "Accounts Receivable Analyst, Order-to-Cash",
-      "company": "Doximity",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 61,
-      "why_fit": "Entry-level analyst at healthcare tech leader; operational focus aligns with background.",
-      "url": "https://jobicy.com/jobs/153690-accounts-receivable-analyst-order-to-cash",
-      "source": "Jobicy",
-      "posted_date": "2026-09-20",
-      "id": "accountsreceivableanalystordertocash|doximity",
-      "fetched_at": "2026-09-21T19:49:20.146Z"
-    },
-    {
-      "title": "Growth Marketing",
-      "company": "Roboflow",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 62,
-      "why_fit": "Entry-level growth role at AI/ML developer platform; aligns with tech and data interests.",
-      "url": "https://jobicy.com/jobs/153637-growth-marketing",
-      "source": "Jobicy",
-      "posted_date": "2026-09-19",
-      "id": "growthmarketing|roboflow",
-      "fetched_at": "2026-09-21T19:49:20.146Z"
-    },
-    {
-      "title": "Product Marketing - Agents",
-      "company": "Elevenlabs",
-      "location": "Anywhere",
-      "fit_score": 56,
-      "level": "entry",
-      "why_fit": "Mid-level product marketing at AI/voice company; remote-anywhere with culture alignment.",
-      "url": "https://jobicy.com/jobs/153666-product-marketing-agents",
-      "source": "Jobicy",
-      "posted_date": "2026-09-19",
-      "id": "productmarketingagents|elevenlabs",
-      "fetched_at": "2026-09-21T19:49:20.146Z"
     }
   ]
 }
