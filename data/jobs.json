@@ -1,47 +1,86 @@
 {
-  "lastUpdated": "2026-09-30T19:45:26.185Z",
+  "lastUpdated": "2026-10-01T20:00:16.817Z",
   "companies": [
+    {
+      "title": "Data Scientist II, Infrastructure",
+      "company": "Pinterest",
+      "location": "San Francisco, CA, US; Remote, US",
+      "level": "mid",
+      "fit_score": 72,
+      "why_fit": "Remote-eligible, leverages AI/ML eval and data analytics skills, aligns with tech-culture intersection interests.",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7816424",
+      "source": "Pinterest Careers",
+      "posted_date": "2026-09-28",
+      "id": "datascientistiiinfrastructure|pinterest",
+      "fetched_at": "2026-10-01T20:00:16.817Z"
+    },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
       "company": "Pinterest",
       "location": "San Francisco, CA, US; Palo Alto, CA, US",
       "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-level ops/admin role at culture-forward media company; leverages organizational and project coordination skills.",
+      "fit_score": 68,
+      "why_fit": "Entry-level operations/partnership role, product/design exposure, aligns with GTM and operations interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8103612",
       "source": "Pinterest Careers",
       "posted_date": "2026-09-28",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-09-30T19:45:26.185Z"
+      "fetched_at": "2026-10-01T20:00:16.817Z"
     },
     {
-      "title": "Content Designer II, Personalization",
+      "title": "Content Growth Specialist, APAC Growth [6-Month Fixed Term]",
       "company": "Pinterest",
-      "location": "San Francisco, CA, US; Remote, US",
-      "level": "mid",
-      "fit_score": 65,
-      "why_fit": "Remote-eligible design role at media/culture platform; product UX background and shipped iOS app experience applicable.",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7908767",
+      "location": "Singapore, SG",
+      "level": "entry",
+      "fit_score": 61,
+      "why_fit": "Growth and GTM-focused, media/culture brand, fixed-term structure suits exploration, though location not preferred.",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8211440",
       "source": "Pinterest Careers",
       "posted_date": "2026-09-28",
-      "id": "contentdesigneriipersonalization|pinterest",
-      "fetched_at": "2026-09-30T19:45:26.185Z"
-    },
-    {
-      "title": "Insights Solutions Partner II",
-      "company": "Pinterest",
-      "location": "Mexico City, MX",
-      "level": "mid",
-      "fit_score": 68,
-      "why_fit": "Market research and insights role; aligns with analytics, research, and GTM interests at media-tech intersection.",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7678372",
-      "source": "Pinterest Careers",
-      "posted_date": "2026-09-28",
-      "id": "insightssolutionspartnerii|pinterest",
-      "fetched_at": "2026-09-30T19:45:26.185Z"
+      "id": "contentgrowthspecialistapacgrowth6monthfixedterm|pinterest",
+      "fetched_at": "2026-10-01T20:00:16.817Z"
     }
   ],
   "discovery": [
+    {
+      "title": "GRC Analyst",
+      "company": "Vercel",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Established remote-first company with tech credibility. Entry-level analyst role matches profile.",
+      "url": "https://jobicy.com/jobs/154264-grc-analyst-2",
+      "source": "Jobicy",
+      "posted_date": "2026-09-30",
+      "id": "grcanalyst|vercel",
+      "fetched_at": "2026-10-01T20:00:16.817Z"
+    },
+    {
+      "title": "Bilingual Product Support Analyst (Canadian French)",
+      "company": "D2L",
+      "location": "Canada",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Entry-level analyst role at established edtech company with product/support intersection.",
+      "url": "https://jobicy.com/jobs/151964-bilingual-product-support-analyst-canadian-french",
+      "source": "Jobicy",
+      "posted_date": "2026-09-29",
+      "id": "bilingualproductsupportanalystcanadianfrench|d2l",
+      "fetched_at": "2026-10-01T20:00:16.817Z"
+    },
+    {
+      "title": "Growth Marketing Manager, Foundry",
+      "company": "Instructure",
+      "location": "USA, Multiple",
+      "level": "mid",
+      "fit_score": 65,
+      "why_fit": "Growth and GTM focus at established company. Multi-location flexibility aligns with preferences.",
+      "url": "https://jobicy.com/jobs/152189-growth-marketing-manager-foundry",
+      "source": "Jobicy",
+      "posted_date": "2026-10-01",
+      "id": "growthmarketingmanagerfoundry|instructure",
+      "fetched_at": "2026-10-01T20:00:16.817Z"
+    },
     {
       "title": "Analyst",
       "company": "Affirm",
@@ -147,19 +186,6 @@
       "fetched_at": "2026-09-30T19:45:26.185Z"
     },
     {
-      "title": "Bilingual Product Support Analyst (Canadian French)",
-      "company": "D2L",
-      "location": "Canada",
-      "level": "entry",
-      "fit_score": 58,
-      "why_fit": "Entry-level product analyst. Established EdTech company. Product and customer research exposure align with interests.",
-      "url": "https://jobicy.com/jobs/151964-bilingual-product-support-analyst-canadian-french",
-      "source": "Jobicy",
-      "posted_date": "2026-09-29",
-      "id": "bilingualproductsupportanalystcanadianfrench|d2l",
-      "fetched_at": "2026-09-30T19:45:26.185Z"
-    },
-    {
       "title": "Operations Service Specialist - Western",
       "company": "Proof",
       "location": "USA",
@@ -209,19 +235,6 @@
       "source": "Jobicy",
       "posted_date": "2026-09-27",
       "id": "lifecyclemarketingautomationspecialist|padsplit",
-      "fetched_at": "2026-09-30T19:45:26.185Z"
-    },
-    {
-      "title": "GRC Analyst",
-      "company": "Vercel",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 51,
-      "why_fit": "Entry-level analyst at developer-focused, culture-forward company. Remote-first infrastructure platform. Emerging role for growth.",
-      "url": "https://jobicy.com/jobs/154264-grc-analyst-2",
-      "source": "Jobicy",
-      "posted_date": "2026-09-30",
-      "id": "grcanalyst|vercel",
       "fetched_at": "2026-09-30T19:45:26.185Z"
     },
     {
@@ -379,58 +392,6 @@
       "posted_date": "2026-09-27",
       "id": "financialanalyst|salesloft",
       "fetched_at": "2026-09-27T18:48:21.026Z"
-    },
-    {
-      "title": "Data Services Reports & Insights Analyst",
-      "company": "Cloudbeds",
-      "location": "LATAM",
-      "level": "entry",
-      "fit_score": 75,
-      "why_fit": "Analytics and insights role in hospitality tech. Remote-first company with strong culture focus.",
-      "url": "https://jobicy.com/jobs/153527-data-services-reports-insights-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-09-17",
-      "id": "dataservicesreportsinsightsanalyst|cloudbeds",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
-      "title": "Customer Experience Analyst",
-      "company": "TechMagic",
-      "location": "Ukraine",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Analytics meets UX research. Established tech consultancy with distributed team culture.",
-      "url": "https://jobicy.com/jobs/146131-customer-experience-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-09-19",
-      "id": "customerexperienceanalyst|techmagic",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
-      "title": "Global Treasury Analyst",
-      "company": "Canonical",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 66,
-      "why_fit": "Financial analytics role at Linux/open-source leader. Established remote-first culture.",
-      "url": "https://jobicy.com/jobs/147422-global-treasury-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-09-26",
-      "id": "globaltreasuryanalyst|canonical",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
-    },
-    {
-      "title": "Customer & Field Marketing Manager - US Remote",
-      "company": "PerfectServe",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 64,
-      "why_fit": "Marketing operations + GTM. Healthcare tech with remote-friendly structure.",
-      "url": "https://jobicy.com/jobs/151087-customer-field-marketing-manager-us-remote",
-      "source": "Jobicy",
-      "posted_date": "2026-09-21",
-      "id": "customerfieldmarketingmanagerusremote|perfectserve",
-      "fetched_at": "2026-09-26T18:11:21.100Z"
     }
   ]
 }
