@@ -1,31 +1,18 @@
 {
-  "lastUpdated": "2026-10-02T19:41:51.816Z",
+  "lastUpdated": "2026-10-03T18:27:36.381Z",
   "companies": [
     {
       "title": "Data Scientist II, Infrastructure",
       "company": "Pinterest",
       "location": "San Francisco, CA, US; Remote, US",
       "level": "mid",
-      "fit_score": 78,
-      "why_fit": "Remote-eligible, leverages AI/LLM evaluation and data analytics expertise in culture-forward platform.",
+      "fit_score": 72,
+      "why_fit": "Remote-available, aligns with data science background and LLM evaluation experience from previous roles.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7816424",
       "source": "Pinterest Careers",
       "posted_date": "2026-10-02",
       "id": "datascientistiiinfrastructure|pinterest",
-      "fetched_at": "2026-10-02T19:41:51.816Z"
-    },
-    {
-      "title": "Content Designer II, Personalization",
-      "company": "Pinterest",
-      "location": "San Francisco, CA, US; Remote, US",
-      "level": "mid",
-      "fit_score": 72,
-      "why_fit": "Remote option, product/UX design background with Figma/Adobe, culture-media intersection aligns.",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7908767",
-      "source": "Pinterest Careers",
-      "posted_date": "2026-10-02",
-      "id": "contentdesigneriipersonalization|pinterest",
-      "fetched_at": "2026-10-02T19:41:51.816Z"
+      "fetched_at": "2026-10-03T18:27:36.381Z"
     },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
@@ -33,15 +20,80 @@
       "location": "San Francisco, CA, US; Palo Alto, CA, US",
       "level": "entry",
       "fit_score": 65,
-      "why_fit": "Entry-level operations/strategy exposure with product and design teams at culture-forward company.",
+      "why_fit": "Entry-level operations/business analyst adjacent role; cross-functional work with product and design teams aligns with interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8103612",
       "source": "Pinterest Careers",
       "posted_date": "2026-10-02",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-10-02T19:41:51.816Z"
+      "fetched_at": "2026-10-03T18:27:36.381Z"
+    },
+    {
+      "title": "Machine Learning Engineer, Core Engineering",
+      "company": "Pinterest",
+      "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; Remote, US",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Remote-available, entry-level ML role leveraging AI/LLM model evaluation and data science minor background.",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=6121450",
+      "source": "Pinterest Careers",
+      "posted_date": "2026-10-02",
+      "id": "machinelearningengineercoreengineering|pinterest",
+      "fetched_at": "2026-10-03T18:27:36.381Z"
     }
   ],
   "discovery": [
+    {
+      "title": "People Operations Coordinator",
+      "company": "Ashby",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Entry-level ops role at established, remote-first HR tech company with strong culture reputation.",
+      "url": "https://jobicy.com/jobs/154451-people-operations-coordinator",
+      "source": "Jobicy",
+      "posted_date": "2026-10-03",
+      "id": "peopleoperationscoordinator|ashby",
+      "fetched_at": "2026-10-03T18:27:36.381Z"
+    },
+    {
+      "title": "QA Analyst (Future Roles)",
+      "company": "Testlio",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 65,
+      "why_fit": "Entry-level analyst role at distributed QA company, flexible global hiring, accessible career path.",
+      "url": "https://jobicy.com/jobs/152333-qa-analyst-future-roles",
+      "source": "Jobicy",
+      "posted_date": "2026-10-02",
+      "id": "qaanalystfutureroles|testlio",
+      "fetched_at": "2026-10-03T18:27:36.381Z"
+    },
+    {
+      "title": "Revenue Operations Analyst (CX)",
+      "company": "Pleo",
+      "location": "Spain",
+      "level": "entry",
+      "fit_score": 62,
+      "why_fit": "Entry-level RevOps role combining operations and analytics at established fintech with strong culture.",
+      "url": "https://jobicy.com/jobs/154457-revenue-operations-analyst-cx",
+      "source": "Jobicy",
+      "posted_date": "2026-10-03",
+      "id": "revenueoperationsanalystcx|pleo",
+      "fetched_at": "2026-10-03T18:27:36.381Z"
+    },
+    {
+      "title": "IT Operations Analyst",
+      "company": "UpGuard",
+      "location": "LATAM",
+      "level": "entry",
+      "fit_score": 58,
+      "why_fit": "Entry-level ops analyst at cybersecurity company with distributed team and flexible location policy.",
+      "url": "https://jobicy.com/jobs/152340-it-operations-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-10-02",
+      "id": "itoperationsanalyst|upguard",
+      "fetched_at": "2026-10-03T18:27:36.381Z"
+    },
     {
       "title": "Associate – Audiobook Licensing & Author Partnerships",
       "company": "Spotify",
@@ -53,19 +105,6 @@
       "source": "Jobicy",
       "posted_date": "2026-10-02",
       "id": "associateaudiobooklicensingauthorpartnerships|spotify",
-      "fetched_at": "2026-10-02T19:41:51.816Z"
-    },
-    {
-      "title": "QA Analyst (Future Roles)",
-      "company": "Testlio",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Established remote-first company, entry-level operations/analyst role, flexible global team.",
-      "url": "https://jobicy.com/jobs/152333-qa-analyst-future-roles",
-      "source": "Jobicy",
-      "posted_date": "2026-10-02",
-      "id": "qaanalystfutureroles|testlio",
       "fetched_at": "2026-10-02T19:41:51.816Z"
     },
     {
