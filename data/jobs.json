@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T22:19:54.999Z",
+  "lastUpdated": "2026-10-13T20:26:58.406Z",
   "companies": [
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
@@ -7,12 +7,12 @@
       "location": "San Francisco, CA, US; Palo Alto, CA, US",
       "level": "entry",
       "fit_score": 72,
-      "why_fit": "Operations/project management exposure at culture-forward media company; flexible locations include desired SF/Bay Area.",
+      "why_fit": "Entry-level ops/project management role at culture-forward company; aligns with PM and operations interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8103612",
       "source": "Pinterest Greenhouse",
       "posted_date": "2026-10-08",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-10-12T22:19:54.999Z"
+      "fetched_at": "2026-10-13T20:26:58.406Z"
     },
     {
       "title": "Insights Solutions Partner II",
@@ -20,28 +20,80 @@
       "location": "Mexico City, MX",
       "level": "entry",
       "fit_score": 68,
-      "why_fit": "Market research and analytics-focused role at media/culture platform; leverages data science and GTM background.",
+      "why_fit": "Market research and insights role leveraging analytics skills; misses remote preference but strong skill alignment.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7678372",
       "source": "Pinterest Greenhouse",
       "posted_date": "2026-09-30",
       "id": "insightssolutionspartnerii|pinterest",
-      "fetched_at": "2026-10-12T22:19:54.999Z"
-    },
-    {
-      "title": "Content Growth Specialist, APAC Growth [6-Month Fixed Term]",
-      "company": "Pinterest",
-      "location": "Singapore, SG",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "GTM and growth focus at media-first brand; culture/music alignment; fixed-term provides work-life clarity.",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8211440",
-      "source": "Pinterest Greenhouse",
-      "posted_date": "2026-10-02",
-      "id": "contentgrowthspecialistapacgrowth6monthfixedterm|pinterest",
-      "fetched_at": "2026-10-12T22:19:54.999Z"
+      "fetched_at": "2026-10-13T20:26:58.406Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Product Analyst",
+      "company": "Liftoff",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 88,
+      "why_fit": "Direct product analytics role matching background; established mobile growth company with work-life balance reputation.",
+      "url": "https://jobicy.com/jobs/153096-product-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-10-13",
+      "id": "productanalyst|liftoff",
+      "fetched_at": "2026-10-13T20:26:58.406Z"
+    },
+    {
+      "title": "CX Operations Analyst",
+      "company": "ClickUp",
+      "location": "Philippines",
+      "level": "entry",
+      "fit_score": 75,
+      "why_fit": "Operations and analytics skills match; ClickUp is established, remote-first, culture-conscious productivity platform.",
+      "url": "https://jobicy.com/jobs/155181-cx-operations-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-10-13",
+      "id": "cxoperationsanalyst|clickup",
+      "fetched_at": "2026-10-13T20:26:58.406Z"
+    },
+    {
+      "title": "Founder's Associate, Strategy Team",
+      "company": "Flex",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 82,
+      "why_fit": "Strategy and decision-making focus; Flex is established, mission-driven, offers varied analytical and operational exposure.",
+      "url": "https://jobicy.com/jobs/155133-founders-associate-strategy-team",
+      "source": "Jobicy",
+      "posted_date": "2026-10-12",
+      "id": "foundersassociatestrategyteam|flex",
+      "fetched_at": "2026-10-13T20:26:58.406Z"
+    },
+    {
+      "title": "Partner Growth Manager (LATAM)",
+      "company": "Acceleration Partners",
+      "location": "Mexico",
+      "level": "entry",
+      "fit_score": 78,
+      "why_fit": "GTM and partnerships focus; established remote-first growth platform with data-driven culture.",
+      "url": "https://jobicy.com/jobs/155188-partner-growth-manager-latam",
+      "source": "Jobicy",
+      "posted_date": "2026-10-13",
+      "id": "partnergrowthmanagerlatam|accelerationpartners",
+      "fetched_at": "2026-10-13T20:26:58.406Z"
+    },
+    {
+      "title": "Customer Success Associate",
+      "company": "First Advantage",
+      "location": "Philippines",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Entry-level operations and customer-facing analytics role at established, remote-friendly company.",
+      "url": "https://jobicy.com/jobs/149655-customer-success-associate",
+      "source": "Jobicy",
+      "posted_date": "2026-10-13",
+      "id": "customersuccessassociate|firstadvantage",
+      "fetched_at": "2026-10-13T20:26:58.406Z"
+    },
     {
       "title": "Analyst, GTM Analytics",
       "company": "Fivetran",
@@ -53,19 +105,6 @@
       "source": "Jobicy",
       "posted_date": "2026-10-11",
       "id": "analystgtmanalytics|fivetran",
-      "fetched_at": "2026-10-12T22:19:54.999Z"
-    },
-    {
-      "title": "Founder's Associate, Strategy Team",
-      "company": "Flex",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Strategy role at established company matches economics background, analytical skills, and interest in decision-making.",
-      "url": "https://jobicy.com/jobs/155133-founders-associate-strategy-team",
-      "source": "Jobicy",
-      "posted_date": "2026-10-12",
-      "id": "foundersassociatestrategyteam|flex",
       "fetched_at": "2026-10-12T22:19:54.999Z"
     },
     {
@@ -301,123 +340,6 @@
       "posted_date": "2026-10-09",
       "id": "complianceoperationsspecialist|twilio",
       "fetched_at": "2026-10-09T19:56:36.885Z"
-    },
-    {
-      "title": "Business Development Associate",
-      "company": "YipitData",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 85,
-      "why_fit": "Entry GTM/partnerships role, remote USA, aligned with background in community/GTM work and market research.",
-      "url": "https://jobicy.com/jobs/154811-business-development-associate",
-      "source": "Jobicy",
-      "posted_date": "2026-10-08",
-      "id": "businessdevelopmentassociate|yipitdata",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "Data Scientist, Corporate",
-      "company": "YipitData",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 84,
-      "why_fit": "Entry data science role matching AI/LLM background, remote USA, established company culture-conscious.",
-      "url": "https://jobicy.com/jobs/154813-data-scientist-corporate",
-      "source": "Jobicy",
-      "posted_date": "2026-10-08",
-      "id": "datascientistcorporate|yipitdata",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "Growth Manager, Paid Media",
-      "company": "GiveDirectly",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 81,
-      "why_fit": "Growth and marketing analytics, remote USA, nonprofit with exceptional culture and mission-driven work.",
-      "url": "https://jobicy.com/jobs/154861-growth-manager-paid-media",
-      "source": "Jobicy",
-      "posted_date": "2026-10-08",
-      "id": "growthmanagerpaidmedia|givedirectly",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "Analyst, Corporate Development & Strategic Partnerships",
-      "company": "PerfectServe",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 80,
-      "why_fit": "Entry partnerships/strategy role, remote USA, aligns with GTM and strategic analysis background.",
-      "url": "https://jobicy.com/jobs/154761-analyst-corporate-development-strategic-partnerships-for-portfolio-company-of-k1-investment-management",
-      "source": "Jobicy",
-      "posted_date": "2026-10-07",
-      "id": "analystcorporatedevelopmentstrategicpartnerships|perfectserve",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "Customer & Field Marketing Manager - US Remote",
-      "company": "PerfectServe",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 78,
-      "why_fit": "GTM and marketing focus, remote USA, healthcare tech company with established remote culture.",
-      "url": "https://jobicy.com/jobs/154769-customer-field-marketing-manager-us-remote-2",
-      "source": "Jobicy",
-      "posted_date": "2026-10-07",
-      "id": "customerfieldmarketingmanagerusremote|perfectserve",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "Commercial Data Scientist",
-      "company": "Doximity",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 77,
-      "why_fit": "Data science and product analytics, remote USA, healthcare tech with strong remote-first culture.",
-      "url": "https://jobicy.com/jobs/154739-commercial-data-scientist",
-      "source": "Jobicy",
-      "posted_date": "2026-10-06",
-      "id": "commercialdatascientist|doximity",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "APAC Partner Business Development Manager",
-      "company": "Deepgram",
-      "location": "Singapore",
-      "level": "mid",
-      "fit_score": 71,
-      "why_fit": "Partnerships and GTM, AI company (Deepgram is voice AI), Singapore remote, tech-forward culture.",
-      "url": "https://jobicy.com/jobs/154833-apac-partner-business-development-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-10-08",
-      "id": "apacpartnerbusinessdevelopmentmanager|deepgram",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "Business Development Executive, APAC Public Sector (ANZ)",
-      "company": "TRM Labs",
-      "location": "Australia",
-      "level": "mid",
-      "fit_score": 69,
-      "why_fit": "Partnerships and GTM in crypto/compliance, ANZ remote, aligns with strategic/GTM interests.",
-      "url": "https://jobicy.com/jobs/154829-business-development-executive-apac-public-sector-anz",
-      "source": "Jobicy",
-      "posted_date": "2026-10-08",
-      "id": "businessdevelopmentexecutiveapacpublicsectoranz|trmlabs",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
-    },
-    {
-      "title": "Event Coordinator/Virtual Event Specialist",
-      "company": "Arlo Solutions",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Operations and community work, remote USA, entry-level, broader operations/GTM adjacent experience.",
-      "url": "https://jobicy.com/jobs/154859-743-event-coordinator-virtual-event-specialist",
-      "source": "Jobicy",
-      "posted_date": "2026-10-08",
-      "id": "eventcoordinatorvirtualeventspecialist|arlosolutions",
-      "fetched_at": "2026-10-08T20:24:33.677Z"
     }
   ]
 }
