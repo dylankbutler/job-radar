@@ -1,34 +1,177 @@
 {
-  "lastUpdated": "2026-10-15T18:47:30.679Z",
+  "lastUpdated": "2026-10-16T18:32:34.700Z",
   "companies": [
     {
       "title": "Integrated Marketing Specialist (B2B)",
       "company": "Pinterest",
       "location": "Amsterdam, NL",
       "level": "entry",
-      "fit_score": 62,
-      "why_fit": "Marketing background aligns with GTM interests; B2B experience valuable, but EU location conflicts with preferred regions.",
+      "fit_score": 72,
+      "why_fit": "GTM/marketing background aligns; B2B marketing leverages analytics and strategy skills.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8268325",
       "source": "Pinterest Careers",
       "posted_date": "2026-10-15",
       "id": "integratedmarketingspecialistb2b|pinterest",
-      "fetched_at": "2026-10-15T18:47:30.679Z"
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Content Growth Specialist, APAC Growth [6-Month Fixed Term]",
+      "company": "Pinterest",
+      "location": "Singapore, SG",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Growth and GTM focus; data-driven culture at media platform; candidate interested in culture brands.",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8211440",
+      "source": "Pinterest Careers",
+      "posted_date": "2026-10-02",
+      "id": "contentgrowthspecialistapacgrowth6monthfixedterm|pinterest",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
     },
     {
       "title": "Insights Solutions Partner II",
       "company": "Pinterest",
       "location": "Mexico City, MX",
       "level": "entry",
-      "fit_score": 58,
-      "why_fit": "Market research and data analytics skills match; partner/GTM work relevant, but Mexico City location not preferred.",
+      "fit_score": 65,
+      "why_fit": "Market research and insights role; data analytics and economics background directly applicable.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7678372",
       "source": "Pinterest Careers",
       "posted_date": "2026-09-30",
       "id": "insightssolutionspartnerii|pinterest",
-      "fetched_at": "2026-10-15T18:47:30.679Z"
+      "fetched_at": "2026-10-16T18:32:34.700Z"
     }
   ],
   "discovery": [
+    {
+      "title": "GTM Systems Analyst",
+      "company": "Ashby",
+      "location": "Canada, Europe, USA",
+      "level": "entry",
+      "fit_score": 85,
+      "why_fit": "Perfect GTM/operations fit. Established remote-first company. Entry-level role matching candidate's GTM and systems background.",
+      "url": "https://jobicy.com/jobs/155421-gtm-systems-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "gtmsystemsanalyst|ashby",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Business Intelligence Analyst",
+      "company": "Carrot",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 82,
+      "why_fit": "Strong data analytics and BI background match. Entry-level role leveraging SQL, Python, dashboards, and insights.",
+      "url": "https://jobicy.com/jobs/153151-business-intelligence-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-10-14",
+      "id": "businessintelligenceanalyst|carrot",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Business Strategy & Operations Manager",
+      "company": "Motive",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 78,
+      "why_fit": "Strategy and operations focus aligns with candidate's interests. Established company with remote flexibility across preferred locations.",
+      "url": "https://jobicy.com/jobs/155446-business-strategy-operations-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "businessstrategyoperationsmanager|motive",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Financial Analyst, FP&A",
+      "company": "Serve Robotics",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Entry-level analyst role combining data, economic research, and strategic decision-making skills candidate possesses.",
+      "url": "https://jobicy.com/jobs/155309-financial-analyst-fpa-3",
+      "source": "Jobicy",
+      "posted_date": "2026-10-14",
+      "id": "financialanalystfpa|serverobotics",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Associate Renewals Manager",
+      "company": "GitLab",
+      "location": "Ireland, Israel",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Entry-level operations and partnerships role at established remote-first company. Requires data-driven decision-making.",
+      "url": "https://jobicy.com/jobs/155427-associate-renewals-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "associaterenewalsmanager|gitlab",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Analyst II, Full Stack (Revenue Analytics)",
+      "company": "Affirm",
+      "location": "Spain",
+      "level": "mid",
+      "fit_score": 75,
+      "why_fit": "Mid-level analytics role with Python, SQL, dashboards. Established fintech company with strong engineering culture.",
+      "url": "https://jobicy.com/jobs/153258-analyst-ii-full-stack-revenue-analytics",
+      "source": "Jobicy",
+      "posted_date": "2026-10-15",
+      "id": "analystiifullstackrevenueanalytics|affirm",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Associate Forward Deployed Product Manager",
+      "company": "Cresta",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 79,
+      "why_fit": "Entry-level product role matching PM interests, UX background, and shipped product experience. AI/LLM company alignment.",
+      "url": "https://jobicy.com/jobs/155316-associate-forward-deployed-product-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-10-14",
+      "id": "associateforwarddeployedproductmanager|cresta",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Marketplace Operations Manager II",
+      "company": "Wheel",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 71,
+      "why_fit": "Operations and marketplace growth focus. Mid-level role combining candidate's ops and GTM/growth interests.",
+      "url": "https://jobicy.com/jobs/153335-marketplace-operations-manager-ii",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "marketplaceoperationsmanagerii|wheel",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "Partner Success Manager - In Market, Southern CA",
+      "company": "Side",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 70,
+      "why_fit": "Southern CA location preference match. Entry-level partnerships and GTM role with data-driven approach.",
+      "url": "https://jobicy.com/jobs/150807-partner-success-manager-in-market-southern-ca",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "partnersuccessmanagerinmarketsouthernca|side",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
+    {
+      "title": "ANALYST DIGITAL MARKETING IV (Remote) IV",
+      "company": "TE Connectivity",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 65,
+      "why_fit": "Mid-level analyst role with data and marketing focus. Established company, though less culture-forward than ideal.",
+      "url": "https://jobicy.com/jobs/150674-analyst-digital-marketing-iv-remote-iv",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "analystdigitalmarketingivremoteiv|teconnectivity",
+      "fetched_at": "2026-10-16T18:32:34.700Z"
+    },
     {
       "title": "Data Analyst",
       "company": "RevenueCat",
@@ -43,32 +186,6 @@
       "fetched_at": "2026-10-15T18:47:30.679Z"
     },
     {
-      "title": "Associate Forward Deployed Product Manager",
-      "company": "Cresta",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 85,
-      "why_fit": "Associate PM role, product focus, AI intersection, established company, remote-friendly.",
-      "url": "https://jobicy.com/jobs/155316-associate-forward-deployed-product-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-10-14",
-      "id": "associateforwarddeployedproductmanager|cresta",
-      "fetched_at": "2026-10-15T18:47:30.679Z"
-    },
-    {
-      "title": "Business Intelligence Analyst",
-      "company": "Carrot",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 82,
-      "why_fit": "Analytics-focused, BI/dashboards, entry-level, established remote company, matches skillset.",
-      "url": "https://jobicy.com/jobs/153151-business-intelligence-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-10-14",
-      "id": "businessintelligenceanalyst|carrot",
-      "fetched_at": "2026-10-15T18:47:30.679Z"
-    },
-    {
       "title": "Research Scientist - Generative Audio",
       "company": "Spotify",
       "location": "EMEA",
@@ -79,32 +196,6 @@
       "source": "Jobicy",
       "posted_date": "2026-10-13",
       "id": "researchscientistgenerativeaudio|spotify",
-      "fetched_at": "2026-10-15T18:47:30.679Z"
-    },
-    {
-      "title": "Financial Analyst, FP&A",
-      "company": "Serve Robotics",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Analyst role, established tech company, entry-level FP&A, remote-eligible, analytical focus.",
-      "url": "https://jobicy.com/jobs/155309-financial-analyst-fpa-3",
-      "source": "Jobicy",
-      "posted_date": "2026-10-14",
-      "id": "financialanalystfpa|serverobotics",
-      "fetched_at": "2026-10-15T18:47:30.679Z"
-    },
-    {
-      "title": "Analyst II, Full Stack (Revenue Analytics)",
-      "company": "Affirm",
-      "location": "Spain",
-      "level": "entry",
-      "fit_score": 71,
-      "why_fit": "Mid-entry analyst role, revenue/data analytics, established fintech, remote Spain.",
-      "url": "https://jobicy.com/jobs/153258-analyst-ii-full-stack-revenue-analytics",
-      "source": "Jobicy",
-      "posted_date": "2026-10-15",
-      "id": "analystiifullstackrevenueanalytics|affirm",
       "fetched_at": "2026-10-15T18:47:30.679Z"
     },
     {
@@ -379,45 +470,6 @@
       "posted_date": "2026-10-10",
       "id": "tradecomplianceanalyst|echodyne",
       "fetched_at": "2026-10-11T19:16:53.500Z"
-    },
-    {
-      "title": "Deal Desk Analyst",
-      "company": "Samsara",
-      "location": "UK",
-      "level": "entry",
-      "fit_score": 70,
-      "why_fit": "Entry-level operations/analytics at established SaaS. Remote-friendly, but UK location outside preferred zones.",
-      "url": "https://jobicy.com/jobs/154902-deal-desk-analyst-6",
-      "source": "Jobicy",
-      "posted_date": "2026-10-09",
-      "id": "dealdeskanalyst|samsara",
-      "fetched_at": "2026-10-10T19:04:27.967Z"
-    },
-    {
-      "title": "Business Process Analyst",
-      "company": "Veracyte",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Entry-level analyst role, USA-based. Operations/process focus aligns with skill set.",
-      "url": "https://jobicy.com/jobs/154886-business-process-analyst-2",
-      "source": "Jobicy",
-      "posted_date": "2026-10-09",
-      "id": "businessprocessanalyst|veracyte",
-      "fetched_at": "2026-10-10T19:04:27.967Z"
-    },
-    {
-      "title": "Content Marketing Manager",
-      "company": "NetBox Labs",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Entry-level marketing/content role at USA-based company. Tech focus, but less direct analytics overlap.",
-      "url": "https://jobicy.com/jobs/152943-content-marketing-manager-5",
-      "source": "Jobicy",
-      "posted_date": "2026-10-10",
-      "id": "contentmarketingmanager|netboxlabs",
-      "fetched_at": "2026-10-10T19:04:27.967Z"
     }
   ]
 }
