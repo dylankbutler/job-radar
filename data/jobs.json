@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16T18:32:34.700Z",
+  "lastUpdated": "2026-10-17T17:39:46.249Z",
   "companies": [
     {
       "title": "Integrated Marketing Specialist (B2B)",
@@ -7,12 +7,12 @@
       "location": "Amsterdam, NL",
       "level": "entry",
       "fit_score": 72,
-      "why_fit": "GTM/marketing background aligns; B2B marketing leverages analytics and strategy skills.",
+      "why_fit": "GTM/marketing background aligns with B2B specialist role; culture-forward brand; remote-flexible potential.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8268325",
-      "source": "Pinterest Careers",
+      "source": "Greenhouse",
       "posted_date": "2026-10-15",
       "id": "integratedmarketingspecialistb2b|pinterest",
-      "fetched_at": "2026-10-16T18:32:34.700Z"
+      "fetched_at": "2026-10-17T17:39:46.249Z"
     },
     {
       "title": "Content Growth Specialist, APAC Growth [6-Month Fixed Term]",
@@ -20,12 +20,12 @@
       "location": "Singapore, SG",
       "level": "entry",
       "fit_score": 68,
-      "why_fit": "Growth and GTM focus; data-driven culture at media platform; candidate interested in culture brands.",
+      "why_fit": "Growth/GTM experience fits; culture-forward brand; cross-regional growth analytics appeals to interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8211440",
-      "source": "Pinterest Careers",
+      "source": "Greenhouse",
       "posted_date": "2026-10-02",
       "id": "contentgrowthspecialistapacgrowth6monthfixedterm|pinterest",
-      "fetched_at": "2026-10-16T18:32:34.700Z"
+      "fetched_at": "2026-10-17T17:39:46.249Z"
     },
     {
       "title": "Insights Solutions Partner II",
@@ -33,12 +33,12 @@
       "location": "Mexico City, MX",
       "level": "entry",
       "fit_score": 65,
-      "why_fit": "Market research and insights role; data analytics and economics background directly applicable.",
+      "why_fit": "Market research/analytics background; insights/data-driven decision-making focus; culture-forward company.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7678372",
-      "source": "Pinterest Careers",
+      "source": "Greenhouse",
       "posted_date": "2026-09-30",
       "id": "insightssolutionspartnerii|pinterest",
-      "fetched_at": "2026-10-16T18:32:34.700Z"
+      "fetched_at": "2026-10-17T17:39:46.249Z"
     }
   ],
   "discovery": [
@@ -47,13 +47,143 @@
       "company": "Ashby",
       "location": "Canada, Europe, USA",
       "level": "entry",
-      "fit_score": 85,
-      "why_fit": "Perfect GTM/operations fit. Established remote-first company. Entry-level role matching candidate's GTM and systems background.",
+      "fit_score": 82,
+      "why_fit": "Remote-first, GTM focus aligns with candidate's background and interests.",
       "url": "https://jobicy.com/jobs/155421-gtm-systems-analyst",
       "source": "Jobicy",
       "posted_date": "2026-10-16",
       "id": "gtmsystemsanalyst|ashby",
-      "fetched_at": "2026-10-16T18:32:34.700Z"
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "GTM Systems Administrator",
+      "company": "dscout",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 78,
+      "why_fit": "GTM operations role matches candidate's operations and GTM interests.",
+      "url": "https://jobicy.com/jobs/155571-gtm-systems-administrator",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "gtmsystemsadministrator|dscout",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "Marketing Analyst, Attribution - ShareGate",
+      "company": "Workleap",
+      "location": "Canada",
+      "level": "entry",
+      "fit_score": 75,
+      "why_fit": "Data-driven marketing analytics role leverages SQL, Python, and analytics skills.",
+      "url": "https://jobicy.com/jobs/155516-marketing-analyst-attribution-sharegate",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "marketinganalystattributionsharegate|workleap",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "Financial Analyst (Entry-Level)",
+      "company": "CertiK",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Entry-level analyst role in AI/blockchain space matches experience and level.",
+      "url": "https://jobicy.com/jobs/153373-financial-analyst-entry-level",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "financialanalystentrylevel|certik",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "Fraud Analyst",
+      "company": "Pleo",
+      "location": "Denmark, Germany, Portugal, Spain, Sweden, UK",
+      "level": "entry",
+      "fit_score": 70,
+      "why_fit": "Remote-friendly, data-driven analyst role with fintech focus and culture reputation.",
+      "url": "https://jobicy.com/jobs/155534-fraud-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "fraudanalyst|pleo",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "Field Marketing Manager",
+      "company": "infisical",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Growth/marketing role at established infrastructure company with remote flexibility.",
+      "url": "https://jobicy.com/jobs/155570-field-marketing-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "fieldmarketingmanager|infisical",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "Customer & Field Marketing Manager - US Remote",
+      "company": "PerfectServe",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 66,
+      "why_fit": "Remote marketing role aligns with GTM and marketing interests at established company.",
+      "url": "https://jobicy.com/jobs/155598-customer-field-marketing-manager-us-remote-3",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "customerfieldmarketingmanagerusremote|perfectserve",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "B2B Marketing Manager (ASEAN)",
+      "company": "Ajax Systems",
+      "location": "APAC",
+      "level": "entry",
+      "fit_score": 63,
+      "why_fit": "Marketing analyst role at established security company, remote-friendly location.",
+      "url": "https://jobicy.com/jobs/153416-b2b-marketing-manager-asean",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "b2bmarketingmanagerasean|ajaxsystems",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "KYB Compliance Analyst (1 Year Contract)",
+      "company": "Binance",
+      "location": "Singapore, UK",
+      "level": "entry",
+      "fit_score": 61,
+      "why_fit": "Analyst role at major fintech company with decision-making and compliance focus.",
+      "url": "https://jobicy.com/jobs/155436-kyb-compliance-analyst-1-year-contract",
+      "source": "Jobicy",
+      "posted_date": "2026-10-16",
+      "id": "kybcomplianceanalyst1yearcontract|binance",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "Seasonal Customer Love Associate - (Remote - GA based)",
+      "company": "Reformation",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 58,
+      "why_fit": "Culture-forward brand (sustainability) with remote work, entry-level operations focus.",
+      "url": "https://jobicy.com/jobs/155606-seasonal-customer-love-associate-remote-ga-based",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "seasonalcustomerloveassociateremotegabased|reformation",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
+    },
+    {
+      "title": "Campaign Coordinator",
+      "company": "GoFasti",
+      "location": "LATAM",
+      "level": "entry",
+      "fit_score": 55,
+      "why_fit": "Entry-level marketing coordination role, though LATAM location less preferred.",
+      "url": "https://jobicy.com/jobs/155562-1038-campaign-coordinator",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "campaigncoordinator|gofasti",
+      "fetched_at": "2026-10-17T17:39:46.249Z"
     },
     {
       "title": "Business Intelligence Analyst",
@@ -392,84 +522,6 @@
       "posted_date": "2026-10-12",
       "id": "appliedscientistprogrowth|thumbtack",
       "fetched_at": "2026-10-12T22:19:54.999Z"
-    },
-    {
-      "title": "RevOps Analyst",
-      "company": "Roboflow",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 78,
-      "why_fit": "Entry-level ops/analytics role at tech-forward AI company with good remote flexibility.",
-      "url": "https://jobicy.com/jobs/154977-revops-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-10-10",
-      "id": "revopsanalyst|roboflow",
-      "fetched_at": "2026-10-11T19:16:53.500Z"
-    },
-    {
-      "title": "Performance Media Analyst",
-      "company": "Monks",
-      "location": "Brazil",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Media analytics role aligns with culture/media interests; entry-level candidate for analytics work.",
-      "url": "https://jobicy.com/jobs/152913-performance-media-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-10-10",
-      "id": "performancemediaanalyst|monks",
-      "fetched_at": "2026-10-11T19:16:53.500Z"
-    },
-    {
-      "title": "Financial Analyst, FP&A",
-      "company": "hims & hers",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Entry-level analyst role; established company with remote flexibility and balanced culture.",
-      "url": "https://jobicy.com/jobs/154913-financial-analyst-fpa-2",
-      "source": "Jobicy",
-      "posted_date": "2026-10-09",
-      "id": "financialanalystfpa|himshers",
-      "fetched_at": "2026-10-11T19:16:53.500Z"
-    },
-    {
-      "title": "Product Manager",
-      "company": "Dropbox",
-      "location": "Mexico",
-      "level": "mid",
-      "fit_score": 62,
-      "why_fit": "Established tech company; product management aligns with shipped app and product/UX background.",
-      "url": "https://jobicy.com/jobs/155043-product-manager-5",
-      "source": "Jobicy",
-      "posted_date": "2026-10-11",
-      "id": "productmanager|dropbox",
-      "fetched_at": "2026-10-11T19:16:53.500Z"
-    },
-    {
-      "title": "Operations Risk Analyst",
-      "company": "Kalshi",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 60,
-      "why_fit": "Entry-level operations/risk analyst role at established company; decision-making focus.",
-      "url": "https://jobicy.com/jobs/152900-operations-risk-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-10-10",
-      "id": "operationsriskanalyst|kalshi",
-      "fetched_at": "2026-10-11T19:16:53.500Z"
-    },
-    {
-      "title": "Trade Compliance Analyst",
-      "company": "Echodyne",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 55,
-      "why_fit": "Entry-level analyst role at established tech company; structured operations and compliance work.",
-      "url": "https://jobicy.com/jobs/152890-trade-compliance-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-10-10",
-      "id": "tradecomplianceanalyst|echodyne",
-      "fetched_at": "2026-10-11T19:16:53.500Z"
     }
   ]
 }
