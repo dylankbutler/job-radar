@@ -1,47 +1,125 @@
 {
-  "lastUpdated": "2026-10-17T17:39:46.249Z",
+  "lastUpdated": "2026-10-18T17:41:41.277Z",
   "companies": [
+    {
+      "title": "Insights Solutions Partner II",
+      "company": "Pinterest",
+      "location": "Mexico City, MX",
+      "level": "mid",
+      "fit_score": 72,
+      "why_fit": "Market research + analytics focus aligns with background; remote-friendly location; culture-forward brand.",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7678372",
+      "source": "Pinterest Careers",
+      "posted_date": "2026-09-30",
+      "id": "insightssolutionspartnerii|pinterest",
+      "fetched_at": "2026-10-18T17:41:41.277Z"
+    },
     {
       "title": "Integrated Marketing Specialist (B2B)",
       "company": "Pinterest",
       "location": "Amsterdam, NL",
       "level": "entry",
-      "fit_score": 72,
-      "why_fit": "GTM/marketing background aligns with B2B specialist role; culture-forward brand; remote-flexible potential.",
+      "fit_score": 68,
+      "why_fit": "GTM and marketing experience; entry-level; culture-forward company; European flexibility.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8268325",
-      "source": "Greenhouse",
+      "source": "Pinterest Careers",
       "posted_date": "2026-10-15",
       "id": "integratedmarketingspecialistb2b|pinterest",
-      "fetched_at": "2026-10-17T17:39:46.249Z"
+      "fetched_at": "2026-10-18T17:41:41.277Z"
     },
     {
       "title": "Content Growth Specialist, APAC Growth [6-Month Fixed Term]",
       "company": "Pinterest",
       "location": "Singapore, SG",
       "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Growth/GTM experience fits; culture-forward brand; cross-regional growth analytics appeals to interests.",
+      "fit_score": 65,
+      "why_fit": "Growth and GTM focus; entry-level; culture-forward brand; fixed-term allows flexibility exploration.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8211440",
-      "source": "Greenhouse",
+      "source": "Pinterest Careers",
       "posted_date": "2026-10-02",
       "id": "contentgrowthspecialistapacgrowth6monthfixedterm|pinterest",
-      "fetched_at": "2026-10-17T17:39:46.249Z"
-    },
-    {
-      "title": "Insights Solutions Partner II",
-      "company": "Pinterest",
-      "location": "Mexico City, MX",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Market research/analytics background; insights/data-driven decision-making focus; culture-forward company.",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7678372",
-      "source": "Greenhouse",
-      "posted_date": "2026-09-30",
-      "id": "insightssolutionspartnerii|pinterest",
-      "fetched_at": "2026-10-17T17:39:46.249Z"
+      "fetched_at": "2026-10-18T17:41:41.277Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Data Services Reports & Insights Analyst",
+      "company": "Cloudbeds",
+      "location": "LATAM",
+      "level": "entry",
+      "fit_score": 82,
+      "why_fit": "Perfect analyst-level fit with data, reporting, insights focus aligned with background.",
+      "url": "https://jobicy.com/jobs/153527-data-services-reports-insights-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-10-18",
+      "id": "dataservicesreportsinsightsanalyst|cloudbeds",
+      "fetched_at": "2026-10-18T17:41:41.277Z"
+    },
+    {
+      "title": "GTM Systems Administrator",
+      "company": "dscout",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 75,
+      "why_fit": "GTM ops/systems role matches candidate's GTM and operations interests, established company.",
+      "url": "https://jobicy.com/jobs/155571-gtm-systems-administrator",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "gtmsystemsadministrator|dscout",
+      "fetched_at": "2026-10-18T17:41:41.277Z"
+    },
+    {
+      "title": "Financial Analyst (Entry-Level)",
+      "company": "CertiK",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Entry-level analyst role with economics background fit; crypto/compliance intersection interesting.",
+      "url": "https://jobicy.com/jobs/153373-financial-analyst-entry-level",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "financialanalystentrylevel|certik",
+      "fetched_at": "2026-10-18T17:41:41.277Z"
+    },
+    {
+      "title": "Global Web Growth Project Manager",
+      "company": "Docplanner",
+      "location": "Poland, Spain",
+      "level": "entry",
+      "fit_score": 65,
+      "why_fit": "Growth PM role matches project/growth interests; established healthtech company with remote flexibility.",
+      "url": "https://jobicy.com/jobs/153492-global-web-growth-project-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-10-18",
+      "id": "globalwebgrowthprojectmanager|docplanner",
+      "fetched_at": "2026-10-18T17:41:41.277Z"
+    },
+    {
+      "title": "Customer & Field Marketing Manager - US Remote",
+      "company": "PerfectServe",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 62,
+      "why_fit": "Marketing/GTM adjacent role; entry-level possibility if interpreted as associate marketer.",
+      "url": "https://jobicy.com/jobs/155598-customer-field-marketing-manager-us-remote-3",
+      "source": "Jobicy",
+      "posted_date": "2026-10-17",
+      "id": "customerfieldmarketingmanagerusremote|perfectserve",
+      "fetched_at": "2026-10-18T17:41:41.277Z"
+    },
+    {
+      "title": "Business Development Manager",
+      "company": "Goodleap",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 60,
+      "why_fit": "BizDev/partnerships fit; entry-level manager title may indicate associate track.",
+      "url": "https://jobicy.com/jobs/155722-business-development-manager-5",
+      "source": "Jobicy",
+      "posted_date": "2026-10-18",
+      "id": "businessdevelopmentmanager|goodleap",
+      "fetched_at": "2026-10-18T17:41:41.277Z"
+    },
     {
       "title": "GTM Systems Analyst",
       "company": "Ashby",
@@ -56,19 +134,6 @@
       "fetched_at": "2026-10-17T17:39:46.249Z"
     },
     {
-      "title": "GTM Systems Administrator",
-      "company": "dscout",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 78,
-      "why_fit": "GTM operations role matches candidate's operations and GTM interests.",
-      "url": "https://jobicy.com/jobs/155571-gtm-systems-administrator",
-      "source": "Jobicy",
-      "posted_date": "2026-10-17",
-      "id": "gtmsystemsadministrator|dscout",
-      "fetched_at": "2026-10-17T17:39:46.249Z"
-    },
-    {
       "title": "Marketing Analyst, Attribution - ShareGate",
       "company": "Workleap",
       "location": "Canada",
@@ -79,19 +144,6 @@
       "source": "Jobicy",
       "posted_date": "2026-10-16",
       "id": "marketinganalystattributionsharegate|workleap",
-      "fetched_at": "2026-10-17T17:39:46.249Z"
-    },
-    {
-      "title": "Financial Analyst (Entry-Level)",
-      "company": "CertiK",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-level analyst role in AI/blockchain space matches experience and level.",
-      "url": "https://jobicy.com/jobs/153373-financial-analyst-entry-level",
-      "source": "Jobicy",
-      "posted_date": "2026-10-17",
-      "id": "financialanalystentrylevel|certik",
       "fetched_at": "2026-10-17T17:39:46.249Z"
     },
     {
@@ -118,19 +170,6 @@
       "source": "Jobicy",
       "posted_date": "2026-10-17",
       "id": "fieldmarketingmanager|infisical",
-      "fetched_at": "2026-10-17T17:39:46.249Z"
-    },
-    {
-      "title": "Customer & Field Marketing Manager - US Remote",
-      "company": "PerfectServe",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 66,
-      "why_fit": "Remote marketing role aligns with GTM and marketing interests at established company.",
-      "url": "https://jobicy.com/jobs/155598-customer-field-marketing-manager-us-remote-3",
-      "source": "Jobicy",
-      "posted_date": "2026-10-17",
-      "id": "customerfieldmarketingmanagerusremote|perfectserve",
       "fetched_at": "2026-10-17T17:39:46.249Z"
     },
     {
@@ -483,45 +522,6 @@
       "posted_date": "2026-10-13",
       "id": "customersuccessassociate|firstadvantage",
       "fetched_at": "2026-10-13T20:26:58.406Z"
-    },
-    {
-      "title": "Analyst, GTM Analytics",
-      "company": "Fivetran",
-      "location": "Costa Rica",
-      "level": "entry",
-      "fit_score": 78,
-      "why_fit": "Perfect GTM analytics role matching candidate's GTM/analytics background and interest in data-driven decision-making.",
-      "url": "https://jobicy.com/jobs/154990-analyst-gtm-analytics",
-      "source": "Jobicy",
-      "posted_date": "2026-10-11",
-      "id": "analystgtmanalytics|fivetran",
-      "fetched_at": "2026-10-12T22:19:54.999Z"
-    },
-    {
-      "title": "Mid-Market Implementation Specialist - Americas",
-      "company": "Ashby",
-      "location": "Canada, USA",
-      "level": "mid",
-      "fit_score": 68,
-      "why_fit": "Implementation specialist role with analytics/data foundation aligns with candidate's technical and operations background.",
-      "url": "https://jobicy.com/jobs/155120-mid-market-implementation-specialist-americas",
-      "source": "Jobicy",
-      "posted_date": "2026-10-12",
-      "id": "midmarketimplementationspecialistamericas|ashby",
-      "fetched_at": "2026-10-12T22:19:54.999Z"
-    },
-    {
-      "title": "Applied Scientist, Pro Growth",
-      "company": "Thumbtack",
-      "location": "Canada",
-      "level": "entry",
-      "fit_score": 62,
-      "why_fit": "Applied scientist role at established marketplace company matches AI/data science experience and growth focus.",
-      "url": "https://jobicy.com/jobs/155122-applied-scientist-pro-growth",
-      "source": "Jobicy",
-      "posted_date": "2026-10-12",
-      "id": "appliedscientistprogrowth|thumbtack",
-      "fetched_at": "2026-10-12T22:19:54.999Z"
     }
   ]
 }
