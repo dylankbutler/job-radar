@@ -1,34 +1,151 @@
 {
-  "lastUpdated": "2026-10-23T18:48:40.244Z",
+  "lastUpdated": "2026-10-24T17:43:50.762Z",
   "companies": [
     {
       "title": "Brand Marketing Manager",
       "company": "Pinterest",
       "location": "San Francisco, CA, US; Remote, US",
-      "level": "mid",
-      "fit_score": 74,
-      "why_fit": "Marketing role at culture brand; remote option; leverages GTM background and media/culture intersection.",
+      "level": "entry",
+      "fit_score": 75,
+      "why_fit": "Marketing/GTM role at media-culture intersection; remote-first; entry-level adjacent position.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8267923",
       "source": "Pinterest Careers",
       "posted_date": "2026-10-21",
       "id": "brandmarketingmanager|pinterest",
-      "fetched_at": "2026-10-23T18:48:40.244Z"
+      "fetched_at": "2026-10-24T17:43:50.762Z"
     },
     {
       "title": "Administrative Business Partner I - Communications and Growth Marketing",
       "company": "Pinterest",
-      "location": "Los Angeles, CA US",
+      "location": "Los Angeles, CA, US",
       "level": "entry",
       "fit_score": 68,
-      "why_fit": "Entry-level operations/GTM support; LA location; growth marketing exposure matches skill set.",
+      "why_fit": "Growth/operations-adjacent role; LA location; entry-level; supports strategic decision-making work.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8280238",
       "source": "Pinterest Careers",
       "posted_date": "2026-10-23",
       "id": "administrativebusinesspartnericommunicationsandgrowthmarketing|pinterest",
-      "fetched_at": "2026-10-23T18:48:40.244Z"
+      "fetched_at": "2026-10-24T17:43:50.762Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Data Analyst, Clinical Data Effectiveness",
+      "company": "Clover Health",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Entry-level data analyst role matching core skills; established healthcare tech company with remote flexibility.",
+      "url": "https://jobicy.com/jobs/150923-data-analyst-clinical-data-effectiveness",
+      "source": "Jobicy",
+      "posted_date": "2026-10-24",
+      "id": "dataanalystclinicaldataeffectiveness|cloverhealth",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Mid-Market Expansion",
+      "company": "ClickUp",
+      "location": "UK",
+      "level": "mid",
+      "fit_score": 65,
+      "why_fit": "Growth/GTM-adjacent role at established SaaS; matches business development and expansion interests.",
+      "url": "https://jobicy.com/jobs/156724-mid-market-expansion",
+      "source": "Jobicy",
+      "posted_date": "2026-10-24",
+      "id": "midmarketexpansion|clickup",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Mid- Market Customer Success Manager - EMEA",
+      "company": "Ashby",
+      "location": "Europe",
+      "level": "mid",
+      "fit_score": 62,
+      "why_fit": "Established HR tech platform; customer success relevant to GTM and operations interests.",
+      "url": "https://jobicy.com/jobs/156516-mid-market-customer-success-manager-emea-3",
+      "source": "Jobicy",
+      "posted_date": "2026-10-23",
+      "id": "midmarketcustomersuccessmanageremea|ashby",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Client Support Analyst - ZAP Solutions",
+      "company": "Banyan Software",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 58,
+      "why_fit": "Entry-level analyst role at established software company; operations and customer-facing experience.",
+      "url": "https://jobicy.com/jobs/156597-client-support-analyst-zap-solutions",
+      "source": "Jobicy",
+      "posted_date": "2026-10-23",
+      "id": "clientsupportanalystzapsolutions|banyansoftware",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Business Development Representative, Singapore",
+      "company": "Chainguard",
+      "location": "Singapore",
+      "level": "entry",
+      "fit_score": 55,
+      "why_fit": "Entry-level BDR role at security-focused tech company; GTM and business development experience.",
+      "url": "https://jobicy.com/jobs/156736-business-development-representative-singapore",
+      "source": "Jobicy",
+      "posted_date": "2026-10-24",
+      "id": "businessdevelopmentrepresentativesingapore|chainguard",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Field & Event Marketing Manager, EMEA",
+      "company": "Deepgram",
+      "location": "UK",
+      "level": "mid",
+      "fit_score": 54,
+      "why_fit": "AI/audio tech company; GTM and marketing role matching candidate interest in technology and culture.",
+      "url": "https://jobicy.com/jobs/156700-field-event-marketing-manager-emea",
+      "source": "Jobicy",
+      "posted_date": "2026-10-24",
+      "id": "fieldeventmarketingmanageremea|deepgram",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Digital Marketing Specialist",
+      "company": "Manay CPA Inc.",
+      "location": "Türkiye",
+      "level": "entry",
+      "fit_score": 48,
+      "why_fit": "Entry-level marketing role with remote flexibility; GTM and marketing operations experience.",
+      "url": "https://jobicy.com/jobs/156715-digital-marketing-specialist",
+      "source": "Jobicy",
+      "posted_date": "2026-10-24",
+      "id": "digitalmarketingspecialist|manaycpainc",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Associate Services Architect",
+      "company": "Tenable",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 48,
+      "why_fit": "Entry-level technical role at established cybersecurity firm; product and operations adjacent.",
+      "url": "https://jobicy.com/jobs/153962-associate-services-architect",
+      "source": "Jobicy",
+      "posted_date": "2026-10-24",
+      "id": "associateservicesarchitect|tenable",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
+    {
+      "title": "Analyst - Weekend - ENGLISH & GERMAN speaking",
+      "company": "Cision",
+      "location": "Bulgaria",
+      "level": "entry",
+      "fit_score": 45,
+      "why_fit": "Entry-level analyst at established media monitoring company; research and insights focus.",
+      "url": "https://jobicy.com/jobs/156565-analyst-weekend-english-german-speaking",
+      "source": "Jobicy",
+      "posted_date": "2026-10-23",
+      "id": "analystweekendenglishgermanspeaking|cision",
+      "fetched_at": "2026-10-24T17:43:50.762Z"
+    },
     {
       "title": "Associate Renewals Manager, SMB",
       "company": "GitLab",
@@ -121,19 +238,6 @@
       "fetched_at": "2026-10-23T18:48:40.244Z"
     },
     {
-      "title": "Mid-Market Customer Success Manager - EMEA",
-      "company": "Ashby",
-      "location": "Europe",
-      "level": "mid",
-      "fit_score": 58,
-      "why_fit": "Operations/GTM adjacent role at established SaaS company with strong remote culture.",
-      "url": "https://jobicy.com/jobs/156516-mid-market-customer-success-manager-emea-3",
-      "source": "Jobicy",
-      "posted_date": "2026-10-23",
-      "id": "midmarketcustomersuccessmanageremea|ashby",
-      "fetched_at": "2026-10-23T18:48:40.244Z"
-    },
-    {
       "title": "Creative Operations Manager",
       "company": "Toptal",
       "location": "Canada",
@@ -147,19 +251,6 @@
       "fetched_at": "2026-10-23T18:48:40.244Z"
     },
     {
-      "title": "Client Support Analyst - ZAP Solutions",
-      "company": "Banyan Software",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 52,
-      "why_fit": "Entry-level analyst role at established US company with potential remote flexibility.",
-      "url": "https://jobicy.com/jobs/156597-client-support-analyst-zap-solutions",
-      "source": "Jobicy",
-      "posted_date": "2026-10-23",
-      "id": "clientsupportanalystzapsolutions|banyansoftware",
-      "fetched_at": "2026-10-23T18:48:40.244Z"
-    },
-    {
       "title": "Threat Detection Analyst (Japanese & English speaking)",
       "company": "Fastly",
       "location": "APAC",
@@ -170,19 +261,6 @@
       "source": "Jobicy",
       "posted_date": "2026-10-23",
       "id": "threatdetectionanalystjapaneseenglishspeaking|fastly",
-      "fetched_at": "2026-10-23T18:48:40.244Z"
-    },
-    {
-      "title": "Analyst - Weekend - ENGLISH & GERMAN speaking",
-      "company": "Cision",
-      "location": "Bulgaria",
-      "level": "entry",
-      "fit_score": 45,
-      "why_fit": "Analyst role at established media tech company, but weekend hours and location mismatch.",
-      "url": "https://jobicy.com/jobs/156565-analyst-weekend-english-german-speaking",
-      "source": "Jobicy",
-      "posted_date": "2026-10-23",
-      "id": "analystweekendenglishgermanspeaking|cision",
       "fetched_at": "2026-10-23T18:48:40.244Z"
     },
     {
