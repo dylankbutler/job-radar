@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T23:39:05.670Z",
+  "lastUpdated": "2026-11-10T21:07:23.918Z",
   "companies": [
     {
       "title": "B2B Growth Marketing Manager",
@@ -7,12 +7,12 @@
       "location": "Remote, US",
       "level": "entry",
       "fit_score": 78,
-      "why_fit": "GTM/growth focus aligns with interests; remote-first; culture-forward brand matches preferences.",
+      "why_fit": "Growth/GTM focus aligns with interests; remote-first; culture-forward brand; entry-level positioning likely.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8268331",
-      "source": "Pinterest Careers (Greenhouse)",
+      "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "b2bgrowthmarketingmanager|pinterest",
-      "fetched_at": "2026-11-09T23:39:05.670Z"
+      "fetched_at": "2026-11-10T21:07:23.918Z"
     },
     {
       "title": "Business Development, AI Product Partnerships",
@@ -20,12 +20,12 @@
       "location": "Remote, US",
       "level": "entry",
       "fit_score": 75,
-      "why_fit": "Partnerships + AI background; remote; aligns with media/tech/culture intersection interests.",
+      "why_fit": "Partnerships/BD align with interests; AI/LLM background relevant; remote; culture-forward platform.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8319154",
-      "source": "Pinterest Careers (Greenhouse)",
+      "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "businessdevelopmentaiproductpartnerships|pinterest",
-      "fetched_at": "2026-11-09T23:39:05.670Z"
+      "fetched_at": "2026-11-10T21:07:23.918Z"
     },
     {
       "title": "Content Enablement Intern 2027 (USA)",
@@ -33,40 +33,79 @@
       "location": "Remote, US",
       "level": "entry",
       "fit_score": 62,
-      "why_fit": "Remote; culture-focused brand; adjacent to GTM/operations; entry-level appropriate for current experience.",
+      "why_fit": "Remote; entry-level; culture/media-forward brand; slightly junior but aligns with background.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8334884",
-      "source": "Pinterest Careers (Greenhouse)",
+      "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "contentenablementintern2027usa|pinterest",
-      "fetched_at": "2026-11-09T23:39:05.670Z"
+      "fetched_at": "2026-11-10T21:07:23.918Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Graduate Partner Marketing Manager",
+      "company": "Canonical",
+      "location": "LATAM, Canada, USA",
+      "level": "entry",
+      "fit_score": 78,
+      "why_fit": "Entry-level GTM/partnerships role at established remote company; aligns with marketing and growth interests.",
+      "url": "https://jobicy.com/jobs/161096-graduate-partner-marketing-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-11-10",
+      "id": "graduatepartnermarketingmanager|canonical",
+      "fetched_at": "2026-11-10T21:07:23.918Z"
+    },
+    {
+      "title": "Community Growth Manager",
+      "company": "Reedsy",
+      "location": "Canada, France, Netherlands, Portugal, Spain, UK, USA",
+      "level": "entry",
+      "fit_score": 75,
+      "why_fit": "Community + growth at media-adjacent company; remote-first, culture-focused, entry-level appropriate role.",
+      "url": "https://jobicy.com/jobs/161086-community-growth-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-11-10",
+      "id": "communitygrowthmanager|reedsy",
+      "fetched_at": "2026-11-10T21:07:23.918Z"
+    },
+    {
+      "title": "RevOps Analyst",
+      "company": "Roboflow",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Analytics + operations at AI/tech company; entry-level analyst role matches data and GTM background.",
+      "url": "https://jobicy.com/jobs/154977-revops-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-11-10",
+      "id": "revopsanalyst|roboflow",
+      "fetched_at": "2026-11-10T21:07:23.918Z"
+    },
     {
       "title": "Growth Analyst (m/f/d)",
       "company": "Kayzen",
       "location": "EMEA, LATAM",
       "level": "entry",
-      "fit_score": 82,
-      "why_fit": "Growth role at established ad-tech company; strong match for analytics and GTM interests.",
+      "fit_score": 68,
+      "why_fit": "Growth analytics role; established company but limited location flexibility for candidate's preferred regions.",
       "url": "https://jobicy.com/jobs/160694-growth-analyst-m-f-d",
       "source": "Jobicy",
       "posted_date": "2026-11-09",
       "id": "growthanalystmfd|kayzen",
-      "fetched_at": "2026-11-09T23:39:05.670Z"
+      "fetched_at": "2026-11-10T21:07:23.918Z"
     },
     {
       "title": "Strategic WFM Analyst",
       "company": "Clipboard",
       "location": "LATAM, Canada, Europe, USA",
       "level": "entry",
-      "fit_score": 75,
-      "why_fit": "Analytics role at remote-first, established workforce management platform; strong data focus.",
+      "fit_score": 65,
+      "why_fit": "Analyst role with strategic operations focus; remote-friendly locations, but WFM less aligned with core interests.",
       "url": "https://jobicy.com/jobs/160216-strategic-wfm-analyst",
       "source": "Jobicy",
       "posted_date": "2026-11-09",
       "id": "strategicwfmanalyst|clipboard",
-      "fetched_at": "2026-11-09T23:39:05.670Z"
+      "fetched_at": "2026-11-10T21:07:23.918Z"
     },
     {
       "title": "Partner Strategy and Delivery Manager",
