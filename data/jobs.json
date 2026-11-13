@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T21:39:51.256Z",
+  "lastUpdated": "2026-11-13T21:06:33.788Z",
   "companies": [
     {
       "title": "B2B Growth Marketing Manager",
@@ -7,12 +7,12 @@
       "location": "Remote, US",
       "level": "entry",
       "fit_score": 78,
-      "why_fit": "Growth/GTM focus aligns with interests; remote-first; media/culture platform matches values.",
+      "why_fit": "Growth/GTM focus aligns with interests; remote-first; culture-forward brand matches preferences.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8268331",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "b2bgrowthmarketingmanager|pinterest",
-      "fetched_at": "2026-11-12T21:39:51.256Z"
+      "fetched_at": "2026-11-13T21:06:33.788Z"
     },
     {
       "title": "Business Development, AI Product Partnerships",
@@ -20,28 +20,80 @@
       "location": "Remote, US",
       "level": "entry",
       "fit_score": 75,
-      "why_fit": "Partnerships/business dev with AI focus; remote; leverages LLM evaluation background.",
+      "why_fit": "Partnerships + AI expertise; remote; aligns with tech/media intersection and LLM background.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8319154",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "businessdevelopmentaiproductpartnerships|pinterest",
-      "fetched_at": "2026-11-12T21:39:51.256Z"
+      "fetched_at": "2026-11-13T21:06:33.788Z"
     },
     {
       "title": "Content Enablement Intern 2027 (USA)",
       "company": "Pinterest",
       "location": "Remote, US",
       "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Entry-level role; remote; culture-forward brand; operations/enablement adjacent to interests.",
+      "fit_score": 68,
+      "why_fit": "Remote; culture-focused brand; operations/enablement aligns with project management interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8334884",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "contentenablementintern2027usa|pinterest",
-      "fetched_at": "2026-11-12T21:39:51.256Z"
+      "fetched_at": "2026-11-13T21:06:33.788Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Research Scientist - Generative Audio",
+      "company": "Spotify",
+      "location": "EMEA",
+      "level": "mid",
+      "fit_score": 78,
+      "why_fit": "Music-forward brand, AI/LLM expertise match, established remote-friendly company, culture-aligned",
+      "url": "https://jobicy.com/jobs/155214-research-scientist-generative-audio",
+      "source": "Jobicy",
+      "posted_date": "2026-11-13",
+      "id": "researchscientistgenerativeaudio|spotify",
+      "fetched_at": "2026-11-13T21:06:33.788Z"
+    },
+    {
+      "title": "Content Marketing Manager",
+      "company": "Wpromote",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 65,
+      "why_fit": "Marketing/growth GTM focus, digital-first agency, potential remote flexibility, content-culture intersection",
+      "url": "https://jobicy.com/jobs/161908-content-marketing-manager-8",
+      "source": "Jobicy",
+      "posted_date": "2026-11-13",
+      "id": "contentmarketingmanager|wpromote",
+      "fetched_at": "2026-11-13T21:06:33.788Z"
+    },
+    {
+      "title": "Marketing and Commercial Specialist (Canada)",
+      "company": "Who Gives A Crap",
+      "location": "Canada",
+      "level": "entry",
+      "fit_score": 62,
+      "why_fit": "Culture-forward brand, established company, GTM/marketing focus, genuine work-life balance reputation",
+      "url": "https://jobicy.com/jobs/162054-marketing-and-commercial-specialist-canada",
+      "source": "Jobicy",
+      "posted_date": "2026-11-13",
+      "id": "marketingandcommercialspecialistcanada|whogivesacrap",
+      "fetched_at": "2026-11-13T21:06:33.788Z"
+    },
+    {
+      "title": "Field Intelligence Analyst (Remote, UAE)",
+      "company": "Sayari",
+      "location": "UAE",
+      "level": "entry",
+      "fit_score": 58,
+      "why_fit": "Remote-first, data/analytics research focus, market intelligence aligns with economic background",
+      "url": "https://jobicy.com/jobs/161636-field-intelligence-analyst-remote-uae",
+      "source": "Jobicy",
+      "posted_date": "2026-11-12",
+      "id": "fieldintelligenceanalystremoteuae|sayari",
+      "fetched_at": "2026-11-13T21:06:33.788Z"
+    },
     {
       "title": "Marketing & GTM Data Analyst",
       "company": "Deepgram",
@@ -144,19 +196,6 @@
       "source": "Jobicy",
       "posted_date": "2026-11-12",
       "id": "businessdevelopmentrepresentativefinancialservices|gitlab",
-      "fetched_at": "2026-11-12T21:39:51.256Z"
-    },
-    {
-      "title": "Field Intelligence Analyst (Remote, UAE)",
-      "company": "Sayari",
-      "location": "UAE",
-      "level": "entry",
-      "fit_score": 58,
-      "why_fit": "Analytics + research at established company. Remote, but location less ideal for preferences.",
-      "url": "https://jobicy.com/jobs/161636-field-intelligence-analyst-remote-uae",
-      "source": "Jobicy",
-      "posted_date": "2026-11-12",
-      "id": "fieldintelligenceanalystremoteuae|sayari",
       "fetched_at": "2026-11-12T21:39:51.256Z"
     },
     {
@@ -431,71 +470,6 @@
       "posted_date": "2026-11-09",
       "id": "productsuccessmanageriperformanceapac|teamworks",
       "fetched_at": "2026-11-09T23:39:05.670Z"
-    },
-    {
-      "title": "Channel Partnerships Manager",
-      "company": "Lyra Health",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 78,
-      "why_fit": "Partnerships role at established healthtech company; aligns with GTM/partnerships interests and mission-driven culture.",
-      "url": "https://jobicy.com/jobs/159791-channel-partnerships-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-11-08",
-      "id": "channelpartnershipsmanager|lyrahealth",
-      "fetched_at": "2026-11-08T19:15:13.058Z"
-    },
-    {
-      "title": "Product & Technical Communications",
-      "company": "Elevenlabs",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 75,
-      "why_fit": "AI/LLM company entry-level role; matches tech + communication skills and AI evaluation background.",
-      "url": "https://jobicy.com/jobs/159771-product-technical-communications",
-      "source": "Jobicy",
-      "posted_date": "2026-11-08",
-      "id": "producttechnicalcommunications|elevenlabs",
-      "fetched_at": "2026-11-08T19:15:13.058Z"
-    },
-    {
-      "title": "Mid-Market Customer Success Manager - Americas",
-      "company": "Ashby",
-      "location": "Canada, USA",
-      "level": "mid",
-      "fit_score": 72,
-      "why_fit": "Established B2B SaaS with strong remote culture; customer-facing role leverages product/community background.",
-      "url": "https://jobicy.com/jobs/159550-mid-market-customer-success-manager-americas",
-      "source": "Jobicy",
-      "posted_date": "2026-11-07",
-      "id": "midmarketcustomersuccessmanageramericas|ashby",
-      "fetched_at": "2026-11-08T19:15:13.058Z"
-    },
-    {
-      "title": "Operations Service Specialist",
-      "company": "Proof",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Entry-level operations role; matches operations/GTM interests and data-driven decision-making focus.",
-      "url": "https://jobicy.com/jobs/159803-operations-service-specialist",
-      "source": "Jobicy",
-      "posted_date": "2026-11-08",
-      "id": "operationsservicespecialist|proof",
-      "fetched_at": "2026-11-08T19:15:13.058Z"
-    },
-    {
-      "title": "Billing Analyst",
-      "company": "Karbon",
-      "location": "Philippines",
-      "level": "entry",
-      "fit_score": 52,
-      "why_fit": "Entry-level analyst role with data focus; location mismatch reduces fit despite role alignment.",
-      "url": "https://jobicy.com/jobs/159532-billing-analyst-2",
-      "source": "Jobicy",
-      "posted_date": "2026-11-07",
-      "id": "billinganalyst|karbon",
-      "fetched_at": "2026-11-08T19:15:13.058Z"
     }
   ]
 }
