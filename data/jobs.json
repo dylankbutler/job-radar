@@ -1,31 +1,31 @@
 {
-  "lastUpdated": "2026-11-17T22:44:23.897Z",
+  "lastUpdated": "2026-11-18T22:25:55.609Z",
   "companies": [
     {
       "title": "Business Development, AI Product Partnerships",
       "company": "Pinterest",
-      "location": "Remote, US",
+      "location": "San Francisco, CA, US; Remote, US",
       "level": "entry",
       "fit_score": 78,
-      "why_fit": "AI/LLM background, remote, partnerships role aligns with GTM and business development interests.",
+      "why_fit": "Remote-eligible, aligns with AI/LLM background, partnerships GTM interest, culture-forward brand.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8319154",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-16",
       "id": "businessdevelopmentaiproductpartnerships|pinterest",
-      "fetched_at": "2026-11-17T22:44:23.897Z"
+      "fetched_at": "2026-11-18T22:25:55.609Z"
     },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
       "company": "Pinterest",
-      "location": "San Francisco, CA, US; Hybrid, CA, US",
+      "location": "San Francisco, CA, US",
       "level": "entry",
       "fit_score": 65,
-      "why_fit": "Entry-level operations/project management role; product/design background fits; hybrid flexibility in CA.",
+      "why_fit": "Entry-level, ops/strategy exposure, cross-functional work aligns with product/analytics background.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8396724",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-17",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-11-17T22:44:23.897Z"
+      "fetched_at": "2026-11-18T22:25:55.609Z"
     },
     {
       "title": "Content Enablement Intern 2027 (USA)",
@@ -33,15 +33,28 @@
       "location": "San Francisco, CA, US; Remote, US",
       "level": "entry",
       "fit_score": 62,
-      "why_fit": "Remote option, culture/media-forward brand, marketing/GTM adjacent; slightly overqualified but viable fit.",
+      "why_fit": "Remote-eligible, culture/media intersection, GTM-adjacent, flexible entry-level opportunity.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8334884",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "contentenablementintern2027usa|pinterest",
-      "fetched_at": "2026-11-17T22:44:23.897Z"
+      "fetched_at": "2026-11-18T22:25:55.609Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Field Intelligence Analyst (Remote, US)",
+      "company": "Sayari",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Analyst role leveraging research skills; established company with remote flexibility and data focus.",
+      "url": "https://jobicy.com/jobs/163164-field-intelligence-analyst-remote-us",
+      "source": "Jobicy",
+      "posted_date": "2026-11-18",
+      "id": "fieldintelligenceanalystremoteus|sayari",
+      "fetched_at": "2026-11-18T22:25:55.609Z"
+    },
     {
       "title": "Growth Marketing Manager",
       "company": "Maze",
@@ -470,58 +483,6 @@
       "posted_date": "2026-11-14",
       "id": "businessanalyst|makailabs",
       "fetched_at": "2026-11-14T19:37:38.432Z"
-    },
-    {
-      "title": "Research Scientist - Generative Audio",
-      "company": "Spotify",
-      "location": "EMEA",
-      "level": "mid",
-      "fit_score": 78,
-      "why_fit": "Music-forward brand, AI/LLM expertise match, established remote-friendly company, culture-aligned",
-      "url": "https://jobicy.com/jobs/155214-research-scientist-generative-audio",
-      "source": "Jobicy",
-      "posted_date": "2026-11-13",
-      "id": "researchscientistgenerativeaudio|spotify",
-      "fetched_at": "2026-11-13T21:06:33.788Z"
-    },
-    {
-      "title": "Content Marketing Manager",
-      "company": "Wpromote",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Marketing/growth GTM focus, digital-first agency, potential remote flexibility, content-culture intersection",
-      "url": "https://jobicy.com/jobs/161908-content-marketing-manager-8",
-      "source": "Jobicy",
-      "posted_date": "2026-11-13",
-      "id": "contentmarketingmanager|wpromote",
-      "fetched_at": "2026-11-13T21:06:33.788Z"
-    },
-    {
-      "title": "Marketing and Commercial Specialist (Canada)",
-      "company": "Who Gives A Crap",
-      "location": "Canada",
-      "level": "entry",
-      "fit_score": 62,
-      "why_fit": "Culture-forward brand, established company, GTM/marketing focus, genuine work-life balance reputation",
-      "url": "https://jobicy.com/jobs/162054-marketing-and-commercial-specialist-canada",
-      "source": "Jobicy",
-      "posted_date": "2026-11-13",
-      "id": "marketingandcommercialspecialistcanada|whogivesacrap",
-      "fetched_at": "2026-11-13T21:06:33.788Z"
-    },
-    {
-      "title": "Field Intelligence Analyst (Remote, UAE)",
-      "company": "Sayari",
-      "location": "UAE",
-      "level": "entry",
-      "fit_score": 58,
-      "why_fit": "Remote-first, data/analytics research focus, market intelligence aligns with economic background",
-      "url": "https://jobicy.com/jobs/161636-field-intelligence-analyst-remote-uae",
-      "source": "Jobicy",
-      "posted_date": "2026-11-12",
-      "id": "fieldintelligenceanalystremoteuae|sayari",
-      "fetched_at": "2026-11-13T21:06:33.788Z"
     }
   ]
 }
