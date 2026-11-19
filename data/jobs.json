@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T22:25:55.609Z",
+  "lastUpdated": "2026-11-19T22:30:54.572Z",
   "companies": [
     {
       "title": "Business Development, AI Product Partnerships",
@@ -7,12 +7,12 @@
       "location": "San Francisco, CA, US; Remote, US",
       "level": "entry",
       "fit_score": 78,
-      "why_fit": "Remote-eligible, aligns with AI/LLM background, partnerships GTM interest, culture-forward brand.",
+      "why_fit": "Remote-first, AI/LLM background directly applicable, partnerships aligns with GTM interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8319154",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-16",
       "id": "businessdevelopmentaiproductpartnerships|pinterest",
-      "fetched_at": "2026-11-18T22:25:55.609Z"
+      "fetched_at": "2026-11-19T22:30:54.572Z"
     },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
@@ -20,12 +20,12 @@
       "location": "San Francisco, CA, US",
       "level": "entry",
       "fit_score": 65,
-      "why_fit": "Entry-level, ops/strategy exposure, cross-functional work aligns with product/analytics background.",
+      "why_fit": "Entry-level operations/project management role with product exposure, though San Francisco based.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8396724",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-17",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-11-18T22:25:55.609Z"
+      "fetched_at": "2026-11-19T22:30:54.572Z"
     },
     {
       "title": "Content Enablement Intern 2027 (USA)",
@@ -33,15 +33,67 @@
       "location": "San Francisco, CA, US; Remote, US",
       "level": "entry",
       "fit_score": 62,
-      "why_fit": "Remote-eligible, culture/media intersection, GTM-adjacent, flexible entry-level opportunity.",
+      "why_fit": "Remote option, culture-forward brand, marketing/GTM adjacent work in media platform.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8334884",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "contentenablementintern2027usa|pinterest",
-      "fetched_at": "2026-11-18T22:25:55.609Z"
+      "fetched_at": "2026-11-19T22:30:54.572Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Business Intelligence Analyst (Contractor)",
+      "company": "Doximity",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 78,
+      "why_fit": "Direct match for data analyst skills; established healthcare tech company with remote flexibility.",
+      "url": "https://jobicy.com/jobs/155822-business-intelligence-analyst-contractor",
+      "source": "Jobicy",
+      "posted_date": "2026-11-19",
+      "id": "businessintelligenceanalystcontractor|doximity",
+      "fetched_at": "2026-11-19T22:30:54.572Z"
+    },
+    {
+      "title": "Data Services Reports & Insights Analyst",
+      "company": "Cloudbeds",
+      "location": "LATAM",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Analytics and reporting focus; established SaaS company with remote-first culture.",
+      "url": "https://jobicy.com/jobs/153527-data-services-reports-insights-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-11-19",
+      "id": "dataservicesreportsinsightsanalyst|cloudbeds",
+      "fetched_at": "2026-11-19T22:30:54.572Z"
+    },
+    {
+      "title": "Business Operations Associate",
+      "company": "CookUnity",
+      "location": "Argentina",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Entry-level operations role; food/lifestyle brand with remote flexibility and collaborative culture.",
+      "url": "https://jobicy.com/jobs/163190-business-operations-associate",
+      "source": "Jobicy",
+      "posted_date": "2026-11-18",
+      "id": "businessoperationsassociate|cookunity",
+      "fetched_at": "2026-11-19T22:30:54.572Z"
+    },
+    {
+      "title": "Growth Partner Account Manager",
+      "company": "Defy Security",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 65,
+      "why_fit": "GTM and partnerships alignment; established cybersecurity company with remote-first approach.",
+      "url": "https://jobicy.com/jobs/163308-growth-partner-account-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-11-19",
+      "id": "growthpartneraccountmanager|defysecurity",
+      "fetched_at": "2026-11-19T22:30:54.572Z"
+    },
     {
       "title": "Field Intelligence Analyst (Remote, US)",
       "company": "Sayari",
@@ -470,19 +522,6 @@
       "posted_date": "2026-11-15",
       "id": "productmanagercaredelivery|mavenclinic",
       "fetched_at": "2026-11-15T20:03:14.902Z"
-    },
-    {
-      "title": "Business Analyst",
-      "company": "Makai Labs",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-level business analyst role aligns with product and analytics background.",
-      "url": "https://jobicy.com/jobs/162170-business-analyst-3",
-      "source": "Jobicy",
-      "posted_date": "2026-11-14",
-      "id": "businessanalyst|makailabs",
-      "fetched_at": "2026-11-14T19:37:38.432Z"
     }
   ]
 }
