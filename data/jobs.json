@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21T20:43:04.256Z",
+  "lastUpdated": "2026-11-22T20:53:18.662Z",
   "companies": [
     {
       "title": "Business Development, AI Product Partnerships",
@@ -7,12 +7,12 @@
       "location": "Remote, US",
       "level": "entry",
       "fit_score": 78,
-      "why_fit": "AI/LLM background, remote-first, partnerships GTM focus aligns perfectly with candidate expertise.",
+      "why_fit": "AI/LLM background, remote-first, partnerships GTM focus aligns perfectly with candidate interests.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8319154",
-      "source": "Pinterest Greenhouse",
+      "source": "Pinterest Careers",
       "posted_date": "2026-11-16",
       "id": "businessdevelopmentaiproductpartnerships|pinterest",
-      "fetched_at": "2026-11-21T20:43:04.256Z"
+      "fetched_at": "2026-11-22T20:53:18.662Z"
     },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
@@ -20,12 +20,12 @@
       "location": "San Francisco, CA, US",
       "level": "entry",
       "fit_score": 65,
-      "why_fit": "Operations/project management focus, product/design background, though SF-based conflicts remote preference.",
+      "why_fit": "Operations/project management experience, product/design familiarity, though SF location less ideal than remote.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8396724",
-      "source": "Pinterest Greenhouse",
+      "source": "Pinterest Careers",
       "posted_date": "2026-11-17",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-11-21T20:43:04.256Z"
+      "fetched_at": "2026-11-22T20:53:18.662Z"
     },
     {
       "title": "Content Enablement Intern 2027 (USA)",
@@ -33,12 +33,12 @@
       "location": "Remote, US",
       "level": "entry",
       "fit_score": 62,
-      "why_fit": "Remote, culture-forward brand, marketing/GTM adjacent; intern level slightly below target but viable.",
+      "why_fit": "Remote, culture-forward brand, marketing/GTM adjacent; intern level acceptable as recent grad.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8334884",
-      "source": "Pinterest Greenhouse",
+      "source": "Pinterest Careers",
       "posted_date": "2026-11-06",
       "id": "contentenablementintern2027usa|pinterest",
-      "fetched_at": "2026-11-21T20:43:04.256Z"
+      "fetched_at": "2026-11-22T20:53:18.662Z"
     }
   ],
   "discovery": [
@@ -392,136 +392,6 @@
       "posted_date": "2026-11-16",
       "id": "productownerrevenuemanagementfpa|amplify",
       "fetched_at": "2026-11-17T22:44:23.897Z"
-    },
-    {
-      "title": "GTM Systems Analyst",
-      "company": "Ashby",
-      "location": "Canada, Europe, USA",
-      "level": "entry",
-      "fit_score": 88,
-      "why_fit": "Perfect match: GTM focus, systems/analytics blend, remote-first, established company, entry-level",
-      "url": "https://jobicy.com/jobs/155421-gtm-systems-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "gtmsystemsanalyst|ashby",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Customer Insights Analyst",
-      "company": "Datavant",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 82,
-      "why_fit": "Analytics focus, insights/research alignment, remote USA, established healthcare tech company",
-      "url": "https://jobicy.com/jobs/162554-customer-insights-analyst",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "customerinsightsanalyst|datavant",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Revenue Systems Analyst",
-      "company": "Amplify",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 80,
-      "why_fit": "Systems analytics role, revenue operations fit, remote-friendly, entry-level appropriate",
-      "url": "https://jobicy.com/jobs/162661-revenue-systems-analyst-2",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "revenuesystemsanalyst|amplify",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Associate Business Development Alliances Manager",
-      "company": "ExtraHop",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 78,
-      "why_fit": "Partnerships/BD focus, associate-level, USA remote, established cybersecurity company",
-      "url": "https://jobicy.com/jobs/162353-associate-business-development-alliances-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-11-15",
-      "id": "associatebusinessdevelopmentalliancesmanager|extrahop",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Junior Performance Marketer (Remote - Bulgaria)",
-      "company": "EverAI",
-      "location": "Bulgaria",
-      "level": "entry",
-      "fit_score": 72,
-      "why_fit": "AI company, marketing/growth focus, junior-level, remote, aligns with LLM background",
-      "url": "https://jobicy.com/jobs/162719-junior-performance-marketer-remote-bulgaria",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "juniorperformancemarketerremotebulgaria|everai",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Marketing Operations Manager - US Remote",
-      "company": "PerfectServe",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 71,
-      "why_fit": "Operations/marketing blend, remote USA, established healthcare company, mid-level match",
-      "url": "https://jobicy.com/jobs/162366-marketing-operations-manager-us-remote",
-      "source": "Jobicy",
-      "posted_date": "2026-11-15",
-      "id": "marketingoperationsmanagerusremote|perfectserve",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Operations Specialist - Remote (MX, BR or AR)",
-      "company": "Appen",
-      "location": "Argentina, Brazil, Mexico",
-      "level": "entry",
-      "fit_score": 66,
-      "why_fit": "Operations focus, AI/data annotation company, remote LATAM, entry-level appropriate",
-      "url": "https://jobicy.com/jobs/162668-operations-specialist-remote-mx-br-or-ar",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "operationsspecialistremotemxbrorar|appen",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Business Development Representative, Financial Services - UKI",
-      "company": "GitLab",
-      "location": "Ireland, UK",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "GTM/BD entry-level, remote-first established company, partnerships adjacent work",
-      "url": "https://jobicy.com/jobs/162685-business-development-representative-financial-services-uki",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "businessdevelopmentrepresentativefinancialservicesuki|gitlab",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "FP&A Manager | Tech & Product | Remote in Spain or Poland",
-      "company": "Docplanner",
-      "location": "Poland, Spain",
-      "level": "mid",
-      "fit_score": 62,
-      "why_fit": "FP&A/product analytics, remote Europe, established HealthTech, mid-level strategic fit",
-      "url": "https://jobicy.com/jobs/162687-fpa-manager-tech-product-remote-in-spain-or-poland",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "fpamanager|techproduct|remoteinspainorpoland|docplanner",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
-    },
-    {
-      "title": "Marketing Analyst III, Germany",
-      "company": "iFIT",
-      "location": "Germany",
-      "level": "mid",
-      "fit_score": 58,
-      "why_fit": "Culture/fitness brand, marketing analytics, remote Germany, mid-level, work-life balance",
-      "url": "https://jobicy.com/jobs/162567-marketing-analyst-iii-germany",
-      "source": "Jobicy",
-      "posted_date": "2026-11-16",
-      "id": "marketinganalystiiigermany|ifit",
-      "fetched_at": "2026-11-16T23:35:54.143Z"
     }
   ]
 }
