@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25T23:25:42.388Z",
+  "lastUpdated": "2026-11-26T23:24:56.594Z",
   "companies": [
     {
       "title": "Data Analytics Engineer II",
@@ -7,12 +7,12 @@
       "location": "San Francisco, CA, US; Remote, US",
       "level": "mid",
       "fit_score": 82,
-      "why_fit": "Direct match: data analytics, SQL/Python skills, remote option, culture-forward brand at intersection of media/design.",
+      "why_fit": "Direct match: data analytics, SQL, Python, remote option, culture-forward brand intersection of media and technology.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8213988",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-23",
       "id": "dataanalyticsengineerii|pinterest",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     },
     {
       "title": "Business Development, AI Product Partnerships",
@@ -20,12 +20,12 @@
       "location": "San Francisco, CA, US; Remote, US",
       "level": "entry",
       "fit_score": 75,
-      "why_fit": "AI/LLM background, partnerships GTM focus, remote-first option, culture/media platform alignment.",
+      "why_fit": "AI/LLM background, partnerships interest, remote-first, culture brand, intersection of tech and decision-making.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8319154",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-16",
       "id": "businessdevelopmentaiproductpartnerships|pinterest",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
@@ -33,66 +33,105 @@
       "location": "San Francisco, CA, US",
       "level": "entry",
       "fit_score": 68,
-      "why_fit": "Operations/project management adjacent, product/UX background, culture-forward company, entry-level appropriate.",
+      "why_fit": "Operations/project management, product/design exposure, entry-level, culture-forward brand, strategic cross-functional work.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8396724",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-17",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Revenue Operations Analyst (Europe)",
+      "company": "Deepgram",
+      "location": "UK",
+      "level": "entry",
+      "fit_score": 82,
+      "why_fit": "Established AI company, remote-first, entry-level ops/analytics role aligns with background.",
+      "url": "https://jobicy.com/jobs/164362-revenue-operations-analyst-europe",
+      "source": "Jobicy",
+      "posted_date": "2026-11-26",
+      "id": "revenueoperationsanalysteurope|deepgram",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
     {
       "title": "Customer Success Operations Analyst",
       "company": "Obsidian Security",
       "location": "USA",
       "level": "entry",
-      "fit_score": 78,
-      "why_fit": "Entry-level ops role at established security company; aligns with operations and GTM interests.",
+      "fit_score": 79,
+      "why_fit": "Entry-level ops analyst role, remote, matches analytics and operations background.",
       "url": "https://jobicy.com/jobs/156880-customer-success-operations-analyst-4",
       "source": "Jobicy",
       "posted_date": "2026-11-25",
       "id": "customersuccessoperationsanalyst|obsidiansecurity",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     },
     {
       "title": "Analyst Relations Manager",
       "company": "Grafana Labs",
       "location": "USA",
-      "level": "entry",
-      "fit_score": 75,
-      "why_fit": "Remote analyst role at established, culture-forward DevOps/monitoring company; GTM adjacent.",
+      "level": "mid",
+      "fit_score": 77,
+      "why_fit": "Established tech company, remote, partnerships/analyst role in emerging data viz space.",
       "url": "https://jobicy.com/jobs/164105-analyst-relations-manager-united-states-remote",
       "source": "Jobicy",
       "posted_date": "2026-11-24",
       "id": "analystrelationsmanager|grafanalabs",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     },
     {
-      "title": "Revenue Operations Administrator",
-      "company": "Kinsta",
-      "location": "Hungary",
+      "title": "Business Analyst (Mexico Based) - Global Services Company",
+      "company": "Truelogic",
+      "location": "Mexico",
       "level": "entry",
-      "fit_score": 72,
-      "why_fit": "Entry-level ops role at remote-first hosting company; operations and growth-focused.",
-      "url": "https://jobicy.com/jobs/156920-revenue-operations-administrator",
+      "fit_score": 73,
+      "why_fit": "Entry-level business analyst, remote-flexible, matches analytical and project skills.",
+      "url": "https://jobicy.com/jobs/164372-business-analyst-mexico-based-global-services-company",
       "source": "Jobicy",
-      "posted_date": "2026-11-25",
-      "id": "revenueoperationsadministrator|kinsta",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "posted_date": "2026-11-26",
+      "id": "businessanalystmexicobasedglobalservicescompany|truelogic",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     },
     {
-      "title": "Financial Analyst",
-      "company": "CertiK",
+      "title": "Marketing Campaigns and Programs Associate",
+      "company": "Harness",
       "location": "USA",
       "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Entry-level analyst at crypto/AI security firm; tech-forward with data focus.",
-      "url": "https://jobicy.com/jobs/156856-financial-analyst-3",
+      "fit_score": 71,
+      "why_fit": "Entry-level marketing role at established DevOps company, remote, aligns with GTM interest.",
+      "url": "https://jobicy.com/jobs/164255-marketing-campaigns-and-programs-associate",
       "source": "Jobicy",
-      "posted_date": "2026-11-24",
-      "id": "financialanalyst|certik",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "posted_date": "2026-11-25",
+      "id": "marketingcampaignsandprogramsassociate|harness",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Marketing Programs Associate",
+      "company": "Axiom",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 70,
+      "why_fit": "Entry-level marketing ops, remote, established company, aligns with marketing/operations skill.",
+      "url": "https://jobicy.com/jobs/164215-marketing-programs-associate",
+      "source": "Jobicy",
+      "posted_date": "2026-11-25",
+      "id": "marketingprogramsassociate|axiom",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Data Analyst, Clinical Data Effectiveness",
+      "company": "Clover Health",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 69,
+      "why_fit": "Entry-level data analyst role, remote, matches SQL/Python analytics background.",
+      "url": "https://jobicy.com/jobs/150923-data-analyst-clinical-data-effectiveness",
+      "source": "Jobicy",
+      "posted_date": "2026-11-25",
+      "id": "dataanalystclinicaldataeffectiveness|cloverhealth",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     },
     {
       "title": "Project Manager (Service Operations)",
@@ -100,12 +139,90 @@
       "location": "Philippines",
       "level": "entry",
       "fit_score": 67,
-      "why_fit": "Entry-level PM/ops role at established marketplace; operations and project management fit.",
+      "why_fit": "Entry-level PM/ops role, established company, matches project management background.",
       "url": "https://jobicy.com/jobs/156993-project-manager-service-operations",
       "source": "Jobicy",
       "posted_date": "2026-11-25",
       "id": "projectmanagerserviceoperations|thumbtack",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Lifecycle Marketing Manager",
+      "company": "AlertMedia",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 66,
+      "why_fit": "Mid-level marketing role, remote, established company, aligns with GTM/marketing interests.",
+      "url": "https://jobicy.com/jobs/164306-lifecycle-marketing-manager-2",
+      "source": "Jobicy",
+      "posted_date": "2026-11-25",
+      "id": "lifecyclemarketingmanager|alertmedia",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Revenue Operations Administrator",
+      "company": "Kinsta",
+      "location": "Hungary",
+      "level": "entry",
+      "fit_score": 65,
+      "why_fit": "Entry-level ops role, remote, established hosting company, matches operations skill.",
+      "url": "https://jobicy.com/jobs/156920-revenue-operations-administrator",
+      "source": "Jobicy",
+      "posted_date": "2026-11-25",
+      "id": "revenueoperationsadministrator|kinsta",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Business Operations Manager",
+      "company": "Motive",
+      "location": "USA",
+      "level": "mid",
+      "fit_score": 64,
+      "why_fit": "Established company, mid-level ops role, remote, aligns with operations/strategy background.",
+      "url": "https://jobicy.com/jobs/164401-business-operations-manager-3",
+      "source": "Jobicy",
+      "posted_date": "2026-11-26",
+      "id": "businessoperationsmanager|motive",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Financial Analyst",
+      "company": "CertiK",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 62,
+      "why_fit": "Entry-level analyst in blockchain/AI security, remote, matches analytical and research skills.",
+      "url": "https://jobicy.com/jobs/156856-financial-analyst-3",
+      "source": "Jobicy",
+      "posted_date": "2026-11-24",
+      "id": "financialanalyst|certik",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Customer Experience Operations Manager",
+      "company": "MagicSchool AI",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 61,
+      "why_fit": "Entry-level ops role at AI/education company, remote, aligns with AI background and operations.",
+      "url": "https://jobicy.com/jobs/164076-customer-experience-operations-manager",
+      "source": "Jobicy",
+      "posted_date": "2026-11-24",
+      "id": "customerexperienceoperationsmanager|magicschoolai",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
+    },
+    {
+      "title": "Billing Operations Analyst 1",
+      "company": "Twilio",
+      "location": "Mexico",
+      "level": "entry",
+      "fit_score": 60,
+      "why_fit": "Entry-level operations analyst at established tech company, remote, matches ops experience.",
+      "url": "https://jobicy.com/jobs/156798-billing-operations-analyst-1",
+      "source": "Jobicy",
+      "posted_date": "2026-11-24",
+      "id": "billingoperationsanalyst1|twilio",
+      "fetched_at": "2026-11-26T23:24:56.594Z"
     },
     {
       "title": "Revenue Operations Manager",
@@ -121,32 +238,6 @@
       "fetched_at": "2026-11-25T23:25:42.388Z"
     },
     {
-      "title": "Billing Operations Analyst 1",
-      "company": "Twilio",
-      "location": "Mexico",
-      "level": "entry",
-      "fit_score": 65,
-      "why_fit": "Entry-level ops analyst at mature, remote-friendly communications platform.",
-      "url": "https://jobicy.com/jobs/156798-billing-operations-analyst-1",
-      "source": "Jobicy",
-      "posted_date": "2026-11-24",
-      "id": "billingoperationsanalyst1|twilio",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
-    },
-    {
-      "title": "Customer Experience Operations Manager",
-      "company": "MagicSchool AI",
-      "location": "USA",
-      "level": "mid",
-      "fit_score": 64,
-      "why_fit": "AI-focused ops role; aligns with LLM background and operations/customer success interests.",
-      "url": "https://jobicy.com/jobs/164076-customer-experience-operations-manager",
-      "source": "Jobicy",
-      "posted_date": "2026-11-24",
-      "id": "customerexperienceoperationsmanager|magicschoolai",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
-    },
-    {
       "title": "Clinical Workflow Analyst",
       "company": "Rackner",
       "location": "USA",
@@ -157,19 +248,6 @@
       "source": "Jobicy",
       "posted_date": "2026-11-25",
       "id": "clinicalworkflowanalyst|rackner",
-      "fetched_at": "2026-11-25T23:25:42.388Z"
-    },
-    {
-      "title": "Data Analyst, Clinical Data Effectiveness",
-      "company": "Clover Health",
-      "location": "USA",
-      "level": "entry",
-      "fit_score": 61,
-      "why_fit": "Entry-level data analyst role; SQL/Python skills directly applicable in healthcare.",
-      "url": "https://jobicy.com/jobs/150923-data-analyst-clinical-data-effectiveness",
-      "source": "Jobicy",
-      "posted_date": "2026-11-25",
-      "id": "dataanalystclinicaldataeffectiveness|cloverhealth",
       "fetched_at": "2026-11-25T23:25:42.388Z"
     },
     {
@@ -418,32 +496,6 @@
       "posted_date": "2026-11-23",
       "id": "internationalpeopleopsanalystbenefits|cribl",
       "fetched_at": "2026-11-24T01:57:47.571Z"
-    },
-    {
-      "title": "Actuarial Associate, UK",
-      "company": "Lemonade",
-      "location": "UK",
-      "level": "entry",
-      "fit_score": 35,
-      "why_fit": "Entry-level but actuarial/insurance focus misaligned; Lemonade is established and remote-friendly but wrong domain.",
-      "url": "https://jobicy.com/jobs/163710-actuarial-associate-uk-2",
-      "source": "Jobicy",
-      "posted_date": "2026-11-21",
-      "id": "actuarialassociateuk|lemonade",
-      "fetched_at": "2026-11-21T20:43:04.256Z"
-    },
-    {
-      "title": "Business Development Representative, Nordics",
-      "company": "Chainguard",
-      "location": "Denmark, Sweden",
-      "level": "entry",
-      "fit_score": 28,
-      "why_fit": "Entry-level GTM interest but security/DevOps niche; location poorly matches candidate geography preferences.",
-      "url": "https://jobicy.com/jobs/163708-business-development-representative-nordics-2",
-      "source": "Jobicy",
-      "posted_date": "2026-11-21",
-      "id": "businessdevelopmentrepresentativenordics|chainguard",
-      "fetched_at": "2026-11-21T20:43:04.256Z"
     }
   ]
 }
