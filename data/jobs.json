@@ -1,47 +1,86 @@
 {
-  "lastUpdated": "2026-11-26T23:24:56.594Z",
+  "lastUpdated": "2026-11-27T23:05:44.109Z",
   "companies": [
     {
       "title": "Data Analytics Engineer II",
       "company": "Pinterest",
       "location": "San Francisco, CA, US; Remote, US",
       "level": "mid",
-      "fit_score": 82,
-      "why_fit": "Direct match: data analytics, SQL, Python, remote option, culture-forward brand intersection of media and technology.",
+      "fit_score": 85,
+      "why_fit": "Direct match: data analytics, SQL, Python, remote-first option, culture-forward brand intersection.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8213988",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-23",
       "id": "dataanalyticsengineerii|pinterest",
-      "fetched_at": "2026-11-26T23:24:56.594Z"
+      "fetched_at": "2026-11-27T23:05:44.109Z"
     },
     {
       "title": "Business Development, AI Product Partnerships",
       "company": "Pinterest",
       "location": "San Francisco, CA, US; Remote, US",
-      "level": "entry",
-      "fit_score": 75,
-      "why_fit": "AI/LLM background, partnerships interest, remote-first, culture brand, intersection of tech and decision-making.",
+      "level": "mid",
+      "fit_score": 78,
+      "why_fit": "AI/LLM background, partnerships GTM focus, remote-first option, media/culture/technology intersection.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8319154",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-16",
       "id": "businessdevelopmentaiproductpartnerships|pinterest",
-      "fetched_at": "2026-11-26T23:24:56.594Z"
+      "fetched_at": "2026-11-27T23:05:44.109Z"
     },
     {
       "title": "Administrative Business Partner I - Engineering, Product and Design",
       "company": "Pinterest",
       "location": "San Francisco, CA, US",
       "level": "entry",
-      "fit_score": 68,
-      "why_fit": "Operations/project management, product/design exposure, entry-level, culture-forward brand, strategic cross-functional work.",
+      "fit_score": 72,
+      "why_fit": "Entry-level operations/project management, product/UX background applicable, strong culture brand.",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8396724",
       "source": "Pinterest Careers",
       "posted_date": "2026-11-17",
       "id": "administrativebusinesspartneriengineeringproductanddesign|pinterest",
-      "fetched_at": "2026-11-26T23:24:56.594Z"
+      "fetched_at": "2026-11-27T23:05:44.109Z"
     }
   ],
   "discovery": [
+    {
+      "title": "Workforce Management Planning Analyst",
+      "company": "Thumbtack",
+      "location": "Philippines",
+      "level": "entry",
+      "fit_score": 72,
+      "why_fit": "Analyst role at established company; ops/planning aligns with background; remote but location mismatch.",
+      "url": "https://jobicy.com/jobs/164562-workforce-management-planning-analyst",
+      "source": "Jobicy",
+      "posted_date": "2026-11-27",
+      "id": "workforcemanagementplanninganalyst|thumbtack",
+      "fetched_at": "2026-11-27T23:05:44.109Z"
+    },
+    {
+      "title": "Workforce Management - Real Time Analyst",
+      "company": "Clipboard",
+      "location": "APAC",
+      "level": "entry",
+      "fit_score": 68,
+      "why_fit": "Entry-level analyst role; operations/data focus; remote but APAC location misaligned with preferences.",
+      "url": "https://jobicy.com/jobs/164577-workforce-management-real-time-analyst-3",
+      "source": "Jobicy",
+      "posted_date": "2026-11-27",
+      "id": "workforcemanagementrealtimeanalyst|clipboard",
+      "fetched_at": "2026-11-27T23:05:44.109Z"
+    },
+    {
+      "title": "Associate GEO and SEO Specialist",
+      "company": "MaintainX",
+      "location": "USA",
+      "level": "entry",
+      "fit_score": 55,
+      "why_fit": "Entry-level associate role; USA-based remote; limited alignment with candidate's core interests/skills.",
+      "url": "https://jobicy.com/jobs/164551-associate-geo-and-seo-specialist",
+      "source": "Jobicy",
+      "posted_date": "2026-11-27",
+      "id": "associategeoandseospecialist|maintainx",
+      "fetched_at": "2026-11-27T23:05:44.109Z"
+    },
     {
       "title": "Revenue Operations Analyst (Europe)",
       "company": "Deepgram",
